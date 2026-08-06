@@ -1,0 +1,82 @@
+---
+/**
+ * Moldura de navegador premium para exibir telas do sistema.
+ * Usa astro:assets (WebP responsivo) quando o src bate com uma tela conhecida.
+ * `eager` deve ser true quando a imagem é o LCP (hero acima da dobra).
+ */
+import { Image } from "astro:assets";
+import { screens } from "../data/screens";
+interface Props {
+  src?: string;
+  alt?: string;
+  url?: string;
+  label?: string;   // texto do placeholder
+  glow?: boolean;
+  eager?: boolean;
+}
+const { src, alt = "Tela do MenosClique", url = "app.menosclique.com.br", label = "Tela do sistema", glow = true, eager = false } = Astro.props;
+const img = src ? screens[src] : undefined;
+---
+<figure class={`frame ${glow ? "frame--glow" : ""}`}>
+  <div class="frame__bar">
+    <span class="frame__dots"><i></i><i></i><i></i></span>
+    <span class="frame__url">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      {url}
+    </span>
+  </div>
+  <div class="frame__screen">
+    {img
+      ? <Image src={img} alt={alt} widths={[420, 640, 900, 1280, 1520]} sizes="(min-width: 980px) 640px, 92vw" loading={eager ? "eager" : "lazy"} decoding="async" fetchpriority={eager ? "high" : undefined} />
+      : src
+        ? <img src={src} alt={alt} loading="lazy" decoding="async" width="1280" height="800" />
+        : <div class="frame__ph"><span>{label}</span><small>screenshot em breve</small></div>}
+  </div>
+</figure>
+
+<style>
+  .frame {
+    margin: 0;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+  .frame--glow { position: relative; }
+  .frame--glow::after {
+    content: ""; position: absolute; inset: auto 6% -26px 6%; height: 60px; z-index: -1;
+    background: radial-gradient(60% 100% at 50% 0%, rgba(34,199,201,.5), transparent 70%);
+    filter: blur(22px);
+  }
+  .frame__bar {
+    display: flex; align-items: center; gap: 14px;
+    height: 42px; padding-inline: 16px;
+    background: linear-gradient(180deg, #fbfefe, #f1f7f7);
+    border-bottom: 1px solid var(--line);
+  }
+  .frame__dots { display: inline-flex; gap: 7px; }
+  .frame__dots i { width: 11px; height: 11px; border-radius: 50%; background: #d7e3e3; }
+  .frame__dots i:nth-child(1) { background: #febc2e; }
+  .frame__dots i:nth-child(2) { background: #28c840; }
+  .frame__dots i:nth-child(3) { background: #d7e3e3; }
+  .frame__url {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: .8rem; color: var(--muted); font-weight: 500;
+    background: #fff; border: 1px solid var(--line); border-radius: 999px;
+    padding: 5px 14px; max-width: 340px;
+  }
+  .frame__url svg { width: 13px; height: 13px; color: var(--turq-deep); }
+  .frame__screen { background: var(--bg-soft); aspect-ratio: 16 / 10; }
+  .frame__screen img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .frame__ph {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    background:
+      linear-gradient(135deg, rgba(34,199,201,.08), rgba(27,103,118,.06)),
+      repeating-linear-gradient(135deg, transparent, transparent 22px, rgba(27,103,118,.035) 22px, rgba(27,103,118,.035) 23px);
+    color: var(--brand);
+  }
+  .frame__ph span { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; }
+  .frame__ph small { color: var(--muted); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+</style>

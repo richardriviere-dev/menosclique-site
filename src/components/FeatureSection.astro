@@ -1,0 +1,77 @@
+---
+import ScreenFrame from "./ScreenFrame.astro";
+interface Props {
+  id: string;
+  tag: string;
+  title: string;      // pode conter <span class="grad">…</span>
+  lead: string;
+  bullets: string[];
+  screenLabel: string;
+  screenSrc?: string;
+  reverse?: boolean;
+  cardIcon?: string;  // svg innerHTML
+  cardTitle?: string;
+  cardSub?: string;
+  cardColor?: string; // ex.: "#e7f9ee|#17a66b"
+}
+const { id, tag, title, lead, bullets, screenLabel, screenSrc, reverse = false, cardIcon, cardTitle, cardSub, cardColor = "#e5f6f6|#12A3A5" } = Astro.props;
+const [cbg, cfg] = cardColor.split("|");
+const register = "https://app.menosclique.com.br/Register";
+---
+<section class={`fsec ${reverse ? "fsec--rev" : ""}`} id={id}>
+  <div class="container fsec__in reveal">
+    <div class="fsec__text">
+      <span class="tag">{tag}</span>
+      <h2 set:html={title}></h2>
+      <p class="lead">{lead}</p>
+      <ul class="ticks">
+        {bullets.map((b) => <li>{b}</li>)}
+      </ul>
+      <a href={register} class="btn btn-dark">Testar grátis</a>
+    </div>
+    <div class="fsec__art">
+      <ScreenFrame label={screenLabel} src={screenSrc} />
+      {cardTitle && (
+        <div class="floaty--sa">
+          <span class="floaty__ic" style={`background:${cbg};color:${cfg}`} set:html={cardIcon} />
+          <div><b>{cardTitle}</b><small>{cardSub}</small></div>
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .fsec { padding-block: clamp(46px, 6.5vw, 84px); }
+  .fsec:nth-child(even) { background: var(--bg-soft); }
+  .fsec__in { display: grid; grid-template-columns: 1fr 1.28fr; gap: 58px; align-items: center; }
+  .fsec--rev .fsec__text { order: 2; }
+  .fsec__text h2 { margin: 16px 0 14px; }
+  .fsec__art { position: relative; }
+  .fsec--rev .fsec__art { order: 1; }
+
+  .ticks { list-style: none; padding: 0; margin: 22px 0 28px; display: grid; gap: 12px; }
+  .ticks li { position: relative; padding-left: 32px; color: var(--ink-soft); font-weight: 500; }
+  .ticks li::before {
+    content: ""; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--bg-mint); border: 1px solid #cfeaea;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2312A3A5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: center;
+  }
+
+  .floaty--sa {
+    position: absolute; bottom: -18px; left: 22px; display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,.94); backdrop-filter: blur(6px);
+    border: 1px solid var(--line); border-radius: 16px; padding: 13px 17px; box-shadow: var(--shadow-lg);
+  }
+  .floaty--sa b { font-size: .94rem; color: var(--ink); font-family: var(--font-display); display: block; }
+  .floaty--sa small { color: var(--muted); font-size: .8rem; }
+  .floaty__ic { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; }
+  .floaty__ic :global(svg) { width: 18px; height: 18px; }
+
+  @media (max-width: 980px) {
+    .fsec__in { grid-template-columns: 1fr; gap: 30px; }
+    .fsec--rev .fsec__text, .fsec--rev .fsec__art { order: unset; }
+    .fsec--rev .fsec__art { order: -1; }
+  }
+</style>

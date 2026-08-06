@@ -1,0 +1,149 @@
+---
+import Base from "../layouts/Base.astro";
+import ScreenFrame from "../components/ScreenFrame.astro";
+import FeatureSection from "../components/FeatureSection.astro";
+
+const register = "https://app.menosclique.com.br/Register";
+const ic = {
+  check: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>`,
+  doc: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>`,
+  money: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+  chat: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg>`,
+  people: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 6a3 3 0 0 1 0 6M21 20a6 6 0 0 0-3-5"/></svg>`,
+  shield: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l8 4v6c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>`,
+};
+
+const sections = [
+  {
+    id: "agenda", tag: "Agenda", reverse: false,
+    title: `Uma agenda que sua recepção <span class="grad">domina no primeiro dia.</span>`,
+    lead: "Visualize por profissional, arraste para reagendar e repita séries de consultas. Bloqueie horários de férias e veja conflitos antes que virem problema.",
+    bullets: ["Agendamento recorrente, encaixes e walk-in", "Bloqueios de horário por profissional e unidade", "Registro de chegada do paciente e status coloridos", "Grade de atendimento por profissional"],
+    screenLabel: "Agenda — visão por profissional", screenSrc: "/screens/agenda.png",
+    cardIcon: ic.check, cardTitle: "18 consultas amanhã", cardSub: "3 já confirmadas", cardColor: "#e7f9ee|#17a66b",
+  },
+  {
+    id: "prontuario", tag: "Prontuário eletrônico", reverse: true,
+    title: `Um prontuário que fala a língua da <span class="grad">sua especialidade.</span>`,
+    lead: "Monte modelos com as seções e campos que você realmente usa. Registre adendos clínicos permanentes e recupere todo o histórico do paciente em segundos.",
+    bullets: ["Modelos personalizados por especialidade", "Adendos clínicos e histórico completo", "Odontograma interativo e plano terapêutico ABA", "Imagem anotável e favoritos clínicos"],
+    screenLabel: "Prontuário / Atendimento", screenSrc: "/screens/prontuario.png",
+    cardIcon: ic.doc, cardTitle: "Modelo: Oftalmologia", cardSub: "salvo automaticamente", cardColor: "#e5f6f6|#12A3A5",
+  },
+  {
+    id: "financeiro", tag: "Financeiro e repasse", reverse: false,
+    title: `Cada consulta vira <span class="grad">controle financeiro</span> — sem planilha.`,
+    lead: "Cobre e receba por atendimento, controle pacotes e sessões e calcule o repasse de cada profissional automaticamente. Cobrança de assinaturas integrada ao Asaas.",
+    bullets: ["Cobranças, pagamentos e recibos por atendimento", "Repasse médico por procedimento e por pacote", "Pacotes e sessões com consumo controlado", "Formas de pagamento e histórico auditável"],
+    screenLabel: "Financeiro do paciente", screenSrc: "/screens/financeiro.png",
+    cardIcon: ic.money, cardTitle: "Repasse do mês", cardSub: "R$ 8.940 calculado", cardColor: "#eef3ff|#4E8DFF",
+  },
+  {
+    id: "documentos", tag: "Documentos", reverse: true,
+    title: `Receituário, atestado e recibo <span class="grad">prontos em um clique.</span>`,
+    lead: "Gere documentos a partir de modelos com os dados do paciente já preenchidos — em PDF, prontos para imprimir ou salvar. Padronize a papelada da clínica inteira.",
+    bullets: ["Receituário, receituário especial e atestado", "Termo de consentimento, contrato e recibo", "Modelos com campos e placeholders automáticos", "Documento livre para qualquer necessidade"],
+    screenLabel: "Gerador de documentos", screenSrc: "/screens/documentos.png",
+    cardIcon: ic.doc, cardTitle: "Atestado gerado", cardSub: "PDF pronto para impressão", cardColor: "#e5f6f6|#12A3A5",
+  },
+  {
+    id: "pacientes", tag: "Pacientes", reverse: false,
+    title: `Todo o histórico do paciente <span class="grad">em um só lugar.</span>`,
+    lead: "Cadastro completo, convênios, arquivos anexos e histórico clínico e financeiro. Vindo de outro sistema? A gente ajuda você a trazer seus pacientes.",
+    bullets: ["Cadastro com convênios e dados de contato", "Arquivos e imagens anexados ao paciente", "Histórico clínico e financeiro unificado", "Migração assistida de pacientes"],
+    screenLabel: "Ficha do paciente", screenSrc: "/screens/pacientes.png",
+    cardIcon: ic.people, cardTitle: "412 pacientes", cardSub: "importados com sucesso", cardColor: "#e7f9ee|#17a66b",
+  },
+  {
+    id: "confirmacao", tag: "Confirmação de presença", reverse: true,
+    title: `Menos faltas na agenda, <span class="grad">com um clique no WhatsApp.</span>`,
+    lead: "Gere o link de confirmação de cada consulta e envie pelo WhatsApp com a mensagem já pronta. O paciente confirma pela página — e o status volta para a sua agenda.",
+    bullets: ["Link de confirmação único por agendamento", "Envio pelo WhatsApp com mensagem pré-preenchida", "Paciente confirma ou pede remarcação pela página", "Status atualizado automaticamente na agenda"],
+    screenLabel: "Confirmação de presença", screenSrc: "/screens/confirmacao.png",
+    cardIcon: ic.chat, cardTitle: "Consulta confirmada", cardSub: "via WhatsApp", cardColor: "#e7f9ee|#17a66b",
+  },
+  {
+    id: "unidades", tag: "Multi-unidade e equipe", reverse: false,
+    title: `Uma unidade ou várias. <span class="grad">Sua clínica, do seu jeito.</span>`,
+    lead: "Gerencie várias unidades e uma equipe inteira com papéis e permissões: administrador, recepção, financeiro e profissional de saúde — cada um vê o que precisa.",
+    bullets: ["Multi-unidade e multi-clínica", "Papéis: Admin, Recepção, Financeiro, Profissional", "Permissões por função, dados isolados por clínica", "Convites de acesso para a equipe"],
+    screenLabel: "Gestão de unidades e equipe", screenSrc: "/screens/equipe.png",
+    cardIcon: ic.people, cardTitle: "Equipe organizada", cardSub: "permissões por função", cardColor: "#eef3ff|#4E8DFF",
+  },
+  {
+    id: "relatorios", tag: "Relatórios", reverse: true,
+    title: `Sua clínica em <span class="grad">números claros.</span>`,
+    lead: "Atendimentos, faturamento, repasses e pacotes num catálogo de relatórios pronto — com exportação para Excel para você analisar do seu jeito.",
+    bullets: ["Relatório de atendimentos e faturamento", "Repasses e tabela de preços", "Consumo de pacotes e sessões", "Exportação para Excel"],
+    screenLabel: "Relatórios e exportação", screenSrc: "/screens/relatorios.png",
+    cardIcon: ic.chart, cardTitle: "Faturamento do mês", cardSub: "exportar para Excel", cardColor: "#e5f6f6|#12A3A5",
+  },
+  {
+    id: "seguranca", tag: "Segurança", reverse: false,
+    title: `Seus dados <span class="grad">seguros e sob controle.</span>`,
+    lead: "Backup automático do banco, trilha de auditoria de tudo que acontece e isolamento total de dados por clínica. Tranquilidade para você e para seus pacientes.",
+    bullets: ["Backup automático diário do banco de dados", "Trilha de auditoria de todas as operações", "Dados isolados por clínica (multi-tenant)", "Acesso por login com papéis e permissões"],
+    screenLabel: "Backups e auditoria", screenSrc: "/screens/seguranca.png",
+    cardIcon: ic.shield, cardTitle: "Backup concluído", cardSub: "hoje às 03:00", cardColor: "#e7f9ee|#17a66b",
+  },
+];
+---
+<Base
+  title="Funcionalidades — MenosClique | Sistema para clínicas e consultórios"
+  description="Agenda, prontuário eletrônico, financeiro, documentos, confirmação por WhatsApp, relatórios e mais. Conheça todas as funcionalidades do MenosClique para clínicas. Teste grátis por 14 dias."
+  path="/funcionalidades"
+>
+  <!-- HERO -->
+  <section class="fhero">
+    <div class="fhero__bg" aria-hidden="true"></div>
+    <div class="container center narrow">
+      <span class="eyebrow center-line">Funcionalidades</span>
+      <h1>Tudo que sua clínica precisa.<br><span class="grad">Menos o que ela não precisa.</span></h1>
+      <p class="lead">Do agendamento ao recibo, o MenosClique reúne a operação inteira da sua clínica num sistema simples de usar e fácil de amar. Veja cada recurso — todos reais, todos já no ar.</p>
+      <div class="fhero__cta">
+        <a href={register} class="btn btn-primary btn-lg">Começar teste grátis</a>
+        <a href="/precos" class="btn btn-ghost btn-lg">Ver planos</a>
+      </div>
+    </div>
+    <div class="container fhero__shot reveal">
+      <ScreenFrame label="Painel do MenosClique" src="/screens/dashboard.png" eager />
+    </div>
+  </section>
+
+  {sections.map((s) => <FeatureSection {...s} />)}
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="fcta reveal">
+        <div class="fcta__bg" aria-hidden="true"></div>
+        <h2>Veja tudo isso funcionando na sua clínica.</h2>
+        <p class="lead">14 dias grátis, sem cartão de crédito, com migração assistida dos seus pacientes.</p>
+        <div class="fcta__row">
+          <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
+          <a href="/precos" class="btn btn-ghost btn-lg">Ver planos e preços</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .fhero { position: relative; padding-top: clamp(46px, 6vw, 84px); padding-bottom: 10px; overflow: hidden; }
+    .fhero__bg { position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(50% 45% at 50% 0%, rgba(34,199,201,.16), transparent 60%),
+        linear-gradient(180deg, #f3fbfb, #fff 70%); }
+    .fhero h1 { margin: 18px 0 18px; }
+    .fhero__cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 26px; }
+    .fhero__shot { margin-top: clamp(40px, 5vw, 64px); max-width: 1080px; }
+
+    .fcta { position: relative; text-align: center; padding: clamp(44px, 6vw, 76px) 30px; border-radius: var(--r-xl); overflow: hidden; color: #eafcfd; }
+    .fcta__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(120% 130% at 20% 0%, var(--dark-2), var(--dark) 60%); }
+    .fcta::before { content: ""; position: absolute; top: -40%; right: -8%; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(circle, rgba(34,199,201,.28), transparent 68%); z-index: -1; }
+    .fcta h2 { color: #fff; }
+    .fcta p { color: #a9c6c9; margin-top: 12px; }
+    .fcta__row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 28px; }
+    @media (max-width: 560px) { .fhero__cta .btn, .fcta__row .btn { flex: 1; } }
+  </style>
+</Base>

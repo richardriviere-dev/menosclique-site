@@ -1,0 +1,296 @@
+---
+import "@fontsource-variable/bricolage-grotesque";
+import "@fontsource-variable/inter";
+import "../styles/global.css";
+// URL (hasheada) da fonte de títulos, para precarregar — no mobile o LCP é o H1,
+// que só pinta na fonte final quando a Bricolage chega.
+import bricolageLatin from "@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2?url";
+
+interface Props {
+  title?: string;
+  description?: string;
+  path?: string;
+  ogType?: string;
+}
+const {
+  title = "MenosClique — Sistema de gestão para clínicas e consultórios",
+  description = "Agenda, prontuário eletrônico, financeiro e documentos em um só sistema para clínicas. Menos cliques, mais cuidado. Teste grátis por 14 dias, sem cartão.",
+  path = "/",
+  ogType = "website",
+} = Astro.props;
+
+const site = "https://www.menosclique.com.br";
+// Canonical sempre com barra final (forma "de diretório"), casando com o sitemap.
+const canonicalPath = path === "/" ? "/" : path.replace(/\/+$/, "") + "/";
+const canonical = new URL(canonicalPath, site).href;
+const app = "https://app.menosclique.com.br";
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "MenosClique",
+  url: site,
+  logo: `${site}/menosclique-icon.png`,
+  slogan: "Porque menos é mais.",
+  description,
+  sameAs: [],
+};
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "MenosClique",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  offers: {
+    "@type": "Offer",
+    price: "69.90",
+    priceCurrency: "BRL",
+  },
+  description,
+};
+---
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href={bricolageLatin} as="font" type="font/woff2" crossorigin />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1B6776" />
+  <!-- Open Graph -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="MenosClique" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={`${site}/og.png`} />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={`${site}/og.png`} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+
+  <!-- Google Analytics 4 com Consent Mode v2 (LGPD) — gtag.js é adiado (idle/1ª interação) p/ não pesar no TBT -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    // Padrão: tudo negado até o usuário decidir.
+    gtag('consent', 'default', {
+      ad_storage: 'denied', analytics_storage: 'denied',
+      ad_user_data: 'denied', ad_personalization: 'denied'
+    });
+    // Reaplica escolha salva em visitas seguintes.
+    try {
+      if (localStorage.getItem('mc_consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    } catch (e) {}
+    gtag('config', 'G-4QM2GV1K6C');
+    // Carrega o gtag.js só quando o navegador estiver ocioso ou na 1ª interação —
+    // os comandos acima ficam na fila (dataLayer) e são processados quando o script chega.
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4QM2GV1K6C';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      if ('requestIdleCallback' in window) requestIdleCallback(loadGA, { timeout: 6000 });
+      else setTimeout(loadGA, 4000);
+    })();
+  </script>
+
+  <!-- Slot para a página injetar tags no <head> (ex.: preload da imagem LCP). -->
+  <slot name="head" />
+</head>
+<body>
+  <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__in">
+      <a href="/" class="nav__brand" aria-label="MenosClique — página inicial">
+        <img src="/menosclique-logo.png" alt="MenosClique" width="168" height="38" />
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="/funcionalidades">Funcionalidades</a>
+        <a href="/especialidades">Especialidades</a>
+        <a href="/precos">Preços</a>
+        <a href="/blog">Blog</a>
+      </nav>
+      <div class="nav__cta">
+        <a href={app} class="nav__login">Entrar</a>
+        <a href={`${app}/Register`} class="btn btn-primary">Teste grátis</a>
+      </div>
+      <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile" hidden>
+      <a href="/funcionalidades">Funcionalidades</a>
+      <a href="/especialidades">Especialidades</a>
+      <a href="/precos">Preços</a>
+      <a href="/blog">Blog</a>
+      <a href={app}>Entrar</a>
+      <a href={`${app}/Register`} class="btn btn-primary btn-block">Começar teste grátis</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <slot />
+  </main>
+
+  <!-- Banner de consentimento de cookies (LGPD) -->
+  <div class="cookie" id="cookieBanner" hidden role="dialog" aria-label="Aviso de cookies">
+    <p class="cookie__txt">Usamos cookies de análise para entender como o site é usado e melhorá-lo. Você pode aceitar ou recusar — a navegação continua normal.</p>
+    <div class="cookie__act">
+      <button type="button" class="btn btn-ghost" id="cookieNo">Recusar</button>
+      <button type="button" class="btn btn-primary" id="cookieYes">Aceitar</button>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot__top">
+        <div class="foot__brand">
+          <div class="foot__logo"><img src="/menosclique-icon.png" alt="" width="30" height="30" /><span>menos<b>clique</b></span></div>
+          <p>Sistema de gestão para clínicas e consultórios. Agenda, prontuário, financeiro e documentos em um só lugar.</p>
+          <p class="foot__slogan">Porque menos é mais.</p>
+        </div>
+        <div class="foot__cols">
+          <div>
+            <h3>Produto</h3>
+            <a href="/funcionalidades">Funcionalidades</a>
+            <a href="/especialidades">Especialidades</a>
+            <a href="/precos">Preços</a>
+            <a href="/teste-gratis">Teste grátis</a>
+          </div>
+          <div>
+            <h3>Recursos</h3>
+            <a href="/funcionalidades#agenda">Agenda</a>
+            <a href="/funcionalidades#prontuario">Prontuário</a>
+            <a href="/funcionalidades#financeiro">Financeiro</a>
+            <a href="/funcionalidades#documentos">Documentos</a>
+          </div>
+          <div>
+            <h3>Empresa</h3>
+            <a href="/quem-somos">Quem somos</a>
+            <a href="/alternativas">Alternativas</a>
+            <a href={`mailto:contato@menosclique.com.br`}>Contato</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot__bottom">
+        <span>© {new Date().getFullYear()} MenosClique. Todos os direitos reservados.</span>
+        <span class="foot__made">Feito para quem cuida de pessoas.</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .skip { position: absolute; left: -999px; top: 0; background: #fff; padding: 10px 16px; border-radius: 8px; z-index: 200; }
+    .skip:focus { left: 12px; top: 12px; }
+
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.82); backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s; }
+    .nav.scrolled { border-color: var(--line); box-shadow: 0 6px 24px -18px rgba(12,42,49,.4); }
+    .nav__in { height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .nav__brand img { height: 34px; width: auto; }
+    .nav__links { display: flex; align-items: center; gap: 30px; margin-left: 14px; margin-right: auto; }
+    .nav__links a { color: var(--ink-soft); font-weight: 500; font-size: .97rem; transition: color .18s; }
+    .nav__links a:hover { color: var(--turq-ink); }
+    .nav__cta { display: flex; align-items: center; gap: 14px; }
+    .nav__login { color: var(--ink); font-weight: 600; font-size: .97rem; }
+    .nav__login:hover { color: var(--turq-ink); }
+    .nav__burger { display: none; flex-direction: column; gap: 5px; background: none; border: 0; padding: 8px; }
+    .nav__burger span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: .25s; }
+    .nav__mobile { display: none; flex-direction: column; gap: 6px; padding: 14px 22px 22px; border-bottom: 1px solid var(--line); background: #fff; }
+    .nav__mobile a:not(.btn) { padding: 12px 4px; color: var(--ink); font-weight: 500; border-bottom: 1px solid var(--line-soft); }
+
+    @media (max-width: 860px) {
+      .nav__links, .nav__cta { display: none; }
+      .nav__burger { display: flex; }
+      .nav__mobile[data-open] { display: flex; }
+    }
+
+    .foot { background: var(--dark); color: #bcd6d8; padding-block: 64px 30px; }
+    .foot__top { display: grid; grid-template-columns: 1.4fr 2fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .foot__logo { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 16px; }
+    .foot__logo img { height: 28px; width: auto; }
+    .foot__logo span { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: #eafcfd; letter-spacing: -.02em; }
+    .foot__logo b { color: var(--turq); font-weight: 700; }
+    .foot__brand p { color: #9dbdc0; max-width: 340px; font-size: .96rem; }
+    .foot__slogan { margin-top: 12px; color: var(--turq) !important; font-family: var(--font-display); font-weight: 600; }
+    .foot__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .foot__cols h3 { color: #fff; font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
+    .foot__cols a { display: block; color: #9dbdc0; font-size: .95rem; padding: 5px 0; transition: color .18s; }
+    .foot__cols a:hover { color: var(--turq); }
+    .foot__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 24px; color: #7fa2a5; font-size: .88rem; }
+    @media (max-width: 760px) { .foot__top { grid-template-columns: 1fr; } .foot__cols { grid-template-columns: repeat(2,1fr); } }
+
+    /* Banner de cookies */
+    .cookie { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 300; margin: 0 auto; max-width: 720px;
+      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+      background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg);
+      box-shadow: 0 12px 40px -12px rgba(12,42,49,.35); padding: 16px 20px; }
+    /* O atributo `hidden` precisa vencer o display:flex acima (senão o banner nunca some). */
+    .cookie[hidden] { display: none; }
+    .cookie__txt { flex: 1 1 300px; color: var(--ink-soft); font-size: .92rem; line-height: 1.5; margin: 0; }
+    .cookie__act { display: flex; gap: 10px; flex-shrink: 0; }
+    .cookie__act .btn { padding: 9px 18px; font-size: .92rem; }
+    @media (max-width: 560px) {
+      .cookie { left: 10px; right: 10px; bottom: 10px; padding: 14px 16px; }
+      .cookie__act { width: 100%; }
+      .cookie__act .btn { flex: 1; justify-content: center; }
+    }
+  </style>
+
+  <script>
+    // Nav sombra ao rolar
+    const nav = document.getElementById("nav");
+    const onScroll = () => nav?.classList.toggle("scrolled", window.scrollY > 8);
+    onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
+
+    // Menu mobile
+    const burger = document.getElementById("burger");
+    const mob = document.getElementById("navMobile");
+    burger?.addEventListener("click", () => {
+      const open = mob?.hasAttribute("data-open");
+      if (open) { mob?.removeAttribute("data-open"); mob?.setAttribute("hidden", ""); burger?.setAttribute("aria-expanded", "false"); }
+      else { mob?.setAttribute("data-open", ""); mob?.removeAttribute("hidden"); burger?.setAttribute("aria-expanded", "true"); }
+    });
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: .08 });
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+    // Consentimento de cookies (LGPD) — mostra o banner só na 1ª visita/sem escolha salva.
+    const cookie = document.getElementById("cookieBanner");
+    let choice = null;
+    try { choice = localStorage.getItem("mc_consent"); } catch (e) {}
+    if (!choice && cookie) cookie.hidden = false;
+    document.getElementById("cookieYes")?.addEventListener("click", () => {
+      try { localStorage.setItem("mc_consent", "granted"); } catch (e) {}
+      if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: "granted" });
+      if (cookie) cookie.hidden = true;
+    });
+    document.getElementById("cookieNo")?.addEventListener("click", () => {
+      try { localStorage.setItem("mc_consent", "denied"); } catch (e) {}
+      if (cookie) cookie.hidden = true;
+    });
+  </script>
+</body>
+</html>

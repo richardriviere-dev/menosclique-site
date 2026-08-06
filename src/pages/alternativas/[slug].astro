@@ -1,0 +1,181 @@
+---
+import Base from "../../layouts/Base.astro";
+import ScreenFrame from "../../components/ScreenFrame.astro";
+import { concorrentes } from "../../data/concorrentes";
+import { alternativasConteudo } from "../../data/alternativas-content";
+
+export function getStaticPaths() {
+  return concorrentes.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props;
+const register = "https://app.menosclique.com.br/Register";
+const outros = concorrentes.filter((x) => x.slug !== c.slug).slice(0, 6);
+
+// Conteúdo único deste concorrente (intro, "ideal para", FAQ específico).
+const ac = alternativasConteudo[c.slug];
+
+const razoes = [
+  { t: "Menos cliques, de verdade", d: "Simplicidade é o nosso produto. A equipe aprende em minutos, sem treinamento longo nem manual grosso." },
+  { t: "Tudo incluído em todos os planos", d: "Nada de funcionalidade presa em plano caro. Você escolhe pelo número de profissionais — o resto vem completo." },
+  { t: "Preço transparente", d: "Planos a partir de R$ 69,90 por mês, sem letra miúda. Você sabe exatamente o que paga." },
+  { t: "14 dias grátis, sem cartão", d: "Teste com calma, com todas as funcionalidades, antes de decidir. Sem compromisso." },
+  { t: "Migração assistida", d: "A gente te ajuda a trazer seus pacientes para você começar rápido, sem digitar tudo de novo." },
+  { t: "Suporte humano", d: "Gente de verdade para te ajudar — não um robô que empurra você para uma página de ajuda." },
+];
+
+const faqsGerais = [
+  { q: `O MenosClique é uma boa alternativa ao ${c.nome}?`, a: `Se você busca um sistema para clínicas simples de usar, com todas as funcionalidades em todos os planos e preço transparente a partir de R$ 69,90, sim. A melhor forma de saber é testar 14 dias grátis, sem cartão.` },
+  { q: "Consigo migrar meus pacientes?", a: "Sim. Oferecemos migração assistida de pacientes para você começar rápido, sem retrabalho." },
+  { q: "Preciso de cartão de crédito para testar?", a: "Não. O teste grátis de 14 dias não pede cartão de crédito." },
+  { q: "Quais funcionalidades o MenosClique tem?", a: "Agenda completa, prontuário eletrônico personalizável, financeiro e repasse, documentos em PDF, pacotes e sessões, confirmação por WhatsApp, relatórios, multi-unidade, backup automático e mais — tudo em todos os planos." },
+];
+// FAQ específico do concorrente vem primeiro; depois as perguntas transversais.
+const faqs = [...(ac?.faqs ?? []), ...faqsGerais];
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+---
+<Base
+  title={`Alternativa ao ${c.nome} — MenosClique | Sistema para clínicas`}
+  description={`Procurando uma alternativa ao ${c.nome}? O MenosClique é um sistema para clínicas simples e completo: agenda, prontuário, financeiro e documentos. Teste grátis 14 dias, sem cartão.`}
+  path={`/alternativas/${c.slug}`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HERO -->
+  <section class="ahero">
+    <div class="ahero__bg" aria-hidden="true"></div>
+    <div class="container ahero__in">
+      <div class="ahero__copy">
+        <span class="eyebrow">Alternativa ao {c.nome}</span>
+        <h1>Buscando uma alternativa ao {c.nome}? <span class="grad">Conheça o MenosClique.</span></h1>
+        <p class="lead">O {c.nome} é {c.oneLiner}. Se o que você procura é <strong>simplicidade, tudo incluído e preço justo</strong>, o MenosClique pode ser a escolha certa para a sua clínica.</p>
+        <div class="ahero__cta">
+          <a href={register} class="btn btn-primary btn-lg">Testar grátis por 14 dias</a>
+          <a href="/funcionalidades" class="btn btn-ghost btn-lg">Ver funcionalidades</a>
+        </div>
+      </div>
+      <div class="ahero__art"><ScreenFrame label="Painel do MenosClique" src="/screens/dashboard.png" eager /></div>
+    </div>
+  </section>
+
+  <!-- INTRO (conteúdo único por concorrente) -->
+  {ac?.intro?.length && (
+    <section class="section-sm">
+      <div class="container narrow aintro reveal">
+        {ac.intro.map((p) => <p class="aintro__p">{p}</p>)}
+        {ac.idealPara && (
+          <p class="aintro__ideal"><strong>O MenosClique é ideal para</strong> {ac.idealPara}</p>
+        )}
+      </div>
+    </section>
+  )}
+
+  <!-- RAZÕES -->
+  <section class="section">
+    <div class="container">
+      <div class="center narrow reveal">
+        <span class="eyebrow center-line">Por que considerar o MenosClique</span>
+        <h2>Menos complicação. <span class="grad">Mais clínica funcionando.</span></h2>
+      </div>
+      <div class="raz-grid">
+        {razoes.map((r) => (
+          <div class="raz card reveal">
+            <span class="raz__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>{r.t}</h3><p>{r.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAMING JUSTO -->
+  <section class="section-sm bg-alt">
+    <div class="container narrow center reveal">
+      <p class="fair">Não vamos falar mal de ninguém. Cada sistema tem seus pontos fortes, e o {c.nome} atende muita gente. Nossa proposta é diferente: <strong>fazer menos, melhor</strong> — um sistema que sua equipe realmente usa, com preço que cabe no orçamento da clínica. A melhor forma de comparar é <a href={register}>testar grátis</a> e sentir na prática.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container narrow">
+      <div class="center reveal" style="margin-bottom:34px">
+        <span class="eyebrow center-line">Perguntas frequentes</span>
+        <h2>MenosClique como alternativa ao {c.nome}</h2>
+      </div>
+      <div class="faq-list reveal">
+        {faqs.map((f) => (
+          <details class="faq"><summary>{f.q}<span class="faq__i"></span></summary><p>{f.a}</p></details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTRAS -->
+  <section class="section-sm bg-alt">
+    <div class="container">
+      <h3 class="rel__title">Compare também com</h3>
+      <div class="rel">
+        {outros.map((o) => <a href={`/alternativas/${o.slug}`} class="rel__link">Alternativa ao {o.nome}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="ecta reveal">
+        <div class="ecta__bg" aria-hidden="true"></div>
+        <h2>Veja a diferença você mesmo.</h2>
+        <p class="lead">14 dias grátis, sem cartão, com migração assistida. Decida com a sua clínica na tela.</p>
+        <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .ahero { position: relative; padding-top: clamp(40px, 5vw, 72px); padding-bottom: clamp(30px, 4vw, 52px); overflow: hidden; }
+    .ahero__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(55% 50% at 85% 5%, rgba(34,199,201,.16), transparent 60%), linear-gradient(180deg, #f3fbfb, #fff 65%); }
+    .ahero__in { display: grid; grid-template-columns: 1fr 1.05fr; gap: 52px; align-items: center; }
+    .ahero h1 { margin: 16px 0 16px; }
+    .ahero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+    .aintro { text-align: left; }
+    .aintro__p { color: var(--ink-soft); font-size: 1.06rem; line-height: 1.75; max-width: 64ch; margin: 0 auto 16px; }
+    .aintro__ideal { max-width: 64ch; margin: 22px auto 0; padding: 16px 20px; border-left: 3px solid var(--turq);
+      background: var(--bg-mint); border-radius: 0 var(--r) var(--r) 0; color: var(--ink); font-size: 1.02rem; line-height: 1.6; }
+    .aintro__ideal strong { color: var(--turq-ink); }
+
+    .raz-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 46px; }
+    .raz { padding: 24px 24px; }
+    .raz__ic { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 11px; background: var(--bg-mint); border: 1px solid #d9efef; color: var(--turq-deep); margin-bottom: 14px; }
+    .raz__ic svg { width: 20px; height: 20px; }
+    .raz h3 { font-size: 1.08rem; margin-bottom: 7px; }
+    .raz p { font-size: .95rem; }
+
+    .bg-alt { background: var(--bg-soft); }
+    .fair { font-size: 1.15rem; line-height: 1.6; color: var(--ink-soft); }
+    .fair strong { color: var(--ink); }
+
+    .faq-list { display: grid; gap: 12px; }
+    .faq { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 4px 22px; box-shadow: var(--shadow-sm); }
+    .faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; padding: 18px 0; font-weight: 600; color: var(--ink); font-family: var(--font-display); list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq__i { position: relative; flex-shrink: 0; width: 20px; height: 20px; }
+    .faq__i::before, .faq__i::after { content: ""; position: absolute; background: var(--turq-deep); border-radius: 2px; }
+    .faq__i::before { top: 9px; left: 2px; width: 16px; height: 2px; }
+    .faq__i::after { top: 2px; left: 9px; width: 2px; height: 16px; transition: transform .25s; }
+    .faq[open] .faq__i::after { transform: scaleY(0); }
+    .faq p { padding: 0 0 20px; color: var(--ink-soft); }
+
+    .rel__title { font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 16px; }
+    .rel { display: flex; flex-wrap: wrap; gap: 10px; }
+    .rel__link { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: .92rem; font-weight: 500; color: var(--ink-soft); transition: .18s; }
+    .rel__link:hover { border-color: var(--turq); color: var(--turq-ink); }
+
+    .ecta { position: relative; text-align: center; padding: clamp(40px, 5vw, 64px) 30px; border-radius: var(--r-xl); overflow: hidden; color: #eafcfd; }
+    .ecta__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(120% 130% at 20% 0%, var(--dark-2), var(--dark) 60%); }
+    .ecta::before { content: ""; position: absolute; top: -40%; right: -8%; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(34,199,201,.28), transparent 68%); z-index: -1; }
+    .ecta h2 { color: #fff; } .ecta p { color: #a9c6c9; margin: 12px 0 24px; }
+
+    @media (max-width: 980px) { .ahero__in { grid-template-columns: 1fr; gap: 34px; } .raz-grid { grid-template-columns: 1fr; } }
+  </style>
+</Base>

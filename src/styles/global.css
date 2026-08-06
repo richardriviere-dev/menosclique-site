@@ -1,0 +1,145 @@
+/* ============================================================
+   MenosClique — Design System
+   "Porque menos é mais" — clareza, respiro, confiança.
+   ============================================================ */
+
+:root {
+  /* — Tipografia — */
+  --font-display: "Bricolage Grotesque Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* — Cores da marca — */
+  --brand: #1B6776;        /* teal principal */
+  --brand-deep: #0F4C5C;   /* teal profundo */
+  --turq: #22C7C9;         /* turquesa (acento vivo) */
+  --turq-deep: #12A3A5;    /* turquesa CTA */
+  --turq-ink: #0A6E70;
+
+  /* — Neutros com viés teal (escolhidos, não default) — */
+  --ink: #0C2A31;          /* texto principal */
+  --ink-soft: #38555C;     /* texto secundário */
+  --muted: #57707A;        /* legendas — contraste AA (~5:1 no branco) */
+  --line: #E2ECEC;         /* divisores */
+  --line-soft: #EDF4F4;
+  --bg: #FFFFFF;
+  --bg-soft: #F4FAFA;      /* seções alternadas */
+  --bg-mint: #ECF7F7;
+  --dark: #0B2A31;         /* seções escuras */
+  --dark-2: #0E353E;
+
+  /* — Semânticos — */
+  --good: #17A66B;
+  --star: #F5B301;
+
+  /* — Formas / sombras — */
+  --r-sm: 10px; --r: 16px; --r-lg: 24px; --r-xl: 34px;
+  --shadow-sm: 0 1px 2px rgba(12,42,49,.05), 0 1px 3px rgba(12,42,49,.04);
+  --shadow: 0 10px 30px -12px rgba(12,42,49,.18);
+  --shadow-lg: 0 30px 70px -25px rgba(12,42,49,.30);
+  --shadow-glow: 0 20px 60px -20px rgba(34,199,201,.45);
+
+  --container: 1680px;   /* largo — aproveita telas grandes (40"+), margens menores e conteúdo mais centralizado */
+  --nav-h: 72px;
+}
+
+/* — Reset enxuto — */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+img, svg, video { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+::selection { background: var(--turq); color: #04333a; }
+
+/* — Tipografia — */
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.08; letter-spacing: -.02em; color: var(--ink); text-wrap: balance; }
+h1 { font-size: clamp(2.4rem, 5.2vw, 4.1rem); }
+h2 { font-size: clamp(1.9rem, 3.8vw, 2.9rem); letter-spacing: -.025em; }
+h3 { font-size: clamp(1.2rem, 2vw, 1.45rem); letter-spacing: -.015em; }
+p { color: var(--ink-soft); }
+.lead { font-size: clamp(1.08rem, 1.7vw, 1.28rem); color: var(--ink-soft); line-height: 1.55; }
+
+/* — Layout — */
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: 22px; }
+.section { padding-block: clamp(64px, 9vw, 118px); }
+.section-sm { padding-block: clamp(44px, 6vw, 76px); }
+.center { text-align: center; }
+.stack > * + * { margin-top: 1rem; }
+.narrow { max-width: 720px; margin-inline: auto; }
+
+/* — Eyebrow / kicker — */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--turq-ink);
+}
+.eyebrow::before { content: ""; width: 22px; height: 2px; border-radius: 2px; background: var(--turq); }
+.eyebrow.center-line::before { display: none; }
+
+/* — Gradiente de acento no texto — */
+.grad { background: linear-gradient(100deg, var(--brand) 0%, var(--turq-deep) 55%, var(--turq) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* — Botões — */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  font-family: var(--font-body); font-weight: 600; font-size: 1rem;
+  padding: 14px 24px; border-radius: 999px; border: 1.5px solid transparent;
+  transition: transform .18s cubic-bezier(.2,.7,.3,1), box-shadow .22s, background .22s, color .18s, border-color .18s;
+  white-space: nowrap;
+}
+.btn svg { width: 18px; height: 18px; }
+.btn-primary {
+  color: #033; background: linear-gradient(120deg, var(--turq) 0%, var(--turq-deep) 100%);
+  box-shadow: var(--shadow-glow);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 26px 70px -18px rgba(34,199,201,.6); }
+.btn-ghost { color: var(--ink); background: #fff; border-color: var(--line); box-shadow: var(--shadow-sm); }
+.btn-ghost:hover { border-color: var(--turq); color: var(--turq-ink); transform: translateY(-2px); }
+.btn-dark { color: #eafcfd; background: var(--brand-deep); }
+.btn-dark:hover { background: var(--brand); transform: translateY(-2px); }
+.btn-lg { padding: 17px 30px; font-size: 1.06rem; }
+.btn-block { width: 100%; }
+
+/* — Cartões — */
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
+
+/* — Faixa de confiança (trust line) — */
+.trustline { display: flex; flex-wrap: wrap; gap: 10px 26px; align-items: center; color: var(--muted); font-size: .93rem; font-weight: 500; }
+.trustline .ti { display: inline-flex; align-items: center; gap: 7px; }
+.trustline svg { width: 17px; height: 17px; color: var(--turq-deep); }
+
+/* — Pílulas — */
+.tag { display: inline-block; padding: 5px 13px; border-radius: 999px; background: var(--bg-mint); color: var(--turq-ink); font-size: .82rem; font-weight: 600; border: 1px solid #d4ecec; }
+
+/* — Divisor — */
+.hr { height: 1px; background: var(--line); border: 0; }
+
+/* — Seção escura — */
+.dark-sec { background: radial-gradient(120% 120% at 15% 0%, var(--dark-2) 0%, var(--dark) 55%); color: #dff2f3; }
+.dark-sec h2 { color: #fff; }
+.dark-sec p { color: #a9c6c9; }
+
+/* — Reveal on scroll — */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+}
+
+/* — Foco acessível — */
+:focus-visible { outline: 3px solid var(--turq); outline-offset: 2px; border-radius: 6px; }
+
+/* — Utilidades — */
+.grid { display: grid; gap: 22px; }
+.hide-mobile { }
+@media (max-width: 860px) { .hide-mobile { display: none !important; } }

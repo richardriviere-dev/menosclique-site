@@ -1,0 +1,76 @@
+---
+// Toggle Mensal/Anual dos planos. Padrão: Mensal (transparência primeiro; o badge
+// "2 meses grátis" vende o anual). Alterna a classe .billing-anual em todo
+// [data-billing-area] da página; .m-only aparece só no mensal e .a-only só no anual.
+---
+<div class="billing" data-billing-toggle role="group" aria-label="Período de cobrança">
+  <span class="billing__thumb" aria-hidden="true"></span>
+  <button type="button" class="billing__opt is-on" data-mode="mensal" aria-pressed="true">Mensal</button>
+  <button type="button" class="billing__opt" data-mode="anual" aria-pressed="false">
+    Anual
+    <span class="billing__gift">2 meses grátis</span>
+  </button>
+</div>
+
+<style>
+  .billing { position: relative; display: inline-flex; align-items: stretch; margin-top: 26px;
+    background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 5px;
+    box-shadow: var(--shadow-sm); }
+  .billing__thumb { position: absolute; top: 5px; bottom: 5px; left: 5px; width: 0; border-radius: 999px;
+    background: linear-gradient(120deg, var(--turq) 0%, var(--turq-deep) 100%);
+    box-shadow: 0 8px 18px -10px rgba(18,163,165,.9);
+    transition: left .28s cubic-bezier(.4,0,.2,1), width .28s cubic-bezier(.4,0,.2,1); }
+  .billing__opt { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 8px;
+    border: 0; background: transparent; cursor: pointer; font: inherit; font-weight: 700;
+    font-family: var(--font-display); color: var(--ink-soft); padding: 10px 22px; min-height: 44px;
+    border-radius: 999px; transition: color .2s; }
+  .billing__opt.is-on { color: #04333a; }
+  /* Fallback antes do JS posicionar a pílula deslizante */
+  .billing:not(.billing--ready) .billing__opt.is-on { background: linear-gradient(120deg, var(--turq) 0%, var(--turq-deep) 100%); }
+  .billing__gift { font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em;
+    background: var(--bg-mint); color: var(--turq-ink); border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
+  .billing__opt.is-on .billing__gift { background: rgba(255,255,255,.92); color: var(--turq-ink); }
+  @media (max-width: 400px) { .billing__opt { padding: 10px 14px; } }
+</style>
+
+<style is:global>
+  [data-billing-area]:not(.billing-anual) .a-only { display: none !important; }
+  [data-billing-area].billing-anual .m-only { display: none !important; }
+</style>
+
+<script>
+  const wrap = document.querySelector("[data-billing-toggle]");
+  if (wrap) {
+    const thumb = wrap.querySelector(".billing__thumb");
+    const opts = [...wrap.querySelectorAll(".billing__opt")];
+    const areas = [...document.querySelectorAll("[data-billing-area]")];
+
+    const moveThumb = () => {
+      const on = wrap.querySelector(".billing__opt.is-on");
+      if (!on || !thumb) return;
+      thumb.style.left = on.offsetLeft + "px";
+      thumb.style.width = on.offsetWidth + "px";
+      wrap.classList.add("billing--ready");
+    };
+
+    const set = (mode, persist) => {
+      opts.forEach((o) => {
+        const on = o.dataset.mode === mode;
+        o.classList.toggle("is-on", on);
+        o.setAttribute("aria-pressed", String(on));
+      });
+      areas.forEach((a) => a.classList.toggle("billing-anual", mode === "anual"));
+      moveThumb();
+      if (persist) { try { localStorage.setItem("mc_billing", mode); } catch {} }
+    };
+
+    opts.forEach((o) => o.addEventListener("click", () => set(o.dataset.mode, true)));
+
+    let saved = null;
+    try { saved = localStorage.getItem("mc_billing"); } catch {}
+    if (saved === "anual") set("anual", false); else moveThumb();
+
+    window.addEventListener("resize", moveThumb);
+    document.fonts?.ready.then(moveThumb);
+  }
+</script>

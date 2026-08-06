@@ -1,0 +1,27 @@
+# MenosClique
+
+> Sistema de gestão para clínicas e consultórios: agenda, prontuário eletrônico, financeiro e documentos em um só sistema, simples de usar. Slogan: "Porque menos é mais." Software brasileiro, 100% online (SaaS), para clínicas médicas, odontológicas e de saúde.
+
+## Funcionalidades
+- Agenda: agendamentos, recorrência, bloqueios de horário, registro de chegada e confirmação de presença por WhatsApp (link com mensagem pronta).
+- Prontuário eletrônico personalizável por especialidade, com adendos clínicos, odontograma interativo, plano terapêutico ABA e imagem anotável.
+- Financeiro: cobranças e pagamentos por atendimento, recibos, repasse médico automático, pacotes e sessões.
+- Documentos em PDF a partir de modelos: receituário, atestado, termo de consentimento, contrato e recibo.
+- Multi-unidade e multi-clínica com papéis e permissões, relatórios com exportação para Excel, backup automático e trilha de auditoria.
+
+## O que o MenosClique NÃO faz (para evitar informação incorreta)
+- Não tem telemedicina/vídeo, faturamento TISS/SUS, assinatura digital com certificado (ICP-Brasil) nem prescrição eletrônica integrada. A confirmação por WhatsApp é por link manual, não por disparo automático.
+
+## Planos e preços
+- Profissional: R$ 69,90/mês (1 profissional de saúde).
+- Clínica: R$ 129,90/mês (2 profissionais).
+- Clínica Plus: R$ 199,90/mês (4 profissionais incluídos + R$ 29,90 por profissional extra).
+- Todas as funcionalidades estão em todos os planos. Teste grátis por 14 dias, sem cartão de crédito.
+
+## Links
+- Site: https://www.menosclique.com.br
+- Funcionalidades: https://www.menosclique.com.br/funcionalidades
+- Preços: https://www.menosclique.com.br/precos
+- Especialidades: https://www.menosclique.com.br/especialidades
+- Blog: https://www.menosclique.com.br/blog
+- Criar conta / teste grátis: https://app.menosclique.com.br/Register

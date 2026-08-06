@@ -1,0 +1,106 @@
+---
+/**
+ * Herói rotativo: alterna telas do sistema com crossfade + abas clicáveis.
+ * Chama a atenção de todo tipo de lead (agenda, painel, prontuário, financeiro).
+ * A 1ª tela é o LCP da Home: eager + fetchpriority alta. astro:assets = WebP responsivo.
+ */
+import { Image } from "astro:assets";
+import { screens } from "../data/screens";
+interface Shot { src: string; label: string; }
+interface Props { shots: Shot[]; url?: string; }
+const { shots, url = "app.menosclique.com.br" } = Astro.props;
+---
+<figure class="rot" data-rotator>
+  <div class="rot__bar">
+    <span class="rot__dots"><i></i><i></i><i></i></span>
+    <span class="rot__url">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      {url}
+    </span>
+  </div>
+  <div class="rot__screen">
+    {shots.map((s, i) => {
+      const img = screens[s.src];
+      return img
+        ? <Image src={img} alt={s.label} data-shot class={i === 0 ? "is-active" : ""}
+                 widths={[420, 640, 900, 1280, 1520]} sizes="(min-width: 980px) 640px, 92vw"
+                 loading={i === 0 ? "eager" : "lazy"} decoding="async" fetchpriority={i === 0 ? "high" : undefined} />
+        : <img src={s.src} alt={s.label} data-shot class={i === 0 ? "is-active" : ""}
+               loading={i === 0 ? "eager" : "lazy"} decoding="async" width="1280" height="800" />;
+    })}
+  </div>
+  <div class="rot__tabs" role="tablist" aria-label="Telas do sistema">
+    {shots.map((s, i) => (
+      <button type="button" data-tab class={i === 0 ? "is-on" : ""} role="tab" aria-selected={i === 0 ? "true" : "false"}>{s.label}</button>
+    ))}
+  </div>
+</figure>
+
+<style>
+  .rot { margin: 0; position: relative; }
+  .rot__bar {
+    display: flex; align-items: center; gap: 14px; height: 42px; padding-inline: 16px;
+    background: linear-gradient(180deg, #fbfefe, #f1f7f7);
+    border: 1px solid var(--line); border-bottom: 0; border-radius: 16px 16px 0 0;
+  }
+  .rot__dots { display: inline-flex; gap: 7px; }
+  .rot__dots i { width: 11px; height: 11px; border-radius: 50%; background: #d7e3e3; }
+  .rot__dots i:nth-child(1) { background: #febc2e; }
+  .rot__dots i:nth-child(2) { background: #28c840; }
+  .rot__url {
+    display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; color: var(--muted);
+    font-weight: 500; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px;
+  }
+  .rot__url svg { width: 13px; height: 13px; color: var(--turq-deep); }
+
+  .rot__screen {
+    position: relative; aspect-ratio: 16 / 10; overflow: hidden;
+    border: 1px solid var(--line); border-top: 0; border-radius: 0 0 16px 16px;
+    background: var(--bg-soft); box-shadow: var(--shadow-lg);
+  }
+  .rot__screen img {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; object-position: top left;
+    opacity: 0; transition: opacity .7s ease; will-change: opacity;
+  }
+  .rot__screen img.is-active { opacity: 1; }
+  .rot::after {
+    content: ""; position: absolute; inset: auto 6% -26px 6%; height: 60px; z-index: -1;
+    background: radial-gradient(60% 100% at 50% 0%, rgba(34,199,201,.5), transparent 70%); filter: blur(22px);
+  }
+
+  .rot__tabs { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 20px; }
+  .rot__tabs button {
+    font-family: var(--font-body); font-weight: 600; font-size: .84rem; color: var(--ink-soft);
+    background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 7px 16px;
+    box-shadow: var(--shadow-sm); transition: all .2s;
+  }
+  .rot__tabs button:hover { border-color: var(--turq); color: var(--turq-ink); }
+  .rot__tabs button.is-on {
+    color: #04333a; background: linear-gradient(120deg, var(--turq), var(--turq-deep));
+    border-color: transparent; box-shadow: var(--shadow-glow);
+  }
+</style>
+
+<script>
+  document.querySelectorAll("[data-rotator]").forEach((rot) => {
+    const imgs = Array.from(rot.querySelectorAll("[data-shot]"));
+    const tabs = Array.from(rot.querySelectorAll("[data-tab]"));
+    if (imgs.length < 2) return;
+    let i = 0, timer;
+    const show = (n) => {
+      imgs[i].classList.remove("is-active");
+      tabs[i].classList.remove("is-on"); tabs[i].setAttribute("aria-selected", "false");
+      i = (n + imgs.length) % imgs.length;
+      imgs[i].classList.add("is-active");
+      tabs[i].classList.add("is-on"); tabs[i].setAttribute("aria-selected", "true");
+    };
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const start = () => { if (!reduce) timer = window.setInterval(() => show(i + 1), 3800); };
+    const stop  = () => window.clearInterval(timer);
+    tabs.forEach((t, n) => t.addEventListener("click", () => { stop(); show(n); start(); }));
+    rot.addEventListener("mouseenter", stop);
+    rot.addEventListener("mouseleave", start);
+    start();
+  });
+</script>

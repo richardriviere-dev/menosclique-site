@@ -1,0 +1,245 @@
+---
+import Base from "../layouts/Base.astro";
+import BillingToggle from "../components/BillingToggle.astro";
+import { plans } from "../data/plans";
+
+const register = "https://app.menosclique.com.br/Register";
+
+const included = [
+  "Agenda completa (recorrência, bloqueios, arrastar)",
+  "Prontuário eletrônico personalizável",
+  "Documentos em PDF (receituário, atestado, termo, recibo)",
+  "Financeiro completo e repasse médico",
+  "Pacotes e sessões",
+  "Confirmação de presença por WhatsApp",
+  "Relatórios com exportação para Excel",
+  "Multi-unidade e permissões por função",
+  "Backup automático e trilha de auditoria",
+  "Migração assistida de pacientes",
+  "Suporte humano de verdade",
+  "Atualizações contínuas, sem custo extra",
+];
+
+const faqs = [
+  { q: "Preciso de cartão de crédito para testar?", a: "Não. O teste grátis de 14 dias não pede cartão de crédito. Você cria a conta e começa a usar na hora." },
+  { q: "Quantos dias dura o teste grátis?", a: "São 14 dias grátis com acesso a todas as funcionalidades. Você só escolhe um plano quando decidir continuar." },
+  { q: "Qual a diferença entre o plano mensal e o anual?", a: "No mensal você paga mês a mês, sem fidelidade. No anual você paga o equivalente a 10 mensalidades e usa por 12 meses — 2 meses grátis. O pagamento do anual é feito de uma vez, à vista ou parcelado em até 12x no cartão de crédito." },
+  { q: "Posso trocar de plano depois?", a: "Sim. Você pode subir ou descer de plano conforme sua clínica cresce. A cobrança se ajusta ao novo plano." },
+  { q: "Como funciona o profissional extra no Clínica Plus?", a: "O Clínica Plus inclui 4 profissionais de saúde. Precisando de mais, cada profissional adicional custa R$ 39,90 por mês no plano mensal — no anual, sai por R$ 33,25 por mês." },
+  { q: "Todas as funcionalidades estão em todos os planos?", a: "Sim. Agenda, prontuário, financeiro, documentos e tudo o mais estão em todos os planos. A diferença entre eles é apenas a quantidade de profissionais de saúde." },
+  { q: "O que acontece quando o teste grátis acaba?", a: "Avisamos com antecedência por e-mail. Se não escolher um plano, o acesso é pausado — seus dados continuam guardados com segurança." },
+  { q: "Vocês ajudam a migrar do meu sistema atual?", a: "Sim, oferecemos migração assistida de pacientes para você começar rápido, sem digitar tudo de novo." },
+  { q: "Posso cancelar quando quiser?", a: "Pode. No plano mensal não há fidelidade: você cancela quando quiser, direto no sistema. No plano anual, o valor já pago garante seu acesso até o fim dos 12 meses. Em qualquer plano, você tem 7 dias de arrependimento após a contratação, com reembolso integral." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+---
+<Base
+  title="Preços e planos — MenosClique | A partir de R$ 58,25/mês no plano anual"
+  description="Planos do MenosClique em preço de lançamento: a partir de R$ 58,25/mês no plano anual (2 meses grátis) ou R$ 69,90/mês no mensal. Todas as funcionalidades em todos os planos. Teste grátis 14 dias, sem cartão."
+  path="/precos"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HERO + PLANOS -->
+  <section class="phero">
+    <div class="phero__bg" aria-hidden="true"></div>
+    <div class="container center narrow">
+      <span class="eyebrow center-line">Planos e preços</span>
+      <h1>Preço simples,<br><span class="grad">como tudo aqui.</span></h1>
+      <p class="lead">Comece com <strong>14 dias grátis</strong>, sem cartão de crédito. Todas as funcionalidades em todos os planos — você escolhe só pelo tamanho da sua equipe.</p>
+      <BillingToggle />
+    </div>
+
+    <div class="container">
+      <div class="price-grid" data-billing-area>
+        {plans.map((p) => (
+          <div class={`price ${p.featured ? "price--hot" : ""}`}>
+            <span class="price__ribbon" aria-hidden="true"><b>%</b><span>PREÇO DE<br>LANÇAMENTO</span></span>
+            {p.featured && (
+              <span class="price__badge">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.8.7-5 4.6 1.4 6.7L12 17.8 5.9 20.9l1.4-6.7-5-4.6 6.8-.7z"/></svg>
+                Mais escolhido
+              </span>
+            )}
+            <h3>{p.name}</h3>
+            <p class="price__tag">{p.tagline}</p>
+
+            <div class="price__was m-only">
+              <s>R$ {p.from}<span class="price__wasmo">/mês</span></s>
+              <span class="price__off">{p.off}% OFF</span>
+            </div>
+            <div class="price__was a-only">
+              <s>R$ {p.price}<span class="price__wasmo">/mês</span></s>
+              <span class="price__off price__off--annual">2 meses grátis</span>
+            </div>
+
+            <div class="price__val m-only"><span class="price__cur">R$</span>{p.price}<span class="price__mo">/mês</span></div>
+            <div class="price__val a-only"><span class="price__cur">R$</span>{p.yearPerMonth}<span class="price__mo">/mês</span></div>
+
+            <p class="price__bill m-only">cobrança mês a mês · sem fidelidade</p>
+            <p class="price__bill a-only">cobrado anualmente: <b>R$ {p.yearTotal}</b> à vista ou em até 12x no cartão</p>
+            <p class="price__save a-only">Você economiza R$ {p.yearSave} por ano</p>
+
+            <p class="price__pros">{p.pros}</p>
+            {p.extra && (
+              <>
+                <p class="price__extra m-only">+ <s>R$ {p.extra.from}</s> <b>R$ {p.extra.price}</b> por profissional extra</p>
+                <p class="price__extra a-only">+ <b>R$ {p.extra.yearPerMonth}</b>/mês por profissional extra</p>
+              </>
+            )}
+
+            <a href={register} class={`btn ${p.featured ? "btn-primary" : "btn-ghost"} btn-block`}>Testar grátis</a>
+          </div>
+        ))}
+      </div>
+      <p class="center trial-note"><span>14 dias grátis</span> · <span>sem cartão de crédito</span> · <span>cancele quando quiser</span></p>
+    </div>
+  </section>
+
+  <!-- TUDO INCLUÍDO -->
+  <section class="section bg-alt">
+    <div class="container">
+      <div class="center narrow reveal">
+        <span class="eyebrow center-line">Sem pegadinha</span>
+        <h2>Todos os planos incluem <span class="grad">tudo.</span></h2>
+        <p class="lead" style="margin-top:12px">Aqui a gente não prende funcionalidade em plano caro. Escolha pelo número de profissionais — o resto vem completo desde o primeiro dia.</p>
+      </div>
+      <ul class="incl reveal">
+        {included.map((i) => (
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>{i}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container faq-wrap">
+      <div class="faq-head reveal">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2>Tudo que você precisa saber antes de testar.</h2>
+        <p class="lead">Ficou alguma dúvida? <a href="mailto:contato@menosclique.com.br">Fale com a gente</a>.</p>
+      </div>
+      <div class="faq-list reveal">
+        {faqs.map((f) => (
+          <details class="faq">
+            <summary>{f.q}<span class="faq__i" aria-hidden="true"></span></summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="pcta reveal">
+        <div class="pcta__bg" aria-hidden="true"></div>
+        <h2>Experimente grátis por 14 dias.</h2>
+        <p class="lead">Sem cartão. Sem compromisso. Com migração assistida.</p>
+        <div class="pcta__row"><a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a></div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .phero { position: relative; padding-top: clamp(46px, 6vw, 84px); padding-bottom: clamp(50px, 6vw, 80px); overflow: hidden; }
+    .phero__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(50% 42% at 50% 0%, rgba(34,199,201,.16), transparent 60%), linear-gradient(180deg, #f3fbfb, #fff 72%); }
+    .phero h1 { margin: 18px 0 16px; }
+
+    .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 56px; align-items: start; }
+    .price { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 32px 28px; position: relative; overflow: visible; }
+    .price--hot { border: 2px solid var(--turq); box-shadow: 0 24px 60px -30px rgba(18,163,165,.55); transform: translateY(-8px); }
+
+    /* Fita "PREÇO DE LANÇAMENTO" (pennant vermelho no canto superior direito) */
+    .price__ribbon { position: absolute; top: -4px; right: 20px; z-index: 3; width: 60px; text-align: center;
+      color: #fff; background: linear-gradient(135deg, #f4565b, #d5373d); line-height: 1.05;
+      padding: 9px 6px 15px; border-radius: 4px 4px 0 0;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+      box-shadow: 0 8px 16px -8px rgba(213,55,61,.7); }
+    .price__ribbon b { display: block; font-size: 1.15rem; font-weight: 800; }
+    .price__ribbon span { display: block; font-size: .5rem; font-weight: 800; letter-spacing: .05em; margin-top: 1px; }
+
+    /* Selo "Mais escolhido" (pill teal com estrela) */
+    .price__badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); z-index: 4;
+      display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
+      background: var(--turq-deep); color: #fff; font-size: .74rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .05em; padding: 7px 16px; border-radius: 999px;
+      box-shadow: 0 10px 22px -10px rgba(15,125,132,.7); }
+    .price__badge svg { width: 14px; height: 14px; }
+
+    .price h3 { font-size: 1.35rem; }
+    .price__tag { color: var(--muted); font-size: .92rem; margin-top: 4px; }
+
+    /* Preço "de" (riscado) + badge de desconto */
+    .price__was { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .price__was s { color: var(--muted); font-size: 1rem; text-decoration: line-through; text-decoration-color: rgba(213,55,61,.55); }
+    .price__wasmo { font-size: .82rem; }
+    .price__off { background: linear-gradient(135deg, #f4565b, #e0454b); color: #fff; font-weight: 800;
+      font-size: .76rem; letter-spacing: .02em; padding: 4px 10px; border-radius: 999px;
+      box-shadow: 0 6px 14px -8px rgba(213,55,61,.8); }
+    .price__off--annual { background: linear-gradient(135deg, var(--turq-deep), var(--turq-ink));
+      text-transform: uppercase; box-shadow: 0 6px 14px -8px rgba(18,163,165,.8); }
+
+    .price__val { font-family: var(--font-display); font-weight: 700; font-size: 3.1rem; color: var(--ink); margin: 4px 0 2px; letter-spacing: -.03em; }
+    .price__cur { font-size: 1.3rem; vertical-align: super; margin-right: 4px; color: var(--ink-soft); }
+    .price__mo { font-size: 1rem; font-weight: 500; color: var(--muted); font-family: var(--font-body); }
+    .price__bill { font-size: .88rem; color: var(--muted); margin: 0; }
+    .price__bill b { color: var(--ink); font-weight: 700; }
+    .price__save { display: inline-flex; align-items: center; font-size: .84rem; font-weight: 700;
+      color: var(--turq-ink); background: var(--bg-mint); border: 1px solid #d4ecec;
+      border-radius: 999px; padding: 4px 12px; margin: 10px 0 0; }
+    .price__pros { font-weight: 600; color: var(--turq-ink); margin: 8px 0 4px; }
+    .price__extra { font-size: .9rem; color: var(--ink-soft); margin: 0 0 20px; }
+    .price__extra s { color: var(--muted); text-decoration-color: rgba(213,55,61,.55); }
+    .price__extra b { color: var(--ink); font-weight: 700; }
+    .price:not(:has(.price__extra)) .price__pros { margin-bottom: 22px; }
+
+    .trial-note { color: var(--muted); font-size: .95rem; margin-top: 28px; }
+    .trial-note span { white-space: nowrap; }
+
+    .bg-alt { background: var(--bg-soft); }
+    .incl { list-style: none; padding: 0; margin: 46px auto 0; max-width: 900px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 34px; }
+    .incl li { display: flex; align-items: flex-start; gap: 12px; color: var(--ink); font-weight: 500; }
+    .incl svg { width: 22px; height: 22px; color: var(--turq-deep); flex-shrink: 0; margin-top: 2px; }
+
+    .faq-wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: 50px; align-items: start; }
+    .faq-head { position: sticky; top: 100px; }
+    .faq-head h2 { margin: 14px 0 12px; }
+    .faq-list { display: grid; gap: 12px; }
+    .faq { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 4px 22px; box-shadow: var(--shadow-sm); }
+    .faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; padding: 18px 0; font-weight: 600; color: var(--ink); font-family: var(--font-display); list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq__i { position: relative; flex-shrink: 0; width: 20px; height: 20px; }
+    .faq__i::before, .faq__i::after { content: ""; position: absolute; background: var(--turq-deep); border-radius: 2px; transition: transform .25s; }
+    .faq__i::before { top: 9px; left: 2px; width: 16px; height: 2px; }
+    .faq__i::after { top: 2px; left: 9px; width: 2px; height: 16px; }
+    .faq[open] .faq__i::after { transform: scaleY(0); }
+    .faq p { padding: 0 0 20px; color: var(--ink-soft); }
+
+    .pcta { position: relative; text-align: center; padding: clamp(44px, 6vw, 70px) 30px; border-radius: var(--r-xl); overflow: hidden; color: #eafcfd; }
+    .pcta__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(120% 130% at 20% 0%, var(--dark-2), var(--dark) 60%); }
+    .pcta::before { content: ""; position: absolute; top: -40%; right: -8%; width: 440px; height: 440px; border-radius: 50%; background: radial-gradient(circle, rgba(34,199,201,.28), transparent 68%); z-index: -1; }
+    .pcta h2 { color: #fff; }
+    .pcta p { color: #a9c6c9; margin-top: 12px; }
+    .pcta__row { margin-top: 26px; }
+
+    @media (max-width: 980px) {
+      .price-grid { grid-template-columns: 1fr; max-width: 440px; margin-inline: auto; row-gap: 34px; }
+      .price--hot { transform: none; }
+      .faq-wrap { grid-template-columns: 1fr; gap: 30px; }
+      .faq-head { position: static; }
+    }
+    @media (max-width: 560px) { .incl { grid-template-columns: 1fr; } }
+  </style>
+</Base>

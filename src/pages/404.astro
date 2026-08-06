@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+const register = "https://app.menosclique.com.br/Register";
+---
+<Base title="Página não encontrada — MenosClique" description="A página que você procura não foi encontrada." path="/404">
+  <section class="nf">
+    <div class="nf__bg" aria-hidden="true"></div>
+    <div class="container center">
+      <span class="nf__code grad">404</span>
+      <h1>Essa página deu menos que o esperado.</h1>
+      <p class="lead">O link pode estar quebrado ou a página foi movida. Mas a sua clínica organizada continua a um clique de distância.</p>
+      <div class="nf__cta">
+        <a href="/" class="btn btn-primary btn-lg">Voltar para o início</a>
+        <a href="/funcionalidades" class="btn btn-ghost btn-lg">Ver funcionalidades</a>
+      </div>
+      <div class="nf__links">
+        <a href="/precos">Preços</a>
+        <a href="/especialidades">Especialidades</a>
+        <a href="/blog">Blog</a>
+        <a href={register}>Teste grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .nf { position: relative; padding: clamp(70px, 12vw, 140px) 0; overflow: hidden; }
+    .nf__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(45% 45% at 50% 10%, rgba(34,199,201,.16), transparent 60%), linear-gradient(180deg, #f3fbfb, #fff 70%); }
+    .nf__code { font-family: var(--font-display); font-weight: 700; font-size: clamp(5rem, 16vw, 10rem); line-height: 1; letter-spacing: -.04em; display: block; }
+    .nf h1 { margin: 8px 0 14px; }
+    .nf .lead { max-width: 560px; margin-inline: auto; }
+    .nf__cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 30px 0 26px; }
+    .nf__links { display: flex; gap: 8px 22px; justify-content: center; flex-wrap: wrap; }
+    .nf__links a { color: var(--turq-ink); font-weight: 600; font-size: .95rem; }
+    .nf__links a:hover { text-decoration: underline; }
+    @media (max-width: 560px) { .nf__cta .btn { flex: 1; } }
+  </style>
+</Base>

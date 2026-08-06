@@ -1,0 +1,133 @@
+---
+import Base from "../layouts/Base.astro";
+import ScreenFrame from "../components/ScreenFrame.astro";
+const register = "https://app.menosclique.com.br/Register";
+
+const passos = [
+  { n: "1", t: "Crie sua conta", d: "Em menos de 2 minutos, sem cartão de crédito. Você já entra no sistema." },
+  { n: "2", t: "Configure em minutos", d: "Cadastre profissionais e serviços, ou traga seus pacientes com a migração assistida." },
+  { n: "3", t: "Comece a atender", d: "Agenda, prontuário e financeiro prontos. Sua equipe aprende no primeiro dia." },
+];
+const ganhos = [
+  "Acesso a todas as funcionalidades por 14 dias",
+  "Sem cartão de crédito e sem compromisso",
+  "Migração assistida dos seus pacientes",
+  "Suporte humano para tirar suas dúvidas",
+];
+const faqs = [
+  { q: "O teste é realmente grátis?", a: "Sim. São 14 dias com acesso total, sem pedir cartão de crédito. Você só escolhe um plano se decidir continuar." },
+  { q: "O que acontece quando o teste acaba?", a: "Avisamos por e-mail com antecedência. Se você não escolher um plano, o acesso é pausado — seus dados ficam guardados com segurança." },
+  { q: "Preciso instalar algo?", a: "Não. O MenosClique é 100% online: você acessa pelo navegador, de qualquer computador." },
+];
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+---
+<Base
+  title="Teste grátis — MenosClique | 14 dias sem cartão de crédito"
+  description="Experimente o MenosClique grátis por 14 dias, com todas as funcionalidades e sem cartão de crédito. Sistema para clínicas simples e completo. Crie sua conta em 2 minutos."
+  path="/teste-gratis"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HERO -->
+  <section class="thero">
+    <div class="thero__bg" aria-hidden="true"></div>
+    <div class="container thero__in">
+      <div class="thero__copy">
+        <span class="eyebrow">Teste grátis</span>
+        <h1>Comece grátis em <span class="grad">menos de 2 minutos.</span></h1>
+        <p class="lead">14 dias com tudo liberado, sem cartão de crédito. Sinta na prática como a sua clínica funciona com menos cliques.</p>
+        <div class="thero__cta">
+          <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
+          <a href="/precos" class="btn btn-ghost btn-lg">Ver planos</a>
+        </div>
+        <ul class="thero__ganhos">
+          {ganhos.map((g) => (
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>{g}</li>
+          ))}
+        </ul>
+      </div>
+      <div class="thero__art"><ScreenFrame label="Painel do MenosClique" src="/screens/dashboard.png" eager /></div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section">
+    <div class="container">
+      <div class="center narrow reveal">
+        <span class="eyebrow center-line">Como funciona</span>
+        <h2>Do cadastro ao primeiro atendimento, <span class="grad">em minutos.</span></h2>
+      </div>
+      <div class="steps">
+        {passos.map((p) => (
+          <div class="step card reveal">
+            <span class="step__n">{p.n}</span>
+            <h3>{p.t}</h3><p>{p.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-alt">
+    <div class="container narrow">
+      <div class="center reveal" style="margin-bottom:34px">
+        <span class="eyebrow center-line">Perguntas frequentes</span>
+        <h2>Sobre o teste grátis</h2>
+      </div>
+      <div class="faq-list reveal">
+        {faqs.map((f) => (
+          <details class="faq"><summary>{f.q}<span class="faq__i"></span></summary><p>{f.a}</p></details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="tcta reveal">
+        <div class="tcta__bg" aria-hidden="true"></div>
+        <h2>Sua clínica com menos cliques começa agora.</h2>
+        <p class="lead">14 dias grátis. Sem cartão. Sem compromisso.</p>
+        <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .thero { position: relative; padding-top: clamp(40px, 5vw, 72px); padding-bottom: clamp(30px, 4vw, 56px); overflow: hidden; }
+    .thero__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(55% 50% at 85% 5%, rgba(34,199,201,.16), transparent 60%), linear-gradient(180deg, #f3fbfb, #fff 65%); }
+    .thero__in { display: grid; grid-template-columns: 1fr 1.05fr; gap: 52px; align-items: center; }
+    .thero h1 { margin: 16px 0 16px; }
+    .thero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 24px; }
+    .thero__ganhos { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+    .thero__ganhos li { display: flex; align-items: center; gap: 10px; color: var(--ink-soft); font-weight: 500; }
+    .thero__ganhos svg { width: 18px; height: 18px; color: var(--turq-deep); flex-shrink: 0; }
+
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 46px; }
+    .step { padding: 30px 28px; }
+    .step__n { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; background: linear-gradient(120deg, var(--turq), var(--turq-deep)); color: #04333a; font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; margin-bottom: 16px; }
+    .step h3 { font-size: 1.15rem; margin-bottom: 7px; }
+    .step p { font-size: .96rem; }
+
+    .bg-alt { background: var(--bg-soft); }
+    .faq-list { display: grid; gap: 12px; }
+    .faq { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 4px 22px; box-shadow: var(--shadow-sm); }
+    .faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; padding: 18px 0; font-weight: 600; color: var(--ink); font-family: var(--font-display); list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq__i { position: relative; flex-shrink: 0; width: 20px; height: 20px; }
+    .faq__i::before, .faq__i::after { content: ""; position: absolute; background: var(--turq-deep); border-radius: 2px; }
+    .faq__i::before { top: 9px; left: 2px; width: 16px; height: 2px; }
+    .faq__i::after { top: 2px; left: 9px; width: 2px; height: 16px; transition: transform .25s; }
+    .faq[open] .faq__i::after { transform: scaleY(0); }
+    .faq p { padding: 0 0 20px; color: var(--ink-soft); }
+
+    .tcta { position: relative; text-align: center; padding: clamp(40px, 5vw, 64px) 30px; border-radius: var(--r-xl); overflow: hidden; color: #eafcfd; }
+    .tcta__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(120% 130% at 20% 0%, var(--dark-2), var(--dark) 60%); }
+    .tcta::before { content: ""; position: absolute; top: -40%; right: -8%; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(34,199,201,.28), transparent 68%); z-index: -1; }
+    .tcta h2 { color: #fff; } .tcta p { color: #a9c6c9; margin: 12px 0 24px; }
+
+    @media (max-width: 980px) { .thero__in { grid-template-columns: 1fr; gap: 34px; } .steps { grid-template-columns: 1fr; } }
+  </style>
+</Base>

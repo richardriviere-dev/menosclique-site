@@ -1,0 +1,105 @@
+---
+import Base from "../layouts/Base.astro";
+import ScreenFrame from "../components/ScreenFrame.astro";
+const register = "https://app.menosclique.com.br/Register";
+
+const valores = [
+  { t: "Simplicidade acima de tudo", d: "Software de saúde não precisa ser complicado. Cada tela nasce da pergunta: dá para tirar um clique daqui?" },
+  { t: "Feito para quem cuida", d: "Cada minuto que a sua equipe não gasta lutando com o sistema é um minuto a mais com o paciente." },
+  { t: "Honestidade no que entregamos", d: "Preço transparente, sem funcionalidade presa em plano caro e sem promessa que o sistema não cumpre." },
+  { t: "Seus dados são seus", d: "Backup automático, trilha de auditoria e isolamento total por clínica. Segurança não é opcional." },
+];
+---
+<Base
+  title="Quem somos — MenosClique | Sistema para clínicas"
+  description="O MenosClique nasceu de uma ideia simples: software de gestão para clínicas não precisa ser complicado. Menos cliques, mais cuidado. Conheça nossa filosofia."
+  path="/quem-somos"
+>
+  <!-- HERO -->
+  <section class="qhero">
+    <div class="qhero__bg" aria-hidden="true"></div>
+    <div class="container center narrow">
+      <span class="eyebrow center-line">Quem somos</span>
+      <h1>Cuidamos de quem <span class="grad">cuida de pessoas.</span></h1>
+      <p class="lead">O MenosClique nasceu de uma inquietação simples: por que um sistema para clínicas precisa ser tão complicado? A gente acredita que não precisa — e construiu a prova disso.</p>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="section">
+    <div class="container manifesto reveal">
+      <div class="manifesto__text">
+        <span class="tag">Nossa filosofia</span>
+        <h2>Porque menos <span class="grad">é mais.</span></h2>
+        <p class="lead">Toda clínica já perdeu tempo com sistema travado, tela confusa e funcionalidade que ninguém entende. Tempo que deveria ser do paciente.</p>
+        <p>O MenosClique existe para devolver esse tempo. Reunimos agenda, prontuário, financeiro e documentos num único sistema, com uma obsessão: <strong>tirar clique do caminho</strong>. Menos telas para aprender, menos passos para concluir, menos suporte para pedir. Mais organização, mais controle, mais cuidado.</p>
+        <p>Não é sobre ter mil funcionalidades. É sobre ter as certas, funcionando de um jeito que qualquer pessoa da sua equipe entende no primeiro dia.</p>
+      </div>
+      <div class="manifesto__art"><ScreenFrame label="Painel do MenosClique" src="/screens/dashboard.png" eager /></div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="section bg-alt">
+    <div class="container">
+      <div class="center narrow reveal">
+        <span class="eyebrow center-line">No que acreditamos</span>
+        <h2>Princípios que guiam cada decisão.</h2>
+      </div>
+      <div class="val-grid">
+        {valores.map((v, i) => (
+          <div class="val card reveal">
+            <span class="val__n">{String(i + 1).padStart(2, "0")}</span>
+            <div><h3>{v.t}</h3><p>{v.d}</p></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPROMISSO -->
+  <section class="section">
+    <div class="container center narrow reveal">
+      <span class="eyebrow center-line">Nosso compromisso</span>
+      <h2>Com a sua clínica e com os seus pacientes.</h2>
+      <p class="lead" style="margin-top:14px">Levamos a segurança a sério: backup automático diário, trilha de auditoria de tudo que acontece no sistema e isolamento total dos dados de cada clínica. Você atende com tranquilidade; seus pacientes confiam os dados a quem cuida deles.</p>
+      <div style="margin-top:28px"><a href={register} class="btn btn-primary btn-lg">Começar teste grátis</a></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="qcta reveal">
+        <div class="qcta__bg" aria-hidden="true"></div>
+        <h2>Venha simplificar a sua clínica.</h2>
+        <p class="lead">14 dias grátis, sem cartão, com migração assistida dos seus pacientes.</p>
+        <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .qhero { position: relative; padding-top: clamp(46px, 6vw, 88px); padding-bottom: clamp(20px, 3vw, 44px); overflow: hidden; }
+    .qhero__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(50% 42% at 50% 0%, rgba(34,199,201,.16), transparent 60%), linear-gradient(180deg, #f3fbfb, #fff 72%); }
+    .qhero h1 { margin: 16px 0 16px; }
+
+    .manifesto { display: grid; grid-template-columns: 1.05fr 1.1fr; gap: 54px; align-items: center; }
+    .manifesto h2 { margin: 14px 0 16px; }
+    .manifesto p { margin: 12px 0; }
+
+    .bg-alt { background: var(--bg-soft); }
+    .val-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 46px; }
+    .val { display: flex; gap: 18px; padding: 26px 26px; align-items: flex-start; }
+    .val__n { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--turq); line-height: 1; flex-shrink: 0; }
+    .val h3 { font-size: 1.14rem; margin-bottom: 6px; }
+    .val p { font-size: .96rem; }
+
+    .qcta { position: relative; text-align: center; padding: clamp(40px, 5vw, 64px) 30px; border-radius: var(--r-xl); overflow: hidden; color: #eafcfd; }
+    .qcta__bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(120% 130% at 20% 0%, var(--dark-2), var(--dark) 60%); }
+    .qcta::before { content: ""; position: absolute; top: -40%; right: -8%; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(34,199,201,.28), transparent 68%); z-index: -1; }
+    .qcta h2 { color: #fff; } .qcta p { color: #a9c6c9; margin: 12px 0 24px; }
+
+    @media (max-width: 980px) { .manifesto { grid-template-columns: 1fr; gap: 34px; } .val-grid { grid-template-columns: 1fr; } }
+  </style>
+</Base>

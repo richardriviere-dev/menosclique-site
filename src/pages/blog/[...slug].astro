@@ -1,0 +1,110 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+const fmt = (d: Date) => d.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
+const register = "https://app.menosclique.com.br/Register";
+
+const related = (await getCollection("blog"))
+  .filter((p) => p.id !== post.id)
+  .slice(0, 2);
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.pubDate.toISOString(),
+  author: { "@type": "Organization", name: post.data.author },
+  publisher: { "@type": "Organization", name: "MenosClique", logo: { "@type": "ImageObject", url: "https://www.menosclique.com.br/menosclique-icon.png" } },
+  mainEntityOfPage: `https://www.menosclique.com.br/blog/${post.id}`,
+};
+---
+<Base title={`${post.data.title} — MenosClique`} description={post.data.description} path={`/blog/${post.id}`} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <article class="art">
+    <header class="art__head">
+      <div class="art__head-bg" aria-hidden="true"></div>
+      <div class="container narrow">
+        <a href="/blog" class="art__back">&larr; Blog</a>
+        <span class="art__cat">{post.data.category}</span>
+        <h1>{post.data.title}</h1>
+        <p class="art__meta">Por {post.data.author} · {fmt(post.data.pubDate)}</p>
+      </div>
+    </header>
+
+    <div class="art__cover" aria-hidden="true"></div>
+
+    <div class="container narrow">
+      <div class="prose">
+        <Content />
+      </div>
+
+      <div class="art__cta">
+        <h3>Menos cliques, mais cuidado na sua clínica.</h3>
+        <p>Agenda, prontuário e financeiro em um só sistema. Teste grátis por 14 dias, sem cartão.</p>
+        <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
+      </div>
+
+      {related.length > 0 && (
+        <div class="art__rel">
+          <h3>Continue lendo</h3>
+          <div class="art__rel-grid">
+            {related.map((r) => (
+              <a href={`/blog/${r.id}`} class="art__rel-card card">
+                <span>{r.data.category}</span>
+                <strong>{r.data.title}</strong>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </article>
+
+  <style>
+    .art__head { position: relative; padding-top: clamp(36px, 5vw, 60px); padding-bottom: 30px; overflow: hidden; }
+    .art__head-bg { position: absolute; inset: 0; z-index: -1; background: radial-gradient(50% 60% at 50% 0%, rgba(34,199,201,.14), transparent 60%), linear-gradient(180deg, #f3fbfb, #fff); }
+    .art__back { color: var(--turq-ink); font-weight: 600; font-size: .92rem; }
+    .art__cat { display: inline-block; margin: 18px 0 12px; background: var(--bg-mint); color: var(--turq-ink); font-weight: 700; font-size: .8rem; padding: 5px 14px; border-radius: 999px; border: 1px solid #d4ecec; }
+    .art__head h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); }
+    .art__meta { color: var(--muted); margin-top: 14px; font-size: .95rem; }
+
+    .art__cover { max-width: 900px; margin: 6px auto 40px; aspect-ratio: 16 / 7; border-radius: var(--r-lg); box-shadow: var(--shadow);
+      background-color: var(--bg-mint);
+      background-image: linear-gradient(135deg, rgba(34,199,201,.18), rgba(27,103,118,.12)), repeating-linear-gradient(135deg, transparent, transparent 24px, rgba(27,103,118,.04) 24px, rgba(27,103,118,.04) 25px); }
+
+    /* PROSE */
+    .prose { font-size: 1.12rem; line-height: 1.75; color: var(--ink-soft); }
+    .prose :global(h2) { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink); margin: 1.8em 0 .5em; letter-spacing: -.02em; }
+    .prose :global(h3) { font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); margin: 1.5em 0 .4em; }
+    .prose :global(p) { margin: 1em 0; }
+    .prose :global(ul), .prose :global(ol) { margin: 1em 0; padding-left: 1.4em; }
+    .prose :global(li) { margin: .5em 0; }
+    .prose :global(strong) { color: var(--ink); font-weight: 600; }
+    .prose :global(a) { color: var(--turq-ink); text-decoration: underline; text-underline-offset: 3px; font-weight: 500; }
+    .prose :global(a:hover) { color: var(--turq-deep); }
+    .prose :global(blockquote) { border-left: 3px solid var(--turq); padding-left: 18px; margin: 1.4em 0; color: var(--muted); font-style: italic; }
+
+    .art__cta { margin: 54px 0 40px; text-align: center; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 40px 30px; }
+    .art__cta h3 { font-size: 1.4rem; margin-bottom: 10px; }
+    .art__cta p { color: var(--ink-soft); margin-bottom: 22px; }
+
+    .art__rel { margin: 40px 0 20px; border-top: 1px solid var(--line); padding-top: 34px; }
+    .art__rel h3 { font-size: 1.2rem; margin-bottom: 18px; }
+    .art__rel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .art__rel-card { padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; transition: transform .2s, box-shadow .2s, border-color .2s; }
+    .art__rel-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: #cfe8e8; }
+    .art__rel-card span { color: var(--turq-ink); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+    .art__rel-card strong { font-family: var(--font-display); font-size: 1.05rem; color: var(--ink); font-weight: 600; line-height: 1.25; }
+
+    @media (max-width: 600px) { .art__rel-grid { grid-template-columns: 1fr; } .prose { font-size: 1.06rem; } }
+  </style>
+</Base>
