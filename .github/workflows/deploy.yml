@@ -1,0 +1,49 @@
+name: Build e Deploy (menosclique-site)
+
+# Toda vez que algo é gravado na branch main (ex.: o VersaAI cria um artigo novo),
+# o site é montado e enviado automaticamente para o servidor. Também pode ser
+# disparado manualmente na aba "Actions" do GitHub (botão "Run workflow").
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+  workflow_dispatch:
+
+# Evita dois deploys ao mesmo tempo.
+concurrency:
+  group: deploy-menosclique
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Preparar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Montar o site (build)
+        run: npm run build
+
+      - name: Preparar a chave de acesso ao servidor
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H 179.198.109.50 >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Enviar o site para o servidor
+        run: |
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
+            dist/ root@179.198.109.50:/var/www/menosclique-site/
