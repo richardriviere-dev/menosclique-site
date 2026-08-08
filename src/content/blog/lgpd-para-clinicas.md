@@ -4,6 +4,7 @@ description: "Entenda como adequar sua clínica à LGPD: dados sensíveis de sa�
 pubDate: 2026-08-08
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/lgpd-para-clinicas.jpg"
 ---
 
 A **LGPD para clínicas** exige que consultórios e estabelecimentos de saúde tratem dados de pacientes com base legal definida, segurança adequada e transparência. Como dados de saúde são classificados como sensíveis pela Lei nº 13.709/2018, a proteção precisa ser reforçada. Na prática, adequar-se significa mapear informações, definir responsáveis, adotar segurança técnica e informar claramente os pacientes sobre o uso de seus dados.

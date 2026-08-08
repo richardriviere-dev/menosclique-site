@@ -4,6 +4,7 @@ description: "O que é um prontuário eletrônico, quais as vantagens sobre o pa
 pubDate: 2026-07-28
 category: "Prontuário eletrônico"
 author: "Equipe MenosClique"
+cover: "/blog-covers/guia-prontuario-eletronico.jpg"
 ---
 
 O prontuário é o coração do atendimento em saúde. É nele que vive toda a história clínica do paciente — e migrar do papel para o **prontuário eletrônico** é um dos passos que mais transformam a rotina de uma clínica. Neste guia, explicamos o que é, quais as vantagens e como escolher.

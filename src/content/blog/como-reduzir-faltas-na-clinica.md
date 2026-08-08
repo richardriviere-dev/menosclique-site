@@ -4,6 +4,7 @@ description: "Faltas de pacientes corroem a agenda e o faturamento da clínica. 
 pubDate: 2026-08-01
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/como-reduzir-faltas-na-clinica.jpg"
 ---
 
 Toda clínica conhece a dor: o horário estava reservado, o profissional preparado — e o paciente simplesmente não apareceu. O **no-show** (falta sem aviso) é um dos maiores vilões silenciosos da rentabilidade de uma clínica. Cada ausência é um horário que não volta e um faturamento que não entra.

@@ -24,6 +24,7 @@ const schema = {
   author: { "@type": "Organization", name: post.data.author },
   publisher: { "@type": "Organization", name: "MenosClique", logo: { "@type": "ImageObject", url: "https://www.menosclique.com.br/menosclique-icon.png" } },
   mainEntityOfPage: `https://www.menosclique.com.br/blog/${post.id}`,
+  ...(post.data.cover ? { image: `https://www.menosclique.com.br${post.data.cover}` } : {}),
 };
 ---
 <Base title={`${post.data.title} — MenosClique`} description={post.data.description} path={`/blog/${post.id}`} ogType="article">
@@ -40,7 +41,7 @@ const schema = {
       </div>
     </header>
 
-    <div class="art__cover" aria-hidden="true"></div>
+    <div class="art__cover" style={post.data.cover ? `background-image:url(${post.data.cover})` : ""} aria-hidden="true"></div>
 
     <div class="container narrow">
       <div class="prose">
@@ -78,6 +79,7 @@ const schema = {
     .art__meta { color: var(--muted); margin-top: 14px; font-size: .95rem; }
 
     .art__cover { max-width: 900px; margin: 6px auto 40px; aspect-ratio: 16 / 7; border-radius: var(--r-lg); box-shadow: var(--shadow);
+      background-size: cover; background-position: center;
       background-color: var(--bg-mint);
       background-image: linear-gradient(135deg, rgba(34,199,201,.18), rgba(27,103,118,.12)), repeating-linear-gradient(135deg, transparent, transparent 24px, rgba(27,103,118,.04) 24px, rgba(27,103,118,.04) 25px); }
 

@@ -4,6 +4,7 @@ description: "Controle de recebimentos, repasse médico, pacotes e fluxo de caix
 pubDate: 2026-07-20
 category: "Financeiro"
 author: "Equipe MenosClique"
+cover: "/blog-covers/gestao-financeira-para-clinicas.jpg"
 ---
 
 Muita clínica atende bem e mesmo assim vê o dinheiro escorrer pelos dedos. O motivo quase nunca é falta de pacientes — é **falta de controle financeiro**. Recebimentos que não são registrados, repasses calculados na mão, pacotes sem acompanhamento. Este guia mostra como organizar as finanças da sua clínica.
