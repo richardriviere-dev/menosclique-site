@@ -152,6 +152,14 @@ const softwareSchema = {
     <slot />
   </main>
 
+  <!-- Bolha do WhatsApp: contato comercial direto (celular do dono), mensagem pré-preenchida. -->
+  <a class="wa" href="https://wa.me/5511987779910?text=Ol%C3%A1%21%20Vi%20o%20MenosClique%20e%20queria%20tirar%20uma%20d%C3%BAvida%20antes%20de%20assinar." target="_blank" rel="noopener" aria-label="Tirar uma dúvida pelo WhatsApp">
+    <span class="wa__hint">Dúvidas? Fale pelo WhatsApp</span>
+    <span class="wa__btn">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.6.8 5.1 2.2 7.2L3 29l6.2-2.1c2 1.1 4.4 1.7 6.8 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.2-.6-6-1.7l-.4-.3-3.7 1.2 1.2-3.5-.3-.4A10.4 10.4 0 0 1 5.4 15.8C5.4 10 10.2 5.4 16 5.4s10.6 4.6 10.6 10.4S21.8 26.4 16 26.4zm5.8-7.7c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.3 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.2.9 3 .9 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+    </span>
+  </a>
+
   <!-- Banner de consentimento de cookies (LGPD) -->
   <div class="cookie" id="cookieBanner" hidden role="dialog" aria-label="Aviso de cookies">
     <p class="cookie__txt">Usamos cookies de análise para entender como o site é usado e melhorá-lo. Você pode aceitar ou recusar — a navegação continua normal.</p>
@@ -240,6 +248,16 @@ const softwareSchema = {
     @media (max-width: 760px) { .foot__top { grid-template-columns: 1fr; } .foot__cols { grid-template-columns: repeat(2,1fr); } }
 
     /* Banner de cookies */
+    /* Bolha do WhatsApp — canto inferior direito em todas as páginas; alvo de toque ≥56px. */
+    .wa { position: fixed; right: 18px; bottom: 18px; z-index: 350; display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .wa__btn { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; color: #fff; background: #25D366;
+      box-shadow: 0 10px 28px -8px rgba(37,211,102,.7), 0 2px 6px rgba(12,42,49,.18); transition: transform .2s, box-shadow .2s; }
+    .wa__btn svg { width: 32px; height: 32px; }
+    .wa:hover .wa__btn, .wa:focus-visible .wa__btn { transform: translateY(-2px) scale(1.04); box-shadow: 0 14px 32px -8px rgba(37,211,102,.8), 0 2px 6px rgba(12,42,49,.18); }
+    .wa__hint { font-size: .86rem; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      padding: 8px 14px; box-shadow: var(--shadow-lg); opacity: 0; transform: translateX(6px); transition: opacity .2s, transform .2s; pointer-events: none; }
+    .wa:hover .wa__hint, .wa:focus-visible .wa__hint { opacity: 1; transform: none; }
+    @media (max-width: 560px) { .wa { right: 14px; bottom: 14px; } .wa__hint { display: none; } }
     .cookie { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 300; margin: 0 auto; max-width: 720px;
       display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
       background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg);

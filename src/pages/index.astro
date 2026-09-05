@@ -12,7 +12,7 @@ const register = `${app}/Register`;
 
 // Preload da imagem LCP (1ª tela do hero) — mesmos widths/sizes/format do HeroRotator,
 // para o navegador baixá-la em paralelo ao HTML (derruba o LCP no mobile).
-const heroPreload = await getImage({ src: screens["/screens/dashboard.png"], widths: [420, 640, 900, 1280, 1520], sizes: "(min-width: 980px) 640px, 92vw", format: "webp" });
+const heroPreload = await getImage({ src: screens["/screens/dashboard.png"], widths: [480, 768, 1024, 1280, 1600, 1920, 2400, 3200], sizes: "(min-width: 1720px) calc(50vw + 50px), (min-width: 981px) 54vw, 92vw", format: "webp", quality: 95 });
 
 const features = [
   { id: "agenda", t: "Agenda inteligente", d: "Agendamentos por profissional, recorrência, bloqueios de horário e arrastar-e-soltar. Conflitos avisados na hora.",
@@ -36,7 +36,7 @@ const features = [
 ---
 <Base>
   <Fragment slot="head">
-    <link rel="preload" as="image" imagesrcset={heroPreload.srcSet.attribute} imagesizes="(min-width: 980px) 640px, 92vw" fetchpriority="high" />
+    <link rel="preload" as="image" imagesrcset={heroPreload.srcSet.attribute} imagesizes="(min-width: 1720px) calc(50vw + 50px), (min-width: 981px) 54vw, 92vw" fetchpriority="high" />
   </Fragment>
   <!-- ===================== HERO ===================== -->
   <section class="hero">

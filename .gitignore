@@ -11,3 +11,6 @@ npm-debug.log*
 .env.production
 # macOS / editors
 .DS_Store
+
+# backups locais de imagens (originais 1x) — não publicar
+.img-backup/screens/

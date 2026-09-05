@@ -27,7 +27,7 @@ const img = src ? screens[src] : undefined;
   </div>
   <div class="frame__screen">
     {img
-      ? <Image src={img} alt={alt} widths={[420, 640, 900, 1280, 1520]} sizes="(min-width: 980px) 640px, 92vw" loading={eager ? "eager" : "lazy"} decoding="async" fetchpriority={eager ? "high" : undefined} />
+      ? <Image src={img} alt={alt} widths={[480, 768, 1024, 1280, 1600, 1920, 2400, 3200]} sizes="(min-width: 1736px) 905px, (min-width: 981px) 53vw, 92vw" quality={95} loading={eager ? "eager" : "lazy"} decoding="async" fetchpriority={eager ? "high" : undefined} />
       : src
         ? <img src={src} alt={alt} loading="lazy" decoding="async" width="1280" height="800" />
         : <div class="frame__ph"><span>{label}</span><small>screenshot em breve</small></div>}

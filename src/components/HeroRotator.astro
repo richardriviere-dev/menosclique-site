@@ -3,6 +3,9 @@
  * Herói rotativo: alterna telas do sistema com crossfade + abas clicáveis.
  * Chama a atenção de todo tipo de lead (agenda, painel, prontuário, financeiro).
  * A 1ª tela é o LCP da Home: eager + fetchpriority alta. astro:assets = WebP responsivo.
+ * NITIDEZ: `sizes` declara a largura REAL renderizada (~900px no desktop, container 1680) e os
+ * `widths` vão até 2x Retina — declarar 640px fazia o navegador esticar a versão pequena (borrão).
+ * quality 92: texto de interface não tolera a compressão padrão.
  */
 import { Image } from "astro:assets";
 import { screens } from "../data/screens";
@@ -23,7 +26,7 @@ const { shots, url = "app.menosclique.com.br" } = Astro.props;
       const img = screens[s.src];
       return img
         ? <Image src={img} alt={s.label} data-shot class={i === 0 ? "is-active" : ""}
-                 widths={[420, 640, 900, 1280, 1520]} sizes="(min-width: 980px) 640px, 92vw"
+                 widths={[480, 768, 1024, 1280, 1600, 1920, 2400, 3200]} sizes="(min-width: 1720px) calc(50vw + 50px), (min-width: 981px) 54vw, 92vw" quality={95}
                  loading={i === 0 ? "eager" : "lazy"} decoding="async" fetchpriority={i === 0 ? "high" : undefined} />
         : <img src={s.src} alt={s.label} data-shot class={i === 0 ? "is-active" : ""}
                loading={i === 0 ? "eager" : "lazy"} decoding="async" width="1280" height="800" />;
