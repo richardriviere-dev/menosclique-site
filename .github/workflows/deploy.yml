@@ -47,3 +47,7 @@ jobs:
           rsync -az --delete \
             -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
             dist/ root@179.198.109.50:/var/www/menosclique-site/
+
+      # Avisa os buscadores compatíveis com IndexNow (Bing, Yandex e parceiros) sobre todas as URLs.
+      - name: Avisar buscadores (IndexNow)
+        run: python3 deploy/indexnow.py

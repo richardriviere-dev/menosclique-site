@@ -34,8 +34,8 @@ const faqs = [...(ac?.faqs ?? []), ...faqsGerais];
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
 ---
 <Base
-  title={`Alternativa ao ${c.nome} — MenosClique | Sistema para clínicas`}
-  description={`Procurando uma alternativa ao ${c.nome}? O MenosClique é um sistema para clínicas simples e completo: agenda, prontuário, financeiro e documentos. Teste grátis 14 dias, sem cartão.`}
+  title={`Alternativa ao ${c.nome} — MenosClique`}
+  description={`Alternativa ao ${c.nome}: sistema para clínicas simples e completo, com agenda, prontuário, financeiro e documentos. Teste grátis 14 dias, sem cartão.`}
   path={`/alternativas/${c.slug}`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

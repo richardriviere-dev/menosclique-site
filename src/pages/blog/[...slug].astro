@@ -11,9 +11,27 @@ const { Content } = await render(post);
 const fmt = (d: Date) => d.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
 const register = "https://app.menosclique.com.br/Register";
 
-const related = (await getCollection("blog"))
-  .filter((p) => p.id !== post.id)
-  .slice(0, 2);
+// Relacionados: mesma categoria primeiro (linkagem interna temática), depois os mais recentes.
+const all = (await getCollection("blog")).filter((p) => p.id !== post.id)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const related = [...all.filter((p) => p.data.category === post.data.category), ...all.filter((p) => p.data.category !== post.data.category)].slice(0, 3);
+const url = `https://www.menosclique.com.br/blog/${post.id}/`;
+const modified = post.data.updatedDate ?? post.data.pubDate;
+
+// SERP: título até ~60 caracteres (sufixo de marca só quando cabe) e descrição até 158.
+const clamp = (s: string, max: number) => (s.length <= max ? s : s.slice(0, max - 1).replace(/\s+\S*$/, "") + "…");
+const seoTitle = post.data.title.length <= 46 ? `${post.data.title} — MenosClique` : clamp(post.data.title, 60);
+const seoDesc = clamp(post.data.description, 158);
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://www.menosclique.com.br/" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.menosclique.com.br/blog/" },
+    { "@type": "ListItem", position: 3, name: post.data.title, item: url },
+  ],
+};
 
 const schema = {
   "@context": "https://schema.org",
@@ -21,14 +39,17 @@ const schema = {
   headline: post.data.title,
   description: post.data.description,
   datePublished: post.data.pubDate.toISOString(),
-  author: { "@type": "Organization", name: post.data.author },
+  dateModified: modified.toISOString(),
+  inLanguage: "pt-BR",
+  author: { "@type": "Organization", name: post.data.author, url: "https://www.menosclique.com.br/quem-somos/" },
   publisher: { "@type": "Organization", name: "MenosClique", logo: { "@type": "ImageObject", url: "https://www.menosclique.com.br/menosclique-icon.png" } },
-  mainEntityOfPage: `https://www.menosclique.com.br/blog/${post.id}`,
+  mainEntityOfPage: url,
   ...(post.data.cover ? { image: `https://www.menosclique.com.br${post.data.cover}` } : {}),
 };
 ---
-<Base title={`${post.data.title} — MenosClique`} description={post.data.description} path={`/blog/${post.id}`} ogType="article">
+<Base title={seoTitle} description={seoDesc} path={`/blog/${post.id}`} ogType="article">
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />
 
   <article class="art">
     <header class="art__head">
@@ -37,7 +58,7 @@ const schema = {
         <a href="/blog" class="art__back">&larr; Blog</a>
         <span class="art__cat">{post.data.category}</span>
         <h1>{post.data.title}</h1>
-        <p class="art__meta">Por {post.data.author} · {fmt(post.data.pubDate)}</p>
+        <p class="art__meta">Por {post.data.author} · <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>{post.data.updatedDate && (<span> · atualizado em <time datetime={post.data.updatedDate.toISOString()}>{fmt(post.data.updatedDate)}</time></span>)}</p>
       </div>
     </header>
 
@@ -101,12 +122,12 @@ const schema = {
 
     .art__rel { margin: 40px 0 20px; border-top: 1px solid var(--line); padding-top: 34px; }
     .art__rel h3 { font-size: 1.2rem; margin-bottom: 18px; }
-    .art__rel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .art__rel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .art__rel-card { padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; transition: transform .2s, box-shadow .2s, border-color .2s; }
     .art__rel-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: #cfe8e8; }
     .art__rel-card span { color: var(--turq-ink); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
     .art__rel-card strong { font-family: var(--font-display); font-size: 1.05rem; color: var(--ink); font-weight: 600; line-height: 1.25; }
 
-    @media (max-width: 600px) { .art__rel-grid { grid-template-columns: 1fr; } .prose { font-size: 1.06rem; } }
+    @media (max-width: 900px) { .art__rel-grid { grid-template-columns: 1fr; } .prose { font-size: 1.06rem; } }
   </style>
 </Base>

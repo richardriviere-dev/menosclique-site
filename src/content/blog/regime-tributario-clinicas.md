@@ -15,7 +15,7 @@ Neste guia consultivo, você vai entender cada regime, quando ele vale a pena e 
 
 O regime tributário é o conjunto de regras que determina como sua clínica calcula e recolhe impostos federais (IRPJ, CSLL, PIS, COFINS), estaduais e municipais (ISS). A escolha errada é um dos vazamentos financeiros mais silenciosos de um consultório: você pode estar pagando o dobro de imposto sem perceber.
 
-Diferente de custos operacionais que você negocia todo mês, o regime tributário é revisado, em regra, uma vez por ano — na virada do exercício fiscal. Errar nessa escolha significa carregar o custo pelos 12 meses seguintes. Por isso, tratar tributação como parte da [gestão financeira da clínica](/gestao-financeira-para-clinicas) é essencial para não perder dinheiro.
+Diferente de custos operacionais que você negocia todo mês, o regime tributário é revisado, em regra, uma vez por ano — na virada do exercício fiscal. Errar nessa escolha significa carregar o custo pelos 12 meses seguintes. Por isso, tratar tributação como parte da [gestão financeira da clínica](/blog/gestao-financeira-para-clinicas) é essencial para não perder dinheiro.
 
 Vale reforçar: profissionais de saúde podem atuar como pessoa física (recolhendo IRPF, com alíquota que chega a **27,5%**) ou como pessoa jurídica. Na maioria dos cenários com faturamento relevante, a PJ é significativamente mais econômica — e é aí que a escolha do regime entra em cena.
 
@@ -112,7 +112,7 @@ Não existe "melhor regime" universal — existe o melhor regime para o seu perf
 4. **Considere o crescimento:** uma clínica que vai dobrar de tamanho pode ultrapassar limites e mudar o cenário no meio do caminho.
 5. **Compare o total efetivo pago** em cada cenário, não apenas as alíquotas isoladas.
 
-Esse tipo de simulação exige dados organizados. Se você ainda está estruturando o negócio, vale integrar esse planejamento ao processo de [abertura da clínica](/como-abrir-uma-clinica) — escolher o regime certo desde o início evita retrabalho e economia perdida. E se sua clínica já opera, acompanhar os [principais indicadores de gestão](/kpis-para-clinicas) ajuda a antecipar quando trocar de regime na próxima virada de ano.
+Esse tipo de simulação exige dados organizados. Se você ainda está estruturando o negócio, vale integrar esse planejamento ao processo de [abertura da clínica](/blog/como-abrir-uma-clinica) — escolher o regime certo desde o início evita retrabalho e economia perdida. E se sua clínica já opera, acompanhar os [principais indicadores de gestão](/blog/kpis-para-clinicas) ajuda a antecipar quando trocar de regime na próxima virada de ano.
 
 ## Erros comuns que fazem clínicas pagarem imposto a mais
 
@@ -120,7 +120,7 @@ Esse tipo de simulação exige dados organizados. Se você ainda está estrutura
 - **Ficar no Anexo V do Simples sem planejar o Fator R,** pagando 15,5% quando poderia pagar a partir de 6%.
 - **Ignorar a equiparação hospitalar** em clínicas com procedimentos, deixando de reduzir a base de IRPJ e CSLL.
 - **Não revisar o regime anualmente,** mantendo por inércia uma escolha que fazia sentido há três anos.
-- **Precificar sem considerar a carga tributária,** corroendo a margem. Vale revisar também [como precificar consultas particulares](/como-precificar-consultas-particulares) à luz dos impostos.
+- **Precificar sem considerar a carga tributária,** corroendo a margem. Vale revisar também [como precificar consultas particulares](/blog/como-precificar-consultas-particulares) à luz dos impostos.
 
 Todos esses erros têm algo em comum: falta de dados organizados e de acompanhamento contábil próximo. Tributação de clínica não é assunto para resolver uma vez e esquecer — é decisão recorrente que impacta o caixa mês a mês.
 

@@ -9,6 +9,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),   // revisão do artigo (dateModified)
     category: z.string().default("Gestão de clínicas"),
     author: z.string().default("Equipe MenosClique"),
     cover: z.string().optional(),

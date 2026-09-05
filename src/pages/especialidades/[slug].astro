@@ -33,8 +33,8 @@ const faqs = [...(c?.faqs ?? []), ...faqsGerais];
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
 ---
 <Base
-  title={`Sistema para ${e.profissional} — MenosClique | Agenda, prontuário e financeiro`}
-  description={`Sistema para ${e.especialidade.toLowerCase()}: agenda, prontuário eletrônico personalizável, financeiro e documentos em PDF. ${e.destaque} Teste grátis 14 dias, sem cartão.`}
+  title={`Sistema para ${e.profissional} — MenosClique`}
+  description={`Sistema para ${e.especialidade.toLowerCase()}: agenda, prontuário personalizável, financeiro e documentos em PDF num só lugar. Teste grátis 14 dias, sem cartão.`}
   path={`/especialidades/${e.slug}`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

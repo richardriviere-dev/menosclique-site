@@ -33,7 +33,27 @@ const orgSchema = {
   logo: `${site}/menosclique-icon.png`,
   slogan: "Porque menos é mais.",
   description,
+  email: "contato@menosclique.com.br",
+  telephone: "+55-11-98777-9910",
+  areaServed: "BR",
+  contactPoint: [{
+    "@type": "ContactPoint",
+    contactType: "sales",
+    telephone: "+55-11-98777-9910",
+    email: "contato@menosclique.com.br",
+    availableLanguage: "pt-BR",
+    areaServed: "BR",
+  }],
   sameAs: [],
+};
+// Site como entidade (nome de marca nos resultados, base dos sitelinks).
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "MenosClique",
+  url: site,
+  inLanguage: "pt-BR",
+  publisher: { "@type": "Organization", name: "MenosClique", url: site },
 };
 const softwareSchema = {
   "@context": "https://schema.org",
@@ -41,11 +61,25 @@ const softwareSchema = {
   name: "MenosClique",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
+  inLanguage: "pt-BR",
+  // Faixa real dos planos (a página de preços e o llms.txt leem de src/data/plans.ts).
   offers: {
-    "@type": "Offer",
-    price: "69.90",
+    "@type": "AggregateOffer",
+    lowPrice: "69.90",
+    highPrice: "199.60",
     priceCurrency: "BRL",
+    offerCount: "3",
+    url: `${site}/precos/`,
   },
+  featureList: [
+    "Agenda por profissional e unidade, recorrência e bloqueios",
+    "Prontuário eletrônico personalizável por especialidade",
+    "Financeiro: cobranças, pagamentos, recibos e repasse médico",
+    "Documentos em PDF: receituário, atestado, termo e contrato",
+    "Confirmação de presença por WhatsApp",
+    "Relatórios, backup automático e trilha de auditoria",
+  ],
+  screenshot: `${site}/og.jpg`,
   description,
 };
 ---
@@ -69,14 +103,16 @@ const softwareSchema = {
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <meta property="og:image" content={`${site}/og.png`} />
+  <meta property="og:image" content={`${site}/og.jpg`} />
   <meta property="og:locale" content="pt_BR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={`${site}/og.png`} />
+  <meta name="twitter:image" content={`${site}/og.jpg`} />
   <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
+  <link rel="alternate" type="application/rss+xml" title="Blog MenosClique" href="/rss.xml" />
 
   <!-- Google Analytics 4 com Consent Mode v2 (LGPD) — gtag.js é adiado (idle/1ª interação) p/ não pesar no TBT -->
   <script is:inline>
