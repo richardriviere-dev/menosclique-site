@@ -107,7 +107,7 @@ Uma fórmula simples e útil:
 
 Exemplo prático: se sua clínica consome 4 caixas de luvas por dia, o fornecedor entrega em 5 dias e você quer manter uma reserva de segurança de 10 caixas, seu ponto de reposição é (4 × 5) + 10 = 30 caixas. Ou seja, quando o estoque chegar a 30 caixas, é hora de comprar.
 
-Para calcular o consumo médio, use o histórico real de saídas — quanto mais atendimentos sua clínica registra de forma organizada, mais preciso fica esse número. Se você já acompanha o volume de agendamentos, tem uma base natural para prever consumo. Uma boa gestão de agenda e a [redução de faltas (no-show)](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica) ajudam a tornar essa previsão mais confiável.
+Para calcular o consumo médio, use o histórico real de saídas — quanto mais atendimentos sua clínica registra de forma organizada, mais preciso fica esse número. Se você já acompanha o volume de agendamentos, tem uma base natural para prever consumo. Uma boa gestão de agenda e a [redução de faltas (no-show)](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica) ajudam a tornar essa previsão mais confiável.
 
 ## Como controlar validade e evitar medicamentos vencidos?
 
@@ -130,7 +130,7 @@ Rotina recomendada:
 - **Ajustes:** perdas, quebras e vencimentos também precisam ser lançados como saída, com justificativa.
 - **Inventário rotativo:** em vez de parar tudo uma vez por ano, conte um grupo de itens por semana, cobrindo todo o estoque ao longo do mês.
 
-Ao emitir notas fiscais e organizar os custos, mantenha o estoque conectado à parte fiscal e financeira. Se você ainda tem dúvidas sobre esse lado burocrático, vale revisar como funciona a [emissão de NFS-e para clínicas](https://menosclique.com.br/blog/nfse-para-clinicas) e alinhar as compras ao fluxo de caixa.
+Ao emitir notas fiscais e organizar os custos, mantenha o estoque conectado à parte fiscal e financeira. Se você ainda tem dúvidas sobre esse lado burocrático, vale revisar como funciona a [emissão de NFS-e para clínicas](https://www.menosclique.com.br/blog/nfse-para-clinicas) e alinhar as compras ao fluxo de caixa.
 
 ## Planilha ou sistema: o que vale mais a pena?
 

@@ -76,11 +76,11 @@ Grande parte das ligações que uma recepção recebe é para marcar, confirmar 
 
 ### 2. Combate ao no-show
 
-Faltas de pacientes representam horários vagos, receita perdida e desorganização da agenda. O agendamento online, quando integrado a lembretes e confirmação automática, ataca esse problema na raiz. Se quiser se aprofundar, temos um material completo sobre [como reduzir faltas (no-show) na clínica](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica) com estratégias que se complementam ao agendamento digital.
+Faltas de pacientes representam horários vagos, receita perdida e desorganização da agenda. O agendamento online, quando integrado a lembretes e confirmação automática, ataca esse problema na raiz. Se quiser se aprofundar, temos um material completo sobre [como reduzir faltas (no-show) na clínica](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica) com estratégias que se complementam ao agendamento digital.
 
 ### 3. Mais consultas captadas
 
-Segundo o IBGE (PNAD Contínua TIC), o celular é o principal meio de acesso à internet em mais de 98% dos domicílios brasileiros conectados. Ou seja: seus pacientes estão no smartphone. Oferecer um botão de "agendar agora" no Instagram, no Google Meu Negócio ou no WhatsApp captura a intenção do paciente no momento exato em que ela existe — antes que ele desista ou procure outra clínica. Isso conversa diretamente com uma boa estratégia de [marketing médico para clínicas](https://menosclique.com.br/blog/marketing-medico-para-clinicas), sempre respeitando as normas do CFM.
+Segundo o IBGE (PNAD Contínua TIC), o celular é o principal meio de acesso à internet em mais de 98% dos domicílios brasileiros conectados. Ou seja: seus pacientes estão no smartphone. Oferecer um botão de "agendar agora" no Instagram, no Google Meu Negócio ou no WhatsApp captura a intenção do paciente no momento exato em que ela existe — antes que ele desista ou procure outra clínica. Isso conversa diretamente com uma boa estratégia de [marketing médico para clínicas](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas), sempre respeitando as normas do CFM.
 
 ## Agendamento online x agenda de papel: vale a pena migrar?
 
@@ -144,8 +144,8 @@ Um erro comum é ativar o agendamento online e não divulgá-lo. Se o paciente n
 
 O agendamento online entrega seu potencial máximo quando conversa com o resto da operação. As integrações mais valiosas são:
 
-- **Prontuário eletrônico:** ao chegar o dia da consulta, o profissional já tem o histórico do paciente à mão. Entenda melhor no nosso [guia completo de prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico).
-- **Financeiro:** cada consulta agendada alimenta o fluxo de caixa e o controle de recebimentos. Veja como isso se conecta ao [planejamento financeiro da clínica](https://menosclique.com.br/blog/gestao-financeira-para-clinicas).
+- **Prontuário eletrônico:** ao chegar o dia da consulta, o profissional já tem o histórico do paciente à mão. Entenda melhor no nosso [guia completo de prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico).
+- **Financeiro:** cada consulta agendada alimenta o fluxo de caixa e o controle de recebimentos. Veja como isso se conecta ao [planejamento financeiro da clínica](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas).
 - **Lembretes por WhatsApp e SMS:** o canal de maior taxa de abertura no Brasil, essencial para confirmar presença.
 - **Pagamento online:** para particulares e teleconsultas, receber antecipadamente reduz drasticamente as faltas.
 
@@ -164,7 +164,7 @@ Todo agendamento online coleta e armazena dados pessoais — e, muitas vezes, da
 - Garantir armazenamento criptografado e controle de acesso por perfil.
 - Permitir que o paciente exerça seus direitos (correção, exclusão etc.).
 
-Antes de escolher qualquer ferramenta, confirme como ela trata esses pontos. Aprofunde o tema no nosso [guia prático de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas).
+Antes de escolher qualquer ferramenta, confirme como ela trata esses pontos. Aprofunde o tema no nosso [guia prático de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas).
 
 ## Perguntas frequentes
 

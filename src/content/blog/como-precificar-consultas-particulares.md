@@ -105,13 +105,13 @@ Boas práticas de reajuste:
 - **Comunique com antecedência** pacientes recorrentes e em tratamento, respeitando pacotes já contratados.
 - **Reajuste em degraus menores e frequentes** em vez de saltos grandes e raros.
 
-Antes de reajustar, vale acompanhar seus indicadores de gestão — taxa de ocupação, ticket médio e inadimplência. Uma leitura estruturada desses dados está no nosso guia de [prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico) e no conteúdo sobre [agendamento online para clínicas](https://menosclique.com.br/blog/agendamento-online-para-clinicas), que impactam diretamente a ocupação da agenda e, portanto, o custo por atendimento.
+Antes de reajustar, vale acompanhar seus indicadores de gestão — taxa de ocupação, ticket médio e inadimplência. Uma leitura estruturada desses dados está no nosso guia de [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico) e no conteúdo sobre [agendamento online para clínicas](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas), que impactam diretamente a ocupação da agenda e, portanto, o custo por atendimento.
 
 ## Precificação e as regras do CFM sobre divulgação de preços
 
-Divulgar valores de consultas e procedimentos exige atenção às normas éticas. O Código de Ética Médica e as resoluções do CFM restringem a publicidade que caracterize concorrência desleal, mercantilização da medicina ou promoções do tipo "leve 3, pague 2". Antes de anunciar tabelas ou pacotes, entenda o que é permitido no nosso [guia de marketing médico com as regras do CFM](https://menosclique.com.br/blog/marketing-medico-para-clinicas).
+Divulgar valores de consultas e procedimentos exige atenção às normas éticas. O Código de Ética Médica e as resoluções do CFM restringem a publicidade que caracterize concorrência desleal, mercantilização da medicina ou promoções do tipo "leve 3, pague 2". Antes de anunciar tabelas ou pacotes, entenda o que é permitido no nosso [guia de marketing médico com as regras do CFM](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
 
-Além disso, ao trabalhar com pagamentos e comunicação de valores por mensagem, respeite a LGPD e as boas práticas de contato — o tema é aprofundado no guia de [LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas).
+Além disso, ao trabalhar com pagamentos e comunicação de valores por mensagem, respeite a LGPD e as boas práticas de contato — o tema é aprofundado no guia de [LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas).
 
 ## Erros comuns na precificação particular
 

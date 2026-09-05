@@ -50,7 +50,7 @@ Além da MP 2.200-2/2001, a **Lei 14.063/2020** organizou as assinaturas eletrô
 </tr>
 </table>
 
-Para prescrições, especialmente de medicamentos e documentos com valor legal, a recomendação é usar a **assinatura qualificada**, baseada em certificado ICP-Brasil. Esse também é o padrão adotado nas teleconsultas: a **Resolução CFM nº 2.314/2022**, que regulamenta a telemedicina no Brasil, determina que documentos emitidos remotamente sejam assinados eletronicamente por meio de certificado digital válido. Se você atende à distância, vale revisar nosso guia sobre [telemedicina para clínicas e as regras do CFM](https://menosclique.com.br/blog/telemedicina-para-clinicas).
+Para prescrições, especialmente de medicamentos e documentos com valor legal, a recomendação é usar a **assinatura qualificada**, baseada em certificado ICP-Brasil. Esse também é o padrão adotado nas teleconsultas: a **Resolução CFM nº 2.314/2022**, que regulamenta a telemedicina no Brasil, determina que documentos emitidos remotamente sejam assinados eletronicamente por meio de certificado digital válido. Se você atende à distância, vale revisar nosso guia sobre [telemedicina para clínicas e as regras do CFM](https://www.menosclique.com.br/blog/telemedicina-para-clinicas).
 
 ## Certificado digital para médicos: A1, A3 e o certificado do CFM
 
@@ -85,7 +85,7 @@ O certificado digital é o "documento eletrônico" que permite assinar com valid
 
 O **Conselho Federal de Medicina** passou a oferecer certificado digital para médicos regularmente inscritos, integrado às plataformas de prescrição eletrônica da entidade. Isso reduz custo e simplifica a validação da identidade profissional, já que o certificado é vinculado diretamente ao número do CRM.
 
-Na hora de escolher, considere o volume de atendimentos, o uso de vários dispositivos e a integração com o seu software. O certificado **A1** costuma ser mais prático para clínicas que emitem receitas o dia todo, porque dispensa o token físico e pode ser configurado diretamente no [prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico), tornando a assinatura quase instantânea.
+Na hora de escolher, considere o volume de atendimentos, o uso de vários dispositivos e a integração com o seu software. O certificado **A1** costuma ser mais prático para clínicas que emitem receitas o dia todo, porque dispensa o token físico e pode ser configurado diretamente no [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico), tornando a assinatura quase instantânea.
 
 ## Como emitir receitas, atestados e documentos com validade legal
 
@@ -124,7 +124,7 @@ Além da conformidade legal, a prescrição eletrônica traz ganhos operacionais
 - **Histórico centralizado:** todos os documentos ficam vinculados ao prontuário do paciente.
 - **Melhor experiência:** o paciente recebe tudo no celular, com agilidade.
 
-Esses benefícios se conectam diretamente à qualidade percebida do atendimento. Uma clínica que entrega documentos digitais de forma rápida e segura passa uma imagem de modernidade e organização — algo que também impacta reputação e marketing, tema que aprofundamos no guia de [marketing médico dentro das regras do CFM](https://menosclique.com.br/blog/marketing-medico-para-clinicas).
+Esses benefícios se conectam diretamente à qualidade percebida do atendimento. Uma clínica que entrega documentos digitais de forma rápida e segura passa uma imagem de modernidade e organização — algo que também impacta reputação e marketing, tema que aprofundamos no guia de [marketing médico dentro das regras do CFM](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
 
 ## Como integrar a prescrição eletrônica ao prontuário e à telemedicina?
 
@@ -139,7 +139,7 @@ Para que essa integração funcione bem, avalie os seguintes pontos ao escolher 
 5. Vínculo automático de cada documento ao prontuário eletrônico.
 6. Conformidade com a [LGPD no tratamento dos dados de saúde](https://www.menosclique.com.br/blog/lgpd-para-clinicas).
 
-Vale lembrar que documentos digitais contêm dados sensíveis de saúde, protegidos pela Lei Geral de Proteção de Dados. Isso exige controle de acesso, registro de quem visualizou o documento e canais seguros de envio — evite compartilhar receitas por meios abertos sem os devidos cuidados, como detalhamos no guia de [uso do WhatsApp em clínicas conforme CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas).
+Vale lembrar que documentos digitais contêm dados sensíveis de saúde, protegidos pela Lei Geral de Proteção de Dados. Isso exige controle de acesso, registro de quem visualizou o documento e canais seguros de envio — evite compartilhar receitas por meios abertos sem os devidos cuidados, como detalhamos no guia de [uso do WhatsApp em clínicas conforme CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas).
 
 Um sistema como o [MenosClique](https://www.menosclique.com.br) centraliza prontuário, agenda e emissão de documentos em um só lugar, permitindo que a prescrição eletrônica faça parte natural do atendimento — presencial ou remoto. Para clínicas de diferentes áreas, também há configurações por [especialidade médica](https://www.menosclique.com.br/especialidades), o que agiliza modelos de receita e laudos específicos.
 
@@ -153,7 +153,7 @@ Antes de migrar totalmente, siga estas recomendações:
 - **Confira as regras específicas** de medicamentos controlados junto à Anvisa e ao conselho.
 - **Documente o consentimento** do paciente para envio digital, reforçando a conformidade com a LGPD.
 
-Se a sua clínica ainda está estruturando processos, vale conferir o passo a passo de [como abrir e organizar uma clínica](https://menosclique.com.br/blog/como-abrir-uma-clinica), para já nascer com fluxos digitais bem definidos.
+Se a sua clínica ainda está estruturando processos, vale conferir o passo a passo de [como abrir e organizar uma clínica](https://www.menosclique.com.br/blog/como-abrir-uma-clinica), para já nascer com fluxos digitais bem definidos.
 
 ## Perguntas frequentes
 

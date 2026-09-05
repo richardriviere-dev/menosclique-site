@@ -20,7 +20,7 @@ O Perfil da Empresa é a ficha gratuita que a sua clínica mantém dentro do eco
 
 Esse cartão concentra as informações que mais convertem: botão de ligação, botão de rota, site, horário de funcionamento e avaliações. Segundo o próprio [Google Business Profile](https://support.google.com/business/answer/7091), o serviço é totalmente gratuito e pode ser gerenciado pelo navegador ou pelo aplicativo. Não existe taxa para criar ou manter o perfil — cobranças em nome de "verificação paga" são golpe.
 
-Vale lembrar que o perfil é uma peça de presença digital, não de gestão. Ele atrai o paciente até a porta; o que acontece depois — agendamento, prontuário, retorno — depende dos processos internos da clínica e de um bom mapeamento da [jornada do paciente na clínica](https://menosclique.com.br/blog/jornada-do-paciente-na-clinica).
+Vale lembrar que o perfil é uma peça de presença digital, não de gestão. Ele atrai o paciente até a porta; o que acontece depois — agendamento, prontuário, retorno — depende dos processos internos da clínica e de um bom mapeamento da [jornada do paciente na clínica](https://www.menosclique.com.br/blog/jornada-do-paciente-na-clinica).
 
 ## Como o Google decide quais clínicas aparecem nas buscas locais?
 
@@ -45,12 +45,12 @@ Se a clínica ainda não tem perfil, siga esta ordem. Se já existe um cadastro 
 
 1. **Acesse e crie/reivindique:** entre em *google.com/business* com a conta Google institucional da clínica (evite usar o e-mail pessoal de um sócio).
 2. **Escolha a categoria principal:** seja específico — "Clínica dermatológica", "Fisioterapeuta", "Dentista", "Clínica de fonoaudiologia". A categoria principal é um dos sinais de relevância mais fortes.
-3. **Preencha o endereço:** exatamente como no comprovante. Se a clínica atende apenas presencialmente, marque endereço físico visível; se também há telemedicina, veja como estruturar o atendimento no guia de [telemedicina para clínicas](https://menosclique.com.br/blog/telemedicina-para-clinicas).
+3. **Preencha o endereço:** exatamente como no comprovante. Se a clínica atende apenas presencialmente, marque endereço físico visível; se também há telemedicina, veja como estruturar o atendimento no guia de [telemedicina para clínicas](https://www.menosclique.com.br/blog/telemedicina-para-clinicas).
 4. **Defina a área de atendimento:** bairros e cidades cobertos.
 5. **Adicione telefone e site:** use o número principal que a recepção atende.
 6. **Verifique o perfil:** o Google confirma que você é o dono. A verificação pode ser por carta com código (correio), telefone, e-mail ou vídeo, conforme o caso. Sem verificação, o perfil não fica totalmente ativo.
 
-Um ponto jurídico: perfis de clínicas envolvem dados de identificação e, indiretamente, saúde. Ao vincular formulários, botões de contato e mensagens ao perfil, siga as regras de proteção de dados descritas no guia de [LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas). E, se você está estruturando o negócio agora, o passo do perfil se encaixa no roteiro maior de [como abrir uma clínica](https://menosclique.com.br/blog/como-abrir-uma-clinica).
+Um ponto jurídico: perfis de clínicas envolvem dados de identificação e, indiretamente, saúde. Ao vincular formulários, botões de contato e mensagens ao perfil, siga as regras de proteção de dados descritas no guia de [LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas). E, se você está estruturando o negócio agora, o passo do perfil se encaixa no roteiro maior de [como abrir uma clínica](https://www.menosclique.com.br/blog/como-abrir-uma-clinica).
 
 ### Quais categorias e serviços cadastrar?
 
@@ -71,7 +71,7 @@ Adicione fotos da fachada (ajuda o paciente a reconhecer a entrada), da recepç�
 
 ### 2. Descrição completa e honesta
 
-Use o campo de descrição (até 750 caracteres) para explicar quem é a clínica, especialidades, diferenciais e localização. Escreva para o paciente, não para o robô — mas inclua naturalmente os termos que ele busca. Lembre-se de que toda comunicação de saúde precisa respeitar o Código de Ética; vale revisar o [marketing médico para clínicas](https://menosclique.com.br/blog/marketing-medico-para-clinicas) antes de publicar promessas ou resultados.
+Use o campo de descrição (até 750 caracteres) para explicar quem é a clínica, especialidades, diferenciais e localização. Escreva para o paciente, não para o robô — mas inclua naturalmente os termos que ele busca. Lembre-se de que toda comunicação de saúde precisa respeitar o Código de Ética; vale revisar o [marketing médico para clínicas](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas) antes de publicar promessas ou resultados.
 
 ### 3. Horário sempre correto
 
@@ -79,7 +79,7 @@ Horário desatualizado gera avaliação negativa quase automática — o pacient
 
 ### 4. Botões de ação e mensagens
 
-Ative o botão de agendamento (se integrado a um sistema) e o de mensagens quando a recepção tiver rotina para responder rápido. Um perfil que demora dias para responder mensagem perde paciente. Se o contato migra para o WhatsApp, organize essa etapa com base no guia de [WhatsApp para clínicas](https://menosclique.com.br/blog/whatsapp-para-clinicas) para manter conformidade.
+Ative o botão de agendamento (se integrado a um sistema) e o de mensagens quando a recepção tiver rotina para responder rápido. Um perfil que demora dias para responder mensagem perde paciente. Se o contato migra para o WhatsApp, organize essa etapa com base no guia de [WhatsApp para clínicas](https://www.menosclique.com.br/blog/whatsapp-para-clinicas) para manter conformidade.
 
 ### 5. Postagens (Google Posts)
 
@@ -111,7 +111,7 @@ Muitas clínicas fazem o básico e depois abandonam o perfil. Veja o que evitar:
 <tr><td>Sem fotos ou fotos antigas</td><td>Menos cliques e confiança</td><td>Atualizar trimestralmente</td></tr>
 </table>
 
-Outro erro é tratar o perfil como algo isolado. Ele é a porta de entrada, mas de nada adianta atrair o paciente e, depois, perder a agenda no papel ou emitir nota fora do prazo. Vincular o perfil a uma boa operação — do agendamento à cobrança e ao [NFS-e para clínicas](https://menosclique.com.br/blog/nfse-para-clinicas) — é o que gera resultado sustentável. Se sua clínica ainda usa sistemas fragmentados, vale conhecer as [alternativas a sistemas para clínicas](https://www.menosclique.com.br/alternativas) para centralizar tudo.
+Outro erro é tratar o perfil como algo isolado. Ele é a porta de entrada, mas de nada adianta atrair o paciente e, depois, perder a agenda no papel ou emitir nota fora do prazo. Vincular o perfil a uma boa operação — do agendamento à cobrança e ao [NFS-e para clínicas](https://www.menosclique.com.br/blog/nfse-para-clinicas) — é o que gera resultado sustentável. Se sua clínica ainda usa sistemas fragmentados, vale conhecer as [alternativas a sistemas para clínicas](https://www.menosclique.com.br/alternativas) para centralizar tudo.
 
 ## Métricas do perfil: como medir se está funcionando?
 

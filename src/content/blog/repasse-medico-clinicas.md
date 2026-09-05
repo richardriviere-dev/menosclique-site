@@ -15,7 +15,7 @@ Repasse médico (ou comissão de profissional de saúde) é a remuneração paga
 
 O tema parece simples, mas é uma das maiores fontes de conflito e prejuízo em clínicas. Erros de cálculo, falta de transparência e ausência de regras claras corroem a confiança do profissional e podem gerar passivos trabalhistas e tributários. Uma gestão financeira madura trata o repasse como um processo com regras escritas, base de cálculo definida e conferência mensal.
 
-Antes de qualquer conta, vale entender que o repasse é apenas uma peça do quebra-cabeça financeiro da clínica. Se a precificação e o controle de caixa estão frágeis, o cálculo de comissões apenas transfere o problema. Se quiser estruturar toda a base, vale ler antes o nosso [guia de gestão financeira para clínicas](https://menosclique.com.br/blog/gestao-financeira-para-clinicas).
+Antes de qualquer conta, vale entender que o repasse é apenas uma peça do quebra-cabeça financeiro da clínica. Se a precificação e o controle de caixa estão frágeis, o cálculo de comissões apenas transfere o problema. Se quiser estruturar toda a base, vale ler antes o nosso [guia de gestão financeira para clínicas](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas).
 
 ## Quais são os modelos de repasse mais usados?
 
@@ -40,7 +40,7 @@ O percentual justo equilibra o custo real da estrutura com a atratividade para o
 <tr><td>Consultas simples, sem insumos relevantes</td><td>Maior, pois o custo variável é baixo</td></tr>
 </table>
 
-A regra de ouro: quanto mais a clínica investe para gerar aquele atendimento (marketing, recepção, agendamento, materiais), menor tende a ser o percentual repassado. Por isso, entender quanto custa captar cada paciente — algo diretamente ligado ao [marketing médico](https://menosclique.com.br/blog/marketing-medico-para-clinicas) — é essencial para definir um percentual sustentável.
+A regra de ouro: quanto mais a clínica investe para gerar aquele atendimento (marketing, recepção, agendamento, materiais), menor tende a ser o percentual repassado. Por isso, entender quanto custa captar cada paciente — algo diretamente ligado ao [marketing médico](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas) — é essencial para definir um percentual sustentável.
 
 ## Como calcular o repasse médico passo a passo
 
@@ -79,11 +79,11 @@ A tributação depende do formato jurídico da relação. Ignorá-la é o erro m
 
 Sobre o ISS, a [Lei Complementar nº 116/2003](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm) estabelece que a alíquota máxima é de 5%, e a Emenda Constitucional definiu a mínima em 2%. A alíquota exata é definida por cada município, o que muda o cálculo de cidade para cidade.
 
-Quando o profissional é PJ, a clínica recebe uma nota fiscal e precisa emitir a sua própria contra o paciente ou convênio. Para não errar nessa cadeia de documentos, vale revisar o [passo a passo de emissão de NFS-e para clínicas](https://menosclique.com.br/blog/nfse-para-clinicas).
+Quando o profissional é PJ, a clínica recebe uma nota fiscal e precisa emitir a sua própria contra o paciente ou convênio. Para não errar nessa cadeia de documentos, vale revisar o [passo a passo de emissão de NFS-e para clínicas](https://www.menosclique.com.br/blog/nfse-para-clinicas).
 
 ### Repasse gera vínculo trabalhista?
 
-Pode gerar, se a relação, na prática, tiver os elementos de um emprego: pessoalidade, habitualidade, subordinação e onerosidade. Um contrato de parceria bem redigido reduz o risco, mas não basta se a rotina contradiz o papel. Escalas impostas unilateralmente, exclusividade obrigatória e controle rígido de jornada são sinais de alerta. Por isso, a formalização correta desde a abertura do negócio é decisiva — assunto que aprofundamos no guia de [como abrir uma clínica](https://menosclique.com.br/blog/como-abrir-uma-clinica).
+Pode gerar, se a relação, na prática, tiver os elementos de um emprego: pessoalidade, habitualidade, subordinação e onerosidade. Um contrato de parceria bem redigido reduz o risco, mas não basta se a rotina contradiz o papel. Escalas impostas unilateralmente, exclusividade obrigatória e controle rígido de jornada são sinais de alerta. Por isso, a formalização correta desde a abertura do negócio é decisiva — assunto que aprofundamos no guia de [como abrir uma clínica](https://www.menosclique.com.br/blog/como-abrir-uma-clinica).
 
 ## Boas práticas para não errar no repasse
 
@@ -104,7 +104,7 @@ No começo, uma planilha resolve. Com dois ou três profissionais e poucos atend
 
 Um sistema de gestão automatiza a apuração: registra cada atendimento vinculado ao profissional, aplica o percentual configurado, desconta o que foi combinado e gera o relatório de repasse pronto. Isso elimina divergências e libera horas de trabalho administrativo. Sistemas especializados por área — como os de [sistema para clínicas por especialidade](https://www.menosclique.com.br/especialidades) — já trazem essa lógica adaptada ao fluxo de cada especialidade.
 
-Se a sua clínica ainda controla repasses no papel ou em planilhas frágeis, a migração para uma ferramenta adequada costuma se pagar rápido em erros evitados. Fizemos um guia específico sobre isso: [migração de sistema para clínicas](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
+Se a sua clínica ainda controla repasses no papel ou em planilhas frágeis, a migração para uma ferramenta adequada costuma se pagar rápido em erros evitados. Fizemos um guia específico sobre isso: [migração de sistema para clínicas](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
 
 ## Erros comuns que corroem a confiança do profissional
 
@@ -119,7 +119,7 @@ Repasse é tema sensível. Um erro repetido pode fazer você perder um bom profi
 
 A boa notícia: todos são evitáveis com contrato claro, processo padronizado e uma ferramenta que faz a conta de forma transparente. Quando você combina regras escritas com automação, o repasse deixa de ser fonte de atrito e passa a ser um diferencial competitivo para atrair bons profissionais.
 
-Se está avaliando qual ferramenta usar para organizar isso, vale conferir os [12 critérios essenciais para escolher um sistema para clínicas](https://menosclique.com.br/blog/escolher-sistema-para-clinicas) antes de decidir.
+Se está avaliando qual ferramenta usar para organizar isso, vale conferir os [12 critérios essenciais para escolher um sistema para clínicas](https://www.menosclique.com.br/blog/escolher-sistema-para-clinicas) antes de decidir.
 
 ## Perguntas frequentes
 

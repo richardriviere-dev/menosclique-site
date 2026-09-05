@@ -80,15 +80,15 @@ Uma ferramenta simples é o *blueprint de serviço*: uma tabela dividida em "o q
 
 ### Etapa 1 e 2: descoberta e captação
 
-Tudo começa antes do contato. Se a clínica não aparece na busca ou não transmite credibilidade, a jornada nem inicia. Aqui entram presença digital, avaliações e clareza sobre especialidades e horários. Vale lembrar que toda comunicação precisa respeitar as normas de publicidade médica — o nosso [guia de marketing médico para clínicas](https://menosclique.com.br/blog/marketing-medico-para-clinicas) detalha o que o CFM permite e proíbe.
+Tudo começa antes do contato. Se a clínica não aparece na busca ou não transmite credibilidade, a jornada nem inicia. Aqui entram presença digital, avaliações e clareza sobre especialidades e horários. Vale lembrar que toda comunicação precisa respeitar as normas de publicidade médica — o nosso [guia de marketing médico para clínicas](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas) detalha o que o CFM permite e proíbe.
 
 Na captação, velocidade é tudo. Um lead que não recebe resposta em minutos frequentemente já buscou outra clínica. Padronize:
 
 - Tempo máximo de resposta para cada canal (ex.: até 5 minutos no horário comercial).
 - Roteiro de acolhimento para as primeiras mensagens.
-- Uso adequado do WhatsApp, respeitando consentimento e privacidade — veja o [guia de WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas).
+- Uso adequado do WhatsApp, respeitando consentimento e privacidade — veja o [guia de WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas).
 
-Se a definição do valor da consulta ainda gera insegurança na hora do agendamento, revise sua estratégia de [precificação de consultas particulares](https://menosclique.com.br/blog/como-precificar-consultas-particulares) para que a equipe informe preços com segurança.
+Se a definição do valor da consulta ainda gera insegurança na hora do agendamento, revise sua estratégia de [precificação de consultas particulares](https://www.menosclique.com.br/blog/como-precificar-consultas-particulares) para que a equipe informe preços com segurança.
 
 ### Etapa 3: pré-consulta e confirmação
 
@@ -137,11 +137,11 @@ Mapear é diagnóstico; otimizar é tratamento. Depois de enxergar os gargalos, 
   </tr>
 </table>
 
-Um sistema de gestão integrado é o que sustenta a jornada quando a clínica cresce: agenda, prontuário, financeiro e comunicação em um só lugar reduzem retrabalho e falhas de transição. Ferramentas como o [MenosClique](https://www.menosclique.com.br) conectam essas etapas, e há opções específicas por [especialidade](https://www.menosclique.com.br/especialidades) para fluxos particulares. Se você já usa outro software e sente que ele atrapalha o fluxo, o [guia de migração de sistema](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas) mostra como trocar sem dor de cabeça.
+Um sistema de gestão integrado é o que sustenta a jornada quando a clínica cresce: agenda, prontuário, financeiro e comunicação em um só lugar reduzem retrabalho e falhas de transição. Ferramentas como o [MenosClique](https://www.menosclique.com.br) conectam essas etapas, e há opções específicas por [especialidade](https://www.menosclique.com.br/especialidades) para fluxos particulares. Se você já usa outro software e sente que ele atrapalha o fluxo, o [guia de migração de sistema](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas) mostra como trocar sem dor de cabeça.
 
 ### O papel dos dados e da privacidade na jornada
 
-Cada etapa gera dados sensíveis: contato, histórico clínico, exames. A **Lei Geral de Proteção de Dados** ([Lei nº 13.709/2018, fiscalizada pela ANPD](https://www.gov.br/anpd/pt-br)) exige que a clínica trate essas informações com base legal, segurança e finalidade clara. Além disso, dados de saúde têm regras específicas: o Conselho Federal de Medicina determina, pela Resolução CFM nº 1.821/2007, a guarda do prontuário por prazo mínimo de **20 anos** a contar do último registro. Ou seja, otimizar a jornada não é só velocidade — é também conformidade. Aprofunde no nosso [guia de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas).
+Cada etapa gera dados sensíveis: contato, histórico clínico, exames. A **Lei Geral de Proteção de Dados** ([Lei nº 13.709/2018, fiscalizada pela ANPD](https://www.gov.br/anpd/pt-br)) exige que a clínica trate essas informações com base legal, segurança e finalidade clara. Além disso, dados de saúde têm regras específicas: o Conselho Federal de Medicina determina, pela Resolução CFM nº 1.821/2007, a guarda do prontuário por prazo mínimo de **20 anos** a contar do último registro. Ou seja, otimizar a jornada não é só velocidade — é também conformidade. Aprofunde no nosso [guia de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas).
 
 ## Como medir se a jornada está funcionando?
 
@@ -155,7 +155,7 @@ O que não é medido não melhora. Depois de mapear e otimizar, acompanhe indica
 
 Para medir satisfação, o **Net Promoter Score (NPS)** é o padrão mais usado no mundo. Ele pergunta "de 0 a 10, quanto você recomendaria a clínica?" e classifica respostas em promotores (9-10), neutros (7-8) e detratores (0-6). A nota final varia de **-100 a +100**, o que dá um termômetro objetivo da experiência ao longo da jornada. Aplicar o NPS logo após o pós-consulta revela onde o fluxo ainda gera atrito.
 
-Fechar bem o ciclo é o que transforma um atendimento pontual em relacionamento contínuo. Para estruturar o retorno e o recall, aprofunde no nosso [guia de fidelização de pacientes](https://menosclique.com.br/blog/fidelizacao-de-pacientes). E se você está montando os processos do zero, o passo a passo de [como abrir uma clínica](https://menosclique.com.br/blog/como-abrir-uma-clinica) ajuda a desenhar a jornada desde a fundação.
+Fechar bem o ciclo é o que transforma um atendimento pontual em relacionamento contínuo. Para estruturar o retorno e o recall, aprofunde no nosso [guia de fidelização de pacientes](https://www.menosclique.com.br/blog/fidelizacao-de-pacientes). E se você está montando os processos do zero, o passo a passo de [como abrir uma clínica](https://www.menosclique.com.br/blog/como-abrir-uma-clinica) ajuda a desenhar a jornada desde a fundação.
 
 ## Erros comuns ao mapear a jornada do paciente
 

@@ -38,7 +38,7 @@ Estruturar a telemedicina para clínicas não se resume a abrir uma chamada de v
 3. **Padronize o consentimento:** crie um termo de consentimento informado específico para teleconsulta, apresentado e registrado antes do atendimento.
 4. **Integre ao prontuário eletrônico:** a teleconsulta precisa ser registrada com a mesma profundidade da presencial. Um bom [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico) facilita esse registro e a rastreabilidade.
 5. **Configure a emissão de documentos digitais:** receitas, atestados e pedidos de exame devem ser assinados digitalmente com certificado válido.
-6. **Ajuste agenda e cobrança:** defina como as teleconsultas entram no [agendamento online](https://menosclique.com.br/blog/agendamento-online-para-clinicas), com horários, valores e formas de pagamento claras.
+6. **Ajuste agenda e cobrança:** defina como as teleconsultas entram no [agendamento online](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas), com horários, valores e formas de pagamento claras.
 7. **Treine a equipe:** recepção e secretaria precisam saber orientar o paciente sobre acesso, requisitos técnicos e preparação para o atendimento.
 
 ### Como garantir validade jurídica das receitas e atestados online?
@@ -86,7 +86,7 @@ A pressa para lançar o atendimento online costuma gerar falhas que comprometem 
 5. **Não integrar a agenda**, gerando conflitos entre horários presenciais e online.
 6. **Ignorar a organização financeira**, sem controlar recebimentos das teleconsultas.
 
-Esse último ponto merece atenção: teleconsultas exigem definição clara de precificação, formas de pagamento e conciliação. Uma boa [gestão financeira da clínica](https://menosclique.com.br/blog/gestao-financeira-para-clinicas) evita perdas e organiza o fluxo de caixa desse novo canal. E, como o paciente pode faltar também no online, vale revisar estratégias de [redução de no-show](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica) adaptadas ao formato remoto — como confirmação prévia e lembretes automáticos.
+Esse último ponto merece atenção: teleconsultas exigem definição clara de precificação, formas de pagamento e conciliação. Uma boa [gestão financeira da clínica](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas) evita perdas e organiza o fluxo de caixa desse novo canal. E, como o paciente pode faltar também no online, vale revisar estratégias de [redução de no-show](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica) adaptadas ao formato remoto — como confirmação prévia e lembretes automáticos.
 
 ## Telemedicina vale a pena para a sua clínica?
 

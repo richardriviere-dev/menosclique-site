@@ -98,16 +98,16 @@ Além das salas de atendimento, pense em recepção, sala de espera confortável
 
 ## Tecnologia e organização desde o primeiro dia
 
-Abrir com processos manuais é começar já atrasado. Um [prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico) bem estruturado garante registro seguro, atende às exigências de guarda documental e facilita a auditoria. Combine isso com [agendamento online](https://menosclique.com.br/blog/agendamento-online-para-clinicas) para reduzir faltas e ocupar melhor a agenda desde o início.
+Abrir com processos manuais é começar já atrasado. Um [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico) bem estruturado garante registro seguro, atende às exigências de guarda documental e facilita a auditoria. Combine isso com [agendamento online](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas) para reduzir faltas e ocupar melhor a agenda desde o início.
 
-Vale considerar um [sistema de gestão para clínicas](https://www.menosclique.com.br) que centralize agenda, prontuário, financeiro e comunicação — evitando que você monte a operação com ferramentas soltas que não conversam entre si. Se você atende uma área específica, sistemas pensados por [especialidade](https://www.menosclique.com.br/especialidades) reduzem o tempo de configuração inicial. Como você está começando do zero, aproveite para acertar essa escolha de uma vez: trocar de sistema depois, com base de pacientes já cadastrada, é bem mais trabalhoso — veja os [12 critérios para escolher o sistema certo](https://menosclique.com.br/blog/escolher-sistema-para-clinicas) e, se um dia precisar mudar, o [guia de migração sem dor de cabeça](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
+Vale considerar um [sistema de gestão para clínicas](https://www.menosclique.com.br) que centralize agenda, prontuário, financeiro e comunicação — evitando que você monte a operação com ferramentas soltas que não conversam entre si. Se você atende uma área específica, sistemas pensados por [especialidade](https://www.menosclique.com.br/especialidades) reduzem o tempo de configuração inicial. Como você está começando do zero, aproveite para acertar essa escolha de uma vez: trocar de sistema depois, com base de pacientes já cadastrada, é bem mais trabalhoso — veja os [12 critérios para escolher o sistema certo](https://www.menosclique.com.br/blog/escolher-sistema-para-clinicas) e, se um dia precisar mudar, o [guia de migração sem dor de cabeça](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
 
 Dois pontos que muitos esquecem no começo e viram problema depois:
 
-- **LGPD:** dados de saúde são "dados sensíveis" e exigem cuidado redobrado. Estruture consentimento, controle de acesso e segurança desde o dia um. Veja o [guia de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas).
-- **Comunicação e marketing:** a divulgação de serviços de saúde tem regras éticas rígidas. Antes de anunciar, entenda o que é permitido no [guia de marketing médico do CFM](https://menosclique.com.br/blog/marketing-medico-para-clinicas).
+- **LGPD:** dados de saúde são "dados sensíveis" e exigem cuidado redobrado. Estruture consentimento, controle de acesso e segurança desde o dia um. Veja o [guia de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas).
+- **Comunicação e marketing:** a divulgação de serviços de saúde tem regras éticas rígidas. Antes de anunciar, entenda o que é permitido no [guia de marketing médico do CFM](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
 
-Vale ainda definir desde o início como o paciente vai falar com a clínica. O WhatsApp é o canal preferido da maioria, mas usá-lo em saúde exige cuidado com privacidade e com as regras do CFM — configure o atendimento seguindo o [guia de WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas) antes de divulgar o número.
+Vale ainda definir desde o início como o paciente vai falar com a clínica. O WhatsApp é o canal preferido da maioria, mas usá-lo em saúde exige cuidado com privacidade e com as regras do CFM — configure o atendimento seguindo o [guia de WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas) antes de divulgar o número.
 
 ## Erros comuns ao abrir uma clínica
 
@@ -137,4 +137,4 @@ Varia por município e por complexidade da estrutura. Etapas como projeto e vist
 
 ### Posso oferecer teleconsulta na minha clínica?
 
-Sim, desde que siga as normas do CFM sobre telemedicina. É uma boa forma de ampliar o alcance, especialmente no início. Veja como fazer isso corretamente no [guia de telemedicina para clínicas](https://menosclique.com.br/blog/telemedicina-para-clinicas).
+Sim, desde que siga as normas do CFM sobre telemedicina. É uma boa forma de ampliar o alcance, especialmente no início. Veja como fazer isso corretamente no [guia de telemedicina para clínicas](https://www.menosclique.com.br/blog/telemedicina-para-clinicas).

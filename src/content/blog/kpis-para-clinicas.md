@@ -41,7 +41,7 @@ Percentual de pacientes que agendaram e não compareceram, sem cancelar a tempo.
 
 **Fórmula:** (Faltas ÷ Total de agendamentos) × 100
 
-Cada falta é uma vaga que poderia ter sido preenchida e um custo fixo que continua correndo. Reduzir esse indicador tem impacto direto no caixa. Aprofundamos o tema em [como reduzir faltas (no-show) na clínica](https://menosclique.com.br/blog/como-reduzir-faltas-no-show-na-clinica), com estratégias práticas de confirmação e lembretes.
+Cada falta é uma vaga que poderia ter sido preenchida e um custo fixo que continua correndo. Reduzir esse indicador tem impacto direto no caixa. Aprofundamos o tema em [como reduzir faltas (no-show) na clínica](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica), com estratégias práticas de confirmação e lembretes.
 
 ### Taxa de cancelamento e tempo de espera
 
@@ -73,7 +73,7 @@ Percentual do que efetivamente sobra depois de todos os custos e despesas.
 
 **Fórmula:** (Lucro líquido ÷ Receita total) × 100
 
-É o KPI financeiro mais importante e o mais ignorado. Uma clínica pode crescer em faturamento e reduzir a margem ao mesmo tempo — sinal de que os custos crescem mais rápido que a receita. Para estruturar contas a pagar, a receber e fluxo de caixa antes de calcular margem, vale seguir o passo a passo do nosso [guia de gestão financeira para clínicas](https://menosclique.com.br/blog/gestao-financeira-para-clinicas).
+É o KPI financeiro mais importante e o mais ignorado. Uma clínica pode crescer em faturamento e reduzir a margem ao mesmo tempo — sinal de que os custos crescem mais rápido que a receita. Para estruturar contas a pagar, a receber e fluxo de caixa antes de calcular margem, vale seguir o passo a passo do nosso [guia de gestão financeira para clínicas](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas).
 
 ### Taxa de inadimplência e glosa de convênios
 
@@ -81,7 +81,7 @@ A **inadimplência** mede quanto do que foi faturado ainda não foi recebido. A 
 
 **Fórmula da glosa:** (Valor glosado ÷ Valor faturado ao convênio) × 100
 
-Se boa parte da sua receita vem de planos, esse KPI merece atenção máxima. Estratégias para reduzir recusas estão no artigo sobre [faturamento de convênios (TISS)](https://menosclique.com.br/blog/faturamento-de-convenios-tiss).
+Se boa parte da sua receita vem de planos, esse KPI merece atenção máxima. Estratégias para reduzir recusas estão no artigo sobre [faturamento de convênios (TISS)](https://www.menosclique.com.br/blog/faturamento-convenios-tiss).
 
 ## Quais KPIs medem aquisição e retenção de pacientes?
 
@@ -93,7 +93,7 @@ Quanto você gasta, em média, para conquistar um novo paciente.
 
 **Fórmula:** Investimento total em marketing e vendas ÷ número de novos pacientes no período
 
-Se você investiu R$ 3.000 em anúncios e captou 30 novos pacientes, o CAC é R$ 100. Esse número só faz sentido quando comparado ao valor que o paciente gera. Vale lembrar que a divulgação precisa respeitar as normas do CFM — reunimos as diretrizes em [marketing médico para clínicas](https://menosclique.com.br/blog/marketing-medico-para-clinicas).
+Se você investiu R$ 3.000 em anúncios e captou 30 novos pacientes, o CAC é R$ 100. Esse número só faz sentido quando comparado ao valor que o paciente gera. Vale lembrar que a divulgação precisa respeitar as normas do CFM — reunimos as diretrizes em [marketing médico para clínicas](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
 
 ### Taxa de conversão de agendamentos
 
@@ -143,7 +143,7 @@ Um dashboard é a visão única e resumida dos seus KPIs. Regras para montar um 
 - **Use cores com moderação:** verde para dentro da meta, vermelho para fora — nada além disso.
 - **Uma tela só:** se precisa rolar muito, você tem métricas demais.
 
-Ao escolher a ferramenta, priorize integração de dados. Nosso guia de [como escolher sistema para clínicas](https://menosclique.com.br/blog/escolher-sistema-para-clinicas) traz os 12 critérios que evitam a dor de consolidar relatórios na mão. E, se você já usa um sistema que não entrega bons indicadores, a [migração de sistema](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas) pode ser feita sem perder histórico.
+Ao escolher a ferramenta, priorize integração de dados. Nosso guia de [como escolher sistema para clínicas](https://www.menosclique.com.br/blog/escolher-sistema-para-clinicas) traz os 12 critérios que evitam a dor de consolidar relatórios na mão. E, se você já usa um sistema que não entrega bons indicadores, a [migração de sistema](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas) pode ser feita sem perder histórico.
 
 ## Quais erros evitar ao acompanhar KPIs?
 

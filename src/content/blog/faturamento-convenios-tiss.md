@@ -133,7 +133,7 @@ Reduzir glosa é metade do trabalho; a outra metade é fazer o dinheiro entrar m
 </tr>
 </table>
 
-Um ponto que muitas clínicas ignoram: o repasse do convênio precisa ser conciliado com a mesma disciplina de uma conta bancária. Receber um valor "arredondado" da operadora, sem checar item a item, esconde glosas silenciosas. Essa conciliação é o elo entre o faturamento e a saúde financeira do negócio — tema que aprofundamos no nosso [guia de gestão financeira para clínicas](https://menosclique.com.br/blog/gestao-financeira-para-clinicas).
+Um ponto que muitas clínicas ignoram: o repasse do convênio precisa ser conciliado com a mesma disciplina de uma conta bancária. Receber um valor "arredondado" da operadora, sem checar item a item, esconde glosas silenciosas. Essa conciliação é o elo entre o faturamento e a saúde financeira do negócio — tema que aprofundamos no nosso [guia de gestão financeira para clínicas](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas).
 
 ## Faturamento manual x sistema com TISS integrado
 
@@ -147,9 +147,9 @@ Um sistema de gestão com módulo TISS integrado ajuda a:
 - Controlar prazos de faturamento e de recurso de glosa;
 - Conciliar o que foi cobrado com o que foi efetivamente pago.
 
-Além disso, o faturamento não vive isolado: ele começa no [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico), onde o CID e os procedimentos são registrados, e depende de uma agenda organizada — inclusive porque a [redução de faltas (no-show)](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica) impacta diretamente o volume faturável. Quando esses módulos conversam entre si, o dado entra uma única vez e flui até a cobrança, reduzindo divergências.
+Além disso, o faturamento não vive isolado: ele começa no [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico), onde o CID e os procedimentos são registrados, e depende de uma agenda organizada — inclusive porque a [redução de faltas (no-show)](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica) impacta diretamente o volume faturável. Quando esses módulos conversam entre si, o dado entra uma única vez e flui até a cobrança, reduzindo divergências.
 
-Como os dados trafegados no TISS envolvem informações sensíveis de saúde, vale também alinhar o processo às boas práticas de proteção de dados — assunto que detalhamos no [guia de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas). Se você quer avaliar ferramentas que automatizam esse fluxo, vale conhecer os [planos disponíveis](https://www.menosclique.com.br/precos) e comparar com o que já usa.
+Como os dados trafegados no TISS envolvem informações sensíveis de saúde, vale também alinhar o processo às boas práticas de proteção de dados — assunto que detalhamos no [guia de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas). Se você quer avaliar ferramentas que automatizam esse fluxo, vale conhecer os [planos disponíveis](https://www.menosclique.com.br/precos) e comparar com o que já usa.
 
 ## Um fluxo de faturamento saudável, em resumo
 

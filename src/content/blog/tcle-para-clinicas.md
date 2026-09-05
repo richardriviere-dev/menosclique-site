@@ -123,7 +123,7 @@ Sim. O TCLE pode ser digital, e a assinatura eletrônica é válida no Brasil de
 
 Na prática, quanto mais robusto o mecanismo de assinatura (com certificado ICP-Brasil, carimbo de tempo, registro de IP e trilha de auditoria), maior a força probatória. Um TCLE digital bem estruturado tem vantagens claras: rastreabilidade, arquivamento seguro, impossibilidade de "sumir" o documento e facilidade de recuperação.
 
-A lógica é a mesma que já se aplica a outros documentos clínicos digitais — como você vê em nosso guia de [prescrição eletrônica com validade legal](https://menosclique.com.br/blog/prescricao-eletronica-clinicas). Se a clínica está digitalizando processos, faz sentido incluir o TCLE nessa jornada e, em caso de troca de software, garantir a portabilidade dos termos já assinados, tema que abordamos no guia de [migração de sistema para clínicas](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
+A lógica é a mesma que já se aplica a outros documentos clínicos digitais — como você vê em nosso guia de [prescrição eletrônica com validade legal](https://www.menosclique.com.br/blog/prescricao-eletronica-clinicas). Se a clínica está digitalizando processos, faz sentido incluir o TCLE nessa jornada e, em caso de troca de software, garantir a portabilidade dos termos já assinados, tema que abordamos no guia de [migração de sistema para clínicas](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
 
 ## Como conciliar o TCLE com a LGPD?
 
@@ -145,7 +145,7 @@ Multas por descumprimento da LGPD podem chegar a **2% do faturamento** da empres
 
 Fotos de "antes e depois", depoimentos e uso de imagem exigem autorização própria, distinta do TCLE do procedimento — e ainda submetida às normas de publicidade médica. Antes de divulgar qualquer conteúdo de paciente, revise as regras no nosso conteúdo sobre [marketing médico e o CFM](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
 
-O mesmo cuidado vale para a comunicação de resultados e orientações por mensagens. Se a clínica usa aplicativos de mensagem, alinhe o consentimento e o sigilo às boas práticas descritas em [WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas).
+O mesmo cuidado vale para a comunicação de resultados e orientações por mensagens. Se a clínica usa aplicativos de mensagem, alinhe o consentimento e o sigilo às boas práticas descritas em [WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas).
 
 ## Erros comuns que invalidam ou enfraquecem o TCLE
 

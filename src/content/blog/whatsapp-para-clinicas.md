@@ -23,7 +23,7 @@ Os ganhos concretos que uma clínica costuma buscar com o WhatsApp são:
 - **Reengajamento** de pacientes inativos e avisos de retorno.
 - **Envio de orientações** pós-consulta e recados administrativos.
 
-O lembrete e a confirmação, aliás, têm impacto direto na agenda. Se esse é o seu objetivo principal, vale combinar a leitura deste guia com o nosso conteúdo sobre [agendamento online para clínicas](https://menosclique.com.br/blog/agendamento-online-para-clinicas), que mostra como estruturar a agenda para que a confirmação faça sentido.
+O lembrete e a confirmação, aliás, têm impacto direto na agenda. Se esse é o seu objetivo principal, vale combinar a leitura deste guia com o nosso conteúdo sobre [agendamento online para clínicas](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas), que mostra como estruturar a agenda para que a confirmação faça sentido.
 
 ## WhatsApp comum, Business ou API: qual a diferença?
 
@@ -52,7 +52,7 @@ Escolher a ferramenta certa evita retrabalho. Muitas clínicas começam com o Wh
 </tr>
 </table>
 
-Duas informações úteis e reais: o app WhatsApp Business permite **listas de transmissão de até 256 contatos** (que só recebem quem tem o número da clínica salvo na agenda), e a API oficial é a via correta quando você precisa de vários atendentes no mesmo número e de disparos em escala. A escolha depende do volume de mensagens e da necessidade de integração — pontos que também aparecem quando você vai [escolher o sistema para a clínica](https://menosclique.com.br/blog/escolher-sistema-para-clinicas).
+Duas informações úteis e reais: o app WhatsApp Business permite **listas de transmissão de até 256 contatos** (que só recebem quem tem o número da clínica salvo na agenda), e a API oficial é a via correta quando você precisa de vários atendentes no mesmo número e de disparos em escala. A escolha depende do volume de mensagens e da necessidade de integração — pontos que também aparecem quando você vai [escolher o sistema para a clínica](https://www.menosclique.com.br/blog/escolher-sistema-para-clinicas).
 
 ## Como usar o WhatsApp para confirmar consultas e reduzir faltas?
 
@@ -106,7 +106,7 @@ De forma prática:
 </tr>
 </table>
 
-A publicidade médica tem regras específicas na Resolução CFM nº 2.336/2023, e a telemedicina é regida pela Resolução CFM nº 2.314/2022. Usar o WhatsApp para "consultar" pacientes de forma improvisada, sem os requisitos de identificação, registro em prontuário e segurança, é um risco ético. Se você pretende atender à distância pelo canal, entenda antes os limites no nosso conteúdo sobre [telemedicina e o CFM](https://menosclique.com.br/blog/telemedicina-para-clinicas). E, para divulgar sua clínica sem infringir normas, veja o [guia de marketing médico](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
+A publicidade médica tem regras específicas na Resolução CFM nº 2.336/2023, e a telemedicina é regida pela Resolução CFM nº 2.314/2022. Usar o WhatsApp para "consultar" pacientes de forma improvisada, sem os requisitos de identificação, registro em prontuário e segurança, é um risco ético. Se você pretende atender à distância pelo canal, entenda antes os limites no nosso conteúdo sobre [telemedicina e o CFM](https://www.menosclique.com.br/blog/telemedicina-para-clinicas). E, para divulgar sua clínica sem infringir normas, veja o [guia de marketing médico](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas).
 
 ## Como usar o WhatsApp dentro da LGPD?
 
@@ -121,7 +121,7 @@ Boas práticas essenciais:
 - **Descarte e histórico**: registre o essencial no prontuário, não no chat, e defina por quanto tempo as conversas ficam armazenadas.
 - **Nunca use listas de transmissão que revelem contatos entre pacientes** — transmissão preserva privacidade; grupos, não.
 
-Um detalhe importante: qualquer conteúdo clínico relevante que surgir na conversa (uma queixa, uma orientação) precisa ser registrado no [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico), que é o documento oficial. O WhatsApp é canal de contato, não repositório de informação médica. Para o mapa completo de conformidade, consulte também o material da [LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas) e as orientações públicas da [Autoridade Nacional de Proteção de Dados (ANPD)](https://www.gov.br/anpd/pt-br).
+Um detalhe importante: qualquer conteúdo clínico relevante que surgir na conversa (uma queixa, uma orientação) precisa ser registrado no [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico), que é o documento oficial. O WhatsApp é canal de contato, não repositório de informação médica. Para o mapa completo de conformidade, consulte também o material da [LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas) e as orientações públicas da [Autoridade Nacional de Proteção de Dados (ANPD)](https://www.gov.br/anpd/pt-br).
 
 ## Automação e integração: como escalar sem perder o toque humano?
 
@@ -136,7 +136,7 @@ O que faz sentido automatizar:
 
 O que deve permanecer humano: negociação de horários complexos, orientações clínicas, reclamações e qualquer assunto sensível. A regra prática é: automação para o previsível, pessoas para o excepcional.
 
-A automação ganha força quando o WhatsApp conversa com o sistema de gestão — assim os disparos partem diretamente da agenda, sem digitação manual. Se você já usa outro software e quer integrar melhor, considere as [alternativas de sistemas para clínicas](https://www.menosclique.com.br/alternativas) antes de decidir; e, se for trocar de ferramenta, planeje com o nosso guia de [migração de sistema](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas) para não perder histórico.
+A automação ganha força quando o WhatsApp conversa com o sistema de gestão — assim os disparos partem diretamente da agenda, sem digitação manual. Se você já usa outro software e quer integrar melhor, considere as [alternativas de sistemas para clínicas](https://www.menosclique.com.br/alternativas) antes de decidir; e, se for trocar de ferramenta, planeje com o nosso guia de [migração de sistema](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas) para não perder histórico.
 
 ## Erros comuns que expõem a clínica
 
@@ -147,7 +147,7 @@ Evitar armadilhas é tão importante quanto acertar nas boas práticas. Os desli
 - Escrever diagnósticos, resultados ou motivos de consulta nas mensagens.
 - Enviar propaganda sem consentimento e em desacordo com as normas do CFM.
 - Não ter um responsável definido pelo canal, deixando mensagens sem resposta por dias.
-- Confiar informações financeiras sem controle — organize valores e cobranças no seu fluxo de [gestão financeira](https://menosclique.com.br/blog/gestao-financeira-para-clinicas), não em conversas soltas.
+- Confiar informações financeiras sem controle — organize valores e cobranças no seu fluxo de [gestão financeira](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas), não em conversas soltas.
 
 ## Perguntas frequentes
 

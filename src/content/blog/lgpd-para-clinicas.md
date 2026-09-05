@@ -78,7 +78,7 @@ A conformidade não é um documento único, e sim um conjunto de processos. Veja
 7. **Treine a equipe:** recepção, enfermagem e administrativo precisam entender o que podem ou não fazer com dados de pacientes.
 8. **Crie um plano de resposta a incidentes:** defina o que fazer em caso de vazamento, incluindo a comunicação à ANPD e aos titulares afetados.
 
-Boa parte dessas medidas se apoia na tecnologia. Um [prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico) bem configurado já ajuda a atender vários requisitos da lei: acesso restrito por login, registro de quem visualizou cada informação (trilha de auditoria) e armazenamento seguro em nuvem. Ferramentas em papel ou planilhas soltas dificultam demais o controle exigido pela LGPD.
+Boa parte dessas medidas se apoia na tecnologia. Um [prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico) bem configurado já ajuda a atender vários requisitos da lei: acesso restrito por login, registro de quem visualizou cada informação (trilha de auditoria) e armazenamento seguro em nuvem. Ferramentas em papel ou planilhas soltas dificultam demais o controle exigido pela LGPD.
 
 ### O que é o RIPD e quando ele é necessário?
 
@@ -132,9 +132,9 @@ Além das multas, há o risco de ações judiciais movidas por pacientes e o dan
 
 ## Como conectar LGPD, gestão e rotina da clínica?
 
-Conformidade não é um projeto que começa e termina — é cultura. Ela se conecta a praticamente todas as áreas da operação. No [controle financeiro](https://menosclique.com.br/blog/gestao-financeira-para-clinicas), por exemplo, dados de pagamento e convênio também são pessoais e precisam de proteção. Já na comunicação com pacientes, campanhas de lembrete e confirmação de consulta devem respeitar as bases legais adequadas.
+Conformidade não é um projeto que começa e termina — é cultura. Ela se conecta a praticamente todas as áreas da operação. No [controle financeiro](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas), por exemplo, dados de pagamento e convênio também são pessoais e precisam de proteção. Já na comunicação com pacientes, campanhas de lembrete e confirmação de consulta devem respeitar as bases legais adequadas.
 
-A propósito, ferramentas de confirmação automática ajudam bastante a [reduzir faltas na clínica](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica), mas o envio de mensagens deve estar amparado em finalidade legítima e com transparência sobre o uso do contato. Sempre ofereça ao paciente a opção de não receber comunicações não essenciais.
+A propósito, ferramentas de confirmação automática ajudam bastante a [reduzir faltas na clínica](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica), mas o envio de mensagens deve estar amparado em finalidade legítima e com transparência sobre o uso do contato. Sempre ofereça ao paciente a opção de não receber comunicações não essenciais.
 
 Um resumo do que uma clínica em conformidade costuma ter estruturado:
 

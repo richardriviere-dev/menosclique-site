@@ -85,13 +85,13 @@ De nada adianta bom conteúdo se o site trava. O Google usa a velocidade e a exp
 - **Títulos e meta descriptions:** cada página com título único e descrição atrativa.
 - **Dados estruturados (Schema):** marque sua clínica como *MedicalOrganization* e artigos como *MedicalWebPage* para ajudar o Google a entender o conteúdo.
 
-Se a clínica oferece marcação pela internet, integre o site a um [agendamento online](https://menosclique.com.br/blog/agendamento-online-para-clinicas) — reduz atrito para o paciente que chegou pela busca e aumenta a conversão do tráfego orgânico.
+Se a clínica oferece marcação pela internet, integre o site a um [agendamento online](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas) — reduz atrito para o paciente que chegou pela busca e aumenta a conversão do tráfego orgânico.
 
 ## Como aparecer nas buscas locais da sua cidade?
 
 Para clínicas, o SEO local costuma trazer o retorno mais rápido. Quando alguém busca "clínica perto de mim", o Google exibe o chamado "pacote local": um mapa com três estabelecimentos em destaque. Estar ali vale muito.
 
-O ponto de partida é um perfil completo e otimizado. Reunimos o passo a passo detalhado no [guia de Google Meu Negócio para clínicas](https://menosclique.com.br/blog/google-meu-negocio-para-clinicas), mas os fatores que mais pesam no ranqueamento local são:
+O ponto de partida é um perfil completo e otimizado. Reunimos o passo a passo detalhado no [guia de Google Meu Negócio para clínicas](https://www.menosclique.com.br/blog/google-meu-negocio-para-clinicas), mas os fatores que mais pesam no ranqueamento local são:
 
 <table>
 <tr>
@@ -128,7 +128,7 @@ A arquitetura das páginas influencia diretamente o ranqueamento. Uma estrutura 
 - **Blog:** artigos informacionais que atraem tráfego de topo de funil e nutrem autoridade.
 - **Contato e agendamento:** claros e acessíveis em qualquer página.
 
-Crie links internos entre essas páginas: um artigo do blog sobre hipertensão pode linkar para a página do cardiologista, por exemplo. Essa malha interna distribui autoridade e guia o paciente pela jornada. Se você está começando do zero, vale alinhar a estrutura do site já na fase de planejamento — algo que abordamos no guia de [como abrir uma clínica](https://menosclique.com.br/blog/como-abrir-uma-clinica).
+Crie links internos entre essas páginas: um artigo do blog sobre hipertensão pode linkar para a página do cardiologista, por exemplo. Essa malha interna distribui autoridade e guia o paciente pela jornada. Se você está começando do zero, vale alinhar a estrutura do site já na fase de planejamento — algo que abordamos no guia de [como abrir uma clínica](https://www.menosclique.com.br/blog/como-abrir-uma-clinica).
 
 ### Quanto tempo o SEO leva para dar resultado?
 

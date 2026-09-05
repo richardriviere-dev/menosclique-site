@@ -61,17 +61,17 @@ Boas práticas:
 
 Antes de marcar consulta, a maioria dos pacientes pesquisa no Google e nas redes. Um perfil no Google Empresa (Google Business Profile) bem preenchido — com endereço, horários, telefone e fotos do ambiente — aumenta a chance de a clínica ser encontrada em buscas locais como "dermatologista perto de mim".
 
-As avaliações de pacientes também pesam. Peça feedback de forma espontânea e responda a todos os comentários com cordialidade, sem expor dados clínicos. Lembre-se: qualquer coleta e uso de dados de pacientes precisa estar em conformidade com a legislação. Se ainda tem dúvidas sobre isso, vale revisar nosso [guia prático de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas).
+As avaliações de pacientes também pesam. Peça feedback de forma espontânea e responda a todos os comentários com cordialidade, sem expor dados clínicos. Lembre-se: qualquer coleta e uso de dados de pacientes precisa estar em conformidade com a legislação. Se ainda tem dúvidas sobre isso, vale revisar nosso [guia prático de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas).
 
 ### 3. Use o WhatsApp com estratégia (e consentimento)
 
 O WhatsApp está presente em praticamente todos os smartphones brasileiros — pesquisas de mercado apontam adoção superior a 90% entre usuários de internet no Brasil. Isso o torna o canal mais direto para relacionamento, agendamento e lembretes.
 
-Use-o para confirmar consultas, enviar orientações de preparo e responder dúvidas administrativas. Um fluxo de lembretes bem estruturado reduz drasticamente as ausências — tema que aprofundamos em [7 estratégias para reduzir faltas (no-show) na clínica](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica).
+Use-o para confirmar consultas, enviar orientações de preparo e responder dúvidas administrativas. Um fluxo de lembretes bem estruturado reduz drasticamente as ausências — tema que aprofundamos em [7 estratégias para reduzir faltas (no-show) na clínica](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica).
 
 ### 4. Organize a operação para sustentar o crescimento
 
-Não adianta atrair pacientes se a clínica não consegue atendê-los bem. Marketing e operação andam juntos. Um [prontuário eletrônico bem implantado](https://menosclique.com.br/blog/guia-prontuario-eletronico) agiliza o atendimento, e uma [gestão financeira saudável](https://menosclique.com.br/blog/gestao-financeira-para-clinicas) garante que o investimento em captação tenha retorno mensurável.
+Não adianta atrair pacientes se a clínica não consegue atendê-los bem. Marketing e operação andam juntos. Um [prontuário eletrônico bem implantado](https://www.menosclique.com.br/blog/guia-prontuario-eletronico) agiliza o atendimento, e uma [gestão financeira saudável](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas) garante que o investimento em captação tenha retorno mensurável.
 
 ## Quais canais realmente funcionam para atrair pacientes?
 

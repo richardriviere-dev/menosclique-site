@@ -61,7 +61,7 @@ Improvisar o primeiro mês é o erro mais comum. Um bom onboarding acelera a aut
 3. **Semana 3 — Autonomia assistida:** assume o atendimento com um mentor por perto para tirar dúvidas e corrigir desvios em tempo real.
 4. **Semana 4 — Avaliação:** feedback estruturado, correção de pontos fracos e definição de metas para o mês seguinte.
 
-Documente esse plano em um manual simples. Assim, cada nova contratação segue o mesmo caminho e você não depende da memória de ninguém. Se a clínica ainda está em fase inicial, vale alinhar o processo já na etapa de estruturação — o nosso guia de [como abrir uma clínica](https://menosclique.com.br/blog/como-abrir-uma-clinica) ajuda a organizar processos desde o começo.
+Documente esse plano em um manual simples. Assim, cada nova contratação segue o mesmo caminho e você não depende da memória de ninguém. Se a clínica ainda está em fase inicial, vale alinhar o processo já na etapa de estruturação — o nosso guia de [como abrir uma clínica](https://www.menosclique.com.br/blog/como-abrir-uma-clinica) ajuda a organizar processos desde o começo.
 
 ## Como padronizar o atendimento com scripts?
 
@@ -76,7 +76,7 @@ Scripts não engessam o atendimento — eles garantem consistência e dão segur
 
 ### Script de WhatsApp
 
-O WhatsApp virou o canal preferido de muitos pacientes, mas exige cuidado com tom, tempo de resposta e proteção de dados. Padronize saudações, mensagens de confirmação e respostas para as dúvidas mais comuns (valores, endereço, convênios aceitos). Evite enviar dados clínicos sensíveis por mensagem e siga as boas práticas do nosso guia de [WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas).
+O WhatsApp virou o canal preferido de muitos pacientes, mas exige cuidado com tom, tempo de resposta e proteção de dados. Padronize saudações, mensagens de confirmação e respostas para as dúvidas mais comuns (valores, endereço, convênios aceitos). Evite enviar dados clínicos sensíveis por mensagem e siga as boas práticas do nosso guia de [WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas).
 
 ### Script de balcão
 
@@ -85,7 +85,7 @@ O WhatsApp virou o canal preferido de muitos pacientes, mas exige cuidado com to
 - Informe o tempo estimado de espera de forma transparente.
 - Na saída, agende o retorno e entregue recibo ou nota fiscal.
 
-Sobre a emissão fiscal, vale treinar a recepcionista para gerar documentos corretos sem depender do contador para cada atendimento — veja o passo a passo em [NFS-e para clínicas](https://menosclique.com.br/blog/nfse-para-clinicas).
+Sobre a emissão fiscal, vale treinar a recepcionista para gerar documentos corretos sem depender do contador para cada atendimento — veja o passo a passo em [NFS-e para clínicas](https://www.menosclique.com.br/blog/nfse-para-clinicas).
 
 ## Rotina diária: organizando a recepção por horários
 
@@ -155,7 +155,7 @@ A recepcionista lida diariamente com dados sensíveis — nome, CPF, convênio, 
 - Evite enviar dados clínicos por WhatsApp sem necessidade e sem consentimento;
 - Descarte documentos impressos de forma segura.
 
-Para aprofundar a conformidade, oriente a equipe com base no guia de [LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas). Uma recepção que respeita o sigilo transmite confiança e profissionalismo.
+Para aprofundar a conformidade, oriente a equipe com base no guia de [LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas). Uma recepção que respeita o sigilo transmite confiança e profissionalismo.
 
 ## Feedback e retenção: como manter a equipe motivada
 

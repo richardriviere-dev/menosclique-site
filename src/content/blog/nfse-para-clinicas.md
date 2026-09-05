@@ -50,7 +50,7 @@ A obrigação vale para pessoas jurídicas (clínicas constituídas como socieda
 </tr>
 </table>
 
-A nota deve ser emitida no momento da prestação do serviço ou do recebimento, conforme a legislação de cada cidade. Deixar para "emitir tudo no fim do mês" é arriscado: além de perder o controle, você pode descumprir prazos municipais. Se você ainda está estruturando o negócio, vale revisar todo o processo de abertura no nosso guia de [como abrir uma clínica passo a passo](https://menosclique.com.br/blog/como-abrir-uma-clinica), que cobre inscrições e alvarás.
+A nota deve ser emitida no momento da prestação do serviço ou do recebimento, conforme a legislação de cada cidade. Deixar para "emitir tudo no fim do mês" é arriscado: além de perder o controle, você pode descumprir prazos municipais. Se você ainda está estruturando o negócio, vale revisar todo o processo de abertura no nosso guia de [como abrir uma clínica passo a passo](https://www.menosclique.com.br/blog/como-abrir-uma-clinica), que cobre inscrições e alvarás.
 
 ## Como emitir a NFS-e da clínica passo a passo?
 
@@ -64,7 +64,7 @@ O procedimento varia de cidade para cidade, mas o esqueleto é o mesmo. Siga est
 6. **Preencha o valor e a alíquota de ISS.** A alíquota fica entre 2% e 5%. Confira se há retenção na fonte quando o tomador é pessoa jurídica.
 7. **Confira, emita e envie ao paciente.** A nota gera um número de verificação e pode ser enviada por e-mail ou pelo WhatsApp da clínica.
 
-Antes de disparar comunicações com dados fiscais e de saúde pelo celular, revise as boas práticas de segurança no nosso guia de [WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas). E se você usa o app para lembretes e cobranças, o mesmo cuidado se aplica ao envio de notas.
+Antes de disparar comunicações com dados fiscais e de saúde pelo celular, revise as boas práticas de segurança no nosso guia de [WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas). E se você usa o app para lembretes e cobranças, o mesmo cuidado se aplica ao envio de notas.
 
 ### Onde emitir: portal municipal ou Emissor Nacional?
 
@@ -82,7 +82,7 @@ O ISS é o tributo central da nota de serviço. Alguns pontos que você precisa 
 
 Atenção à **retenção do ISS**: em alguns casos, quem recolhe o imposto não é a clínica, mas o tomador do serviço (por exemplo, uma empresa que contrata atendimento ocupacional). Marcar errado o campo de retenção leva a pagar imposto em duplicidade ou deixar de recolher. Esse detalhe muda conforme o regime tributário da clínica — no Simples Nacional, o ISS costuma estar dentro da guia única (DAS), enquanto no Lucro Presumido é recolhido em separado.
 
-Como esses percentuais impactam diretamente a margem, o ideal é considerar a carga tributária na hora de definir valores. Nosso guia de [como precificar consultas particulares](https://menosclique.com.br/blog/como-precificar-consultas-particulares) mostra como embutir impostos sem perder competitividade.
+Como esses percentuais impactam diretamente a margem, o ideal é considerar a carga tributária na hora de definir valores. Nosso guia de [como precificar consultas particulares](https://www.menosclique.com.br/blog/como-precificar-consultas-particulares) mostra como embutir impostos sem perder competitividade.
 
 ## Como automatizar a emissão de notas fiscais na clínica?
 
@@ -129,7 +129,7 @@ Nem toda integração é igual. Antes de contratar ou configurar, confirme:
 - Se trata a retenção de ISS e o cancelamento de notas.
 - Se armazena as notas de forma segura e em conformidade com a proteção de dados.
 
-Esse último ponto é sensível: notas fiscais de saúde envolvem dados pessoais e, indiretamente, informação sobre atendimento. Trate o armazenamento com o mesmo rigor do prontuário. Vale revisar nosso [guia de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas) e o [guia completo de prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico), já que a base de pacientes que alimenta a nota é a mesma do registro clínico.
+Esse último ponto é sensível: notas fiscais de saúde envolvem dados pessoais e, indiretamente, informação sobre atendimento. Trate o armazenamento com o mesmo rigor do prontuário. Vale revisar nosso [guia de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas) e o [guia completo de prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico), já que a base de pacientes que alimenta a nota é a mesma do registro clínico.
 
 ## Erros comuns na emissão da NFS-e (e como evitar)
 
@@ -141,11 +141,11 @@ Na rotina das clínicas, alguns deslizes se repetem. Fique atento:
 - **Não enviar a nota ao paciente.** Isso frustra a dedução no IR e gera reclamações.
 - **Cancelar de forma incorreta.** Cada município tem regra e prazo para cancelamento; fora dele, é preciso emitir nota de substituição ou nota de crédito.
 
-Se você está trocando de ferramenta e teme perder o histórico de notas e cadastros, planeje a transição com cuidado — nosso [guia de migração de sistema para clínicas](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas) ajuda a evitar perda de dados fiscais e financeiros.
+Se você está trocando de ferramenta e teme perder o histórico de notas e cadastros, planeje a transição com cuidado — nosso [guia de migração de sistema para clínicas](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas) ajuda a evitar perda de dados fiscais e financeiros.
 
 ## E a nota de teleconsulta?
 
-A teleconsulta também gera obrigação de emitir NFS-e, com uma particularidade: definir o município competente para o ISS. Em geral, prevalece o local do estabelecimento prestador, mas há discussões conforme o serviço. Se você atende à distância, vale alinhar o enquadramento com o contador e conhecer as regras assistenciais no nosso guia de [telemedicina para clínicas e o CFM](https://menosclique.com.br/blog/telemedicina-para-clinicas).
+A teleconsulta também gera obrigação de emitir NFS-e, com uma particularidade: definir o município competente para o ISS. Em geral, prevalece o local do estabelecimento prestador, mas há discussões conforme o serviço. Se você atende à distância, vale alinhar o enquadramento com o contador e conhecer as regras assistenciais no nosso guia de [telemedicina para clínicas e o CFM](https://www.menosclique.com.br/blog/telemedicina-para-clinicas).
 
 ## Perguntas frequentes
 

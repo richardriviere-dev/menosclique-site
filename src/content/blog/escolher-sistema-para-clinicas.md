@@ -19,7 +19,7 @@ Vale lembrar três pontos que tornam essa decisão delicada:
 
 - A **LGPD (Lei nº 13.709/2018)** prevê multas de até 2% do faturamento da empresa, limitadas a R$ 50 milhões por infração — e dados de saúde são classificados como sensíveis, exigindo cuidado redobrado.
 - O prontuário eletrônico só substitui totalmente o papel quando o sistema é certificado pela **SBIS/CFM** nos níveis de garantia de segurança (NGS1/NGS2), conforme a Resolução CFM nº 1.821/2007.
-- Migrar dados entre sistemas depois exige planejamento; começar certo evita esse custo. Se você já está nessa situação, vale ler nosso [guia de migração de sistema para clínicas](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
+- Migrar dados entre sistemas depois exige planejamento; começar certo evita esse custo. Se você já está nessa situação, vale ler nosso [guia de migração de sistema para clínicas](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
 
 Ou seja: escolher bem não é gasto, é prevenção. Vamos ao checklist.
 
@@ -31,19 +31,19 @@ Use esta lista como um formulário de avaliação. Sugerimos dar uma nota de 0 a
 
 Este é o critério eliminatório número um. Pergunte ao fornecedor: os dados ficam em servidores no Brasil ou no exterior? Há criptografia em trânsito e em repouso? Existe controle de acesso por perfil de usuário e registro de quem acessou cada prontuário (trilha de auditoria)? O contrato traz cláusulas de tratamento de dados?
 
-Para se aprofundar, veja nosso [guia prático de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas) e consulte o texto oficial da lei no portal do [governo federal (ANPD)](https://www.gov.br/anpd/pt-br).
+Para se aprofundar, veja nosso [guia prático de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas) e consulte o texto oficial da lei no portal do [governo federal (ANPD)](https://www.gov.br/anpd/pt-br).
 
 ### 2. Prontuário eletrônico completo e adequado à sua especialidade
 
 Um bom prontuário vai além de um campo de texto livre. Avalie se há modelos por especialidade, anexo de exames e imagens, prescrição digital, histórico cronológico e assinatura eletrônica. Um cardiologista, um psicólogo e um dentista têm necessidades muito diferentes de registro clínico.
 
-Existem soluções pensadas por área — de [sistema por especialidade](https://www.menosclique.com.br/especialidades) a fluxos específicos. Se quiser entender o que é indispensável nesse módulo, nosso [guia completo de prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico) detalha os requisitos.
+Existem soluções pensadas por área — de [sistema por especialidade](https://www.menosclique.com.br/especialidades) a fluxos específicos. Se quiser entender o que é indispensável nesse módulo, nosso [guia completo de prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico) detalha os requisitos.
 
 ### 3. Agenda e agendamento online
 
 A agenda é o coração operacional. Verifique se ela suporta múltiplos profissionais e salas, bloqueios, encaixes, recorrência e visualização por dia/semana/mês. O **agendamento online** pelo próprio paciente reduz ligações e libera a recepção.
 
-Confira também lembretes automáticos, que impactam diretamente as faltas. Aprofunde em [agendamento online](https://menosclique.com.br/blog/agendamento-online-para-clinicas) e em [como reduzir faltas (no-show)](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica).
+Confira também lembretes automáticos, que impactam diretamente as faltas. Aprofunde em [agendamento online](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas) e em [como reduzir faltas (no-show)](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica).
 
 ### 4. Faturamento de convênios (TISS)
 
@@ -63,7 +63,7 @@ Você não gerencia o que não mede. Bons sistemas oferecem indicadores como tax
 
 ### 7. Integrações e telemedicina
 
-Avalie integrações com meios de pagamento, emissão de nota fiscal, WhatsApp e ferramentas de marketing. Se você faz atendimento remoto, verifique o suporte a [telemedicina em conformidade com o CFM](https://menosclique.com.br/blog/telemedicina-para-clinicas) (Resolução CFM nº 2.314/2022).
+Avalie integrações com meios de pagamento, emissão de nota fiscal, WhatsApp e ferramentas de marketing. Se você faz atendimento remoto, verifique o suporte a [telemedicina em conformidade com o CFM](https://www.menosclique.com.br/blog/telemedicina-para-clinicas) (Resolução CFM nº 2.314/2022).
 
 ### 8. Facilidade de uso e curva de aprendizado
 

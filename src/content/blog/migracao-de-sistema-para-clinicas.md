@@ -87,7 +87,7 @@ Os prontuários exigem atenção redobrada por causa do prazo legal de guarda e 
 - Confirme que o novo sistema mantém o **registro de auditoria** — quem acessou, quando e o que alterou —, requisito importante para conformidade.
 - Garanta que os documentos assinados digitalmente permaneçam válidos ou sejam devidamente arquivados.
 
-Para entender a fundo os requisitos de um bom prontuário eletrônico e o que exigir do novo fornecedor, vale ler o nosso [guia completo de prontuário eletrônico](https://menosclique.com.br/blog/guia-prontuario-eletronico). E, como toda migração envolve dados sensíveis de saúde, revise também o [guia de LGPD para clínicas](https://menosclique.com.br/blog/lgpd-para-clinicas) antes de iniciar.
+Para entender a fundo os requisitos de um bom prontuário eletrônico e o que exigir do novo fornecedor, vale ler o nosso [guia completo de prontuário eletrônico](https://www.menosclique.com.br/blog/guia-prontuario-eletronico). E, como toda migração envolve dados sensíveis de saúde, revise também o [guia de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas) antes de iniciar.
 
 ### Como não perder informações financeiras na virada?
 
@@ -98,7 +98,7 @@ O financeiro é onde erros geram prejuízo imediato. O maior risco é migrar em 
 - Migre os **saldos abertos** (contas a receber e a pagar) como registros iniciais no novo sistema.
 - Reconcilie os primeiros 30 dias comparando os dois sistemas para garantir que nenhum lançamento sumiu.
 
-Se o controle financeiro é hoje um dos seus maiores problemas — e costuma ser um dos principais motivos para trocar de software —, aproveite a migração para reorganizar a operação de caixa com base no nosso [guia de gestão financeira para clínicas](https://menosclique.com.br/blog/gestao-financeira-para-clinicas).
+Se o controle financeiro é hoje um dos seus maiores problemas — e costuma ser um dos principais motivos para trocar de software —, aproveite a migração para reorganizar a operação de caixa com base no nosso [guia de gestão financeira para clínicas](https://www.menosclique.com.br/blog/gestao-financeira-para-clinicas).
 
 ## Como escolher o novo fornecedor (e evitar trocar de novo)?
 
@@ -135,7 +135,7 @@ Trocar de sistema dá trabalho — então vale escolher bem para não repetir o 
 </tr>
 </table>
 
-Verifique também se o sistema atende às particularidades da sua área. Existem soluções pensadas por [sistema para clínicas por especialidade](https://www.menosclique.com.br/especialidades), com modelos de prontuário e fluxos específicos — o que reduz a necessidade de customização depois. E, se o agendamento é uma dor atual, revise as boas práticas no [guia de agendamento online para clínicas](https://menosclique.com.br/blog/agendamento-online-para-clinicas) antes de decidir.
+Verifique também se o sistema atende às particularidades da sua área. Existem soluções pensadas por [sistema para clínicas por especialidade](https://www.menosclique.com.br/especialidades), com modelos de prontuário e fluxos específicos — o que reduz a necessidade de customização depois. E, se o agendamento é uma dor atual, revise as boas práticas no [guia de agendamento online para clínicas](https://www.menosclique.com.br/blog/agendamento-online-para-clinicas) antes de decidir.
 
 Ferramentas modernas de gestão como a [MenosClique](https://www.menosclique.com.br) unificam prontuário, agenda e financeiro em um só lugar e oferecem apoio na entrada dos dados — o que reduz drasticamente o atrito da migração.
 

@@ -57,13 +57,13 @@ Nenhuma tática de recall salva um atendimento ruim. A base da fidelização é 
 - **Facilidade de contato:** canais organizados evitam a sensação de abandono entre consultas.
 - **Coerência:** a experiência precisa ser boa sempre, não só quando o profissional está de bom humor.
 
-Reduzir faltas também é parte da experiência — pacientes que faltam por esquecimento não são infiéis, apenas mal lembrados. Vale estruturar isso junto com suas [estratégias para reduzir o no-show](https://menosclique.com.br/blog/como-reduzir-faltas-na-clinica).
+Reduzir faltas também é parte da experiência — pacientes que faltam por esquecimento não são infiéis, apenas mal lembrados. Vale estruturar isso junto com suas [estratégias para reduzir o no-show](https://www.menosclique.com.br/blog/como-reduzir-faltas-na-clinica).
 
 ### 2. Agende o retorno antes de o paciente sair
 
 A tática de retenção mais subestimada é a mais simples: não deixar o paciente sair sem o próximo passo definido. Se o tratamento exige acompanhamento, o retorno deve ser agendado na própria recepção, ao fim da consulta. Isso elimina o atrito de "depois eu marco" — que na prática significa "não vou marcar".
 
-Quando o retorno não é imediato (por exemplo, uma revisão daqui a seis meses), registre a data prevista no sistema para que ela dispare um recall automático no momento certo. Um bom [sistema de gestão para clínicas](https://menosclique.com.br) permite marcar esse "próximo contato" e transformar a intenção em ação sem depender da memória da equipe.
+Quando o retorno não é imediato (por exemplo, uma revisão daqui a seis meses), registre a data prevista no sistema para que ela dispare um recall automático no momento certo. Um bom [sistema de gestão para clínicas](https://www.menosclique.com.br) permite marcar esse "próximo contato" e transformar a intenção em ação sem depender da memória da equipe.
 
 ### 3. Estruture um recall que funcione
 
@@ -73,7 +73,7 @@ Recall é o processo de lembrar ativamente o paciente de voltar. Ele resolve um 
 2. **Recall de tratamento em andamento:** para quem interrompeu um plano no meio (comum em odontologia, fisioterapia e estética).
 3. **Recall preventivo:** campanhas sazonais pertinentes à especialidade (check-up, vacinação, exames de rastreamento).
 
-O canal importa. O WhatsApp costuma ter as maiores taxas de leitura, mas exige cuidado com consentimento e finalidade — o contato precisa ser de saúde, personalizado e não pode virar spam. Estruture isso seguindo as boas práticas do nosso [guia de WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas).
+O canal importa. O WhatsApp costuma ter as maiores taxas de leitura, mas exige cuidado com consentimento e finalidade — o contato precisa ser de saúde, personalizado e não pode virar spam. Estruture isso seguindo as boas práticas do nosso [guia de WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas).
 
 ### 4. Reative pacientes inativos com método
 
@@ -84,7 +84,7 @@ Toda clínica tem uma "base adormecida": pacientes que já vieram, tiveram boa e
 - **Personalize a mensagem** citando o histórico de forma respeitosa, sem expor dados sensíveis.
 - **Facilite o reagendamento** com um link ou um horário já sugerido.
 
-Atenção: qualquer campanha de reativação deve respeitar a base legal de tratamento de dados e o direito do paciente de não ser contatado. Alinhe as ações com o seu [guia de conformidade com a LGPD](https://menosclique.com.br/blog/lgpd-para-clinicas) antes de disparar mensagens em massa.
+Atenção: qualquer campanha de reativação deve respeitar a base legal de tratamento de dados e o direito do paciente de não ser contatado. Alinhe as ações com o seu [guia de conformidade com a LGPD](https://www.menosclique.com.br/blog/lgpd-para-clinicas) antes de disparar mensagens em massa.
 
 ## Quais indicadores mostram se a fidelização está funcionando?
 
@@ -140,7 +140,7 @@ Fidelizar em escala é impossível na base da memória e do caderno. A tecnologi
 
 Diferentes especialidades têm ciclos de retorno distintos — a lógica de recall de um dentista não é a de um cardiologista. Por isso vale escolher uma ferramenta pensada para o seu contexto; veja opções por [sistema para clínicas por especialidade](https://www.menosclique.com.br/especialidades) e compare também as [alternativas de sistemas para clínicas](https://www.menosclique.com.br/alternativas) antes de decidir.
 
-Se você já usa um sistema, mas ele não te dá esses recursos de retenção, migrar pode valer a pena — e não precisa ser traumático. Reunimos as boas práticas no [guia de migração de sistema sem dor de cabeça](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
+Se você já usa um sistema, mas ele não te dá esses recursos de retenção, migrar pode valer a pena — e não precisa ser traumático. Reunimos as boas práticas no [guia de migração de sistema sem dor de cabeça](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas).
 
 ## Erros comuns que sabotam a fidelização
 
@@ -152,7 +152,7 @@ Antes de investir em táticas novas, elimine o que está drenando pacientes sile
 - **Comunicação genérica e excessiva:** mensagens sem relevância cansam e queimam o canal.
 - **Não medir nada:** sem taxa de retorno, você acha que está fidelizando quando pode estar só reciclando a base.
 
-Vale lembrar que fidelização e captação não competem — elas se reforçam. Uma agenda cheia de retornos previsíveis dá fôlego financeiro para investir melhor em captação, incluindo ações de [marketing médico dentro das regras do CFM](https://menosclique.com.br/blog/marketing-medico-para-clinicas). E uma precificação sustentável, tema do nosso guia de [precificação de consultas particulares](https://menosclique.com.br/blog/como-precificar-consultas-particulares), garante que cada paciente retido seja de fato rentável.
+Vale lembrar que fidelização e captação não competem — elas se reforçam. Uma agenda cheia de retornos previsíveis dá fôlego financeiro para investir melhor em captação, incluindo ações de [marketing médico dentro das regras do CFM](https://www.menosclique.com.br/blog/marketing-medico-para-clinicas). E uma precificação sustentável, tema do nosso guia de [precificação de consultas particulares](https://www.menosclique.com.br/blog/como-precificar-consultas-particulares), garante que cada paciente retido seja de fato rentável.
 
 ## Perguntas frequentes
 

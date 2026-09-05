@@ -52,7 +52,7 @@ O timing muda tudo. Enviar cedo demais captura uma impressão incompleta; tarde 
 
 ### 2. Defina o canal de envio
 
-Os canais mais usados por clínicas são WhatsApp, e-mail e SMS. O WhatsApp costuma ter a maior taxa de resposta por ser onde o paciente já se comunica com a clínica, mas exige atenção às regras de consentimento e comunicação. Vale revisar boas práticas no nosso [guia de WhatsApp para clínicas com CFM e LGPD](https://menosclique.com.br/blog/whatsapp-para-clinicas) antes de disparar mensagens.
+Os canais mais usados por clínicas são WhatsApp, e-mail e SMS. O WhatsApp costuma ter a maior taxa de resposta por ser onde o paciente já se comunica com a clínica, mas exige atenção às regras de consentimento e comunicação. Vale revisar boas práticas no nosso [guia de WhatsApp para clínicas com CFM e LGPD](https://www.menosclique.com.br/blog/whatsapp-para-clinicas) antes de disparar mensagens.
 
 Independentemente do canal, o tratamento de dados de saúde exige base legal e cuidado com privacidade. Consulte nosso [guia prático de LGPD para clínicas](https://www.menosclique.com.br/blog/lgpd-para-clinicas) para garantir que a coleta de opiniões esteja em conformidade.
 
@@ -118,7 +118,7 @@ Quando três ou quatro pacientes reclamam do mesmo ponto, você tem um problema 
 
 ### Conecte o NPS à jornada do paciente
 
-Cada nota reflete uma experiência que começa antes da consulta e termina depois dela. Por isso, o NPS rende mais quando cruzado com o mapeamento de todos os pontos de contato. Vale integrar esse trabalho ao seu processo de [mapeamento da jornada do paciente na clínica](https://menosclique.com.br/blog/jornada-do-paciente-na-clinica), identificando exatamente em qual etapa a experiência trava.
+Cada nota reflete uma experiência que começa antes da consulta e termina depois dela. Por isso, o NPS rende mais quando cruzado com o mapeamento de todos os pontos de contato. Vale integrar esse trabalho ao seu processo de [mapeamento da jornada do paciente na clínica](https://www.menosclique.com.br/blog/jornada-do-paciente-na-clinica), identificando exatamente em qual etapa a experiência trava.
 
 ### Feche o loop também com promotores
 
@@ -139,7 +139,7 @@ Muitos consultórios começam bem e abandonam a pesquisa por cometerem falhas ev
 
 Fazer NPS na planilha funciona no começo, mas escala mal. À medida que a clínica cresce, automatizar coleta, cálculo e acompanhamento economiza horas e evita erro. Um bom sistema de gestão permite disparar a pesquisa automaticamente após o atendimento, centralizar as respostas junto ao histórico do paciente e acompanhar a evolução do indicador em painéis.
 
-Se você está avaliando ferramentas ou pensando em trocar a atual, o [MenosClique — sistema de gestão para clínicas e consultórios](https://www.menosclique.com.br) integra agenda, prontuário e comunicação com o paciente em um só lugar, o que facilita fechar o ciclo entre atendimento e feedback. E se o receio é a troca, nosso [guia de migração de sistema sem dor de cabeça](https://menosclique.com.br/blog/migracao-de-sistema-para-clinicas) mostra como fazer a transição com segurança.
+Se você está avaliando ferramentas ou pensando em trocar a atual, o [MenosClique — sistema de gestão para clínicas e consultórios](https://www.menosclique.com.br) integra agenda, prontuário e comunicação com o paciente em um só lugar, o que facilita fechar o ciclo entre atendimento e feedback. E se o receio é a troca, nosso [guia de migração de sistema sem dor de cabeça](https://www.menosclique.com.br/blog/migracao-de-sistema-para-clinicas) mostra como fazer a transição com segurança.
 
 A pesquisa de satisfação, no fim, é um dos poucos indicadores que junta o lado humano e o lado gerencial da clínica: ela transforma a percepção subjetiva do paciente em um número que a gestão consegue acompanhar, comparar e melhorar mês após mês.
 
