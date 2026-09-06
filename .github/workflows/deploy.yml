@@ -40,7 +40,14 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H 179.198.109.50 >> ~/.ssh/known_hosts 2>/dev/null
+          # A identidade do servidor as vezes nao responde de primeira a partir do runner.
+          # Tenta ate 5 vezes antes de desistir (sem isso, uma falha de rede derruba o deploy).
+          for i in 1 2 3 4 5; do
+            ssh-keyscan -T 15 -H 179.198.109.50 >> ~/.ssh/known_hosts 2>/dev/null && break
+            echo "ssh-keyscan falhou (tentativa $i); nova tentativa em 10s..."
+            sleep 10
+          done
+          test -s ~/.ssh/known_hosts
 
       - name: Enviar o site para o servidor
         run: |
