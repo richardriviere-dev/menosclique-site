@@ -44,7 +44,9 @@ const orgSchema = {
     availableLanguage: "pt-BR",
     areaServed: "BR",
   }],
-  sameAs: [],
+  // Perfis oficiais da marca (sameAs): é por aqui que Google e motores de IA confirmam
+  // que site e páginas sociais são a MESMA entidade — base do painel de marca.
+  sameAs: ["https://www.linkedin.com/company/menosclique/"],
 };
 // Site como entidade (nome de marca nos resultados, base dos sitelinks).
 const webSiteSchema = {
