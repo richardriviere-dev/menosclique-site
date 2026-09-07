@@ -132,7 +132,12 @@ const softwareSchema = {
         gtag('consent', 'update', { analytics_storage: 'granted' });
       }
     } catch (e) {}
-    gtag('config', 'G-4QM2GV1K6C');
+    // linker: carimba o link para app.menosclique.com.br com o identificador da sessão.
+    // Sem isso, "visitou o site" e "criou a conta" viram DOIS visitantes e nenhuma campanha
+    // consegue provar de onde veio o cadastro.
+    gtag('config', 'G-4QM2GV1K6C', {
+      linker: { domains: ['menosclique.com.br', 'www.menosclique.com.br', 'app.menosclique.com.br'] }
+    });
     // Carrega o gtag.js só quando o navegador estiver ocioso ou na 1ª interação —
     // os comandos acima ficam na fila (dataLayer) e são processados quando o script chega.
     (function () {
