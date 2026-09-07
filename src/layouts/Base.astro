@@ -121,16 +121,23 @@ const softwareSchema = {
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    // Padrão: tudo negado até o usuário decidir.
+    // LGPD ≠ GDPR: a lei brasileira NÃO exige consentimento prévio para tudo. Medição de
+    // audiência (sem dado sensível, sem identificar pessoa) roda por LEGÍTIMO INTERESSE
+    // (art. 7º, IX) com aviso claro e recusa a um clique — modelo do guia de cookies da ANPD.
+    // Já PUBLICIDADE (remarketing) é invasiva: fica negada até consentimento explícito.
+    // Antes tudo era negado por padrão e metade dos visitantes ficava invisível.
     gtag('consent', 'default', {
-      ad_storage: 'denied', analytics_storage: 'denied',
-      ad_user_data: 'denied', ad_personalization: 'denied'
+      analytics_storage: 'granted',
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
     });
-    // Reaplica escolha salva em visitas seguintes.
+    // Quem recusou a medição (opt-out) continua fora em todas as visitas seguintes;
+    // quem aceitou publicidade libera também os cookies de anúncio.
     try {
-      if (localStorage.getItem('mc_consent') === 'granted') {
-        gtag('consent', 'update', { analytics_storage: 'granted' });
-      }
+      var mc = localStorage.getItem('mc_consent');
+      if (mc === 'denied') gtag('consent', 'update', { analytics_storage: 'denied' });
+      if (mc === 'ads')    gtag('consent', 'update', {
+        ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted'
+      });
     } catch (e) {}
     // linker: carimba o link para app.menosclique.com.br com o identificador da sessão.
     // Sem isso, "visitou o site" e "criou a conta" viram DOIS visitantes e nenhuma campanha
@@ -203,12 +210,13 @@ const softwareSchema = {
     </span>
   </a>
 
-  <!-- Banner de consentimento de cookies (LGPD) -->
-  <div class="cookie" id="cookieBanner" hidden role="dialog" aria-label="Aviso de cookies">
-    <p class="cookie__txt">Usamos cookies de análise para entender como o site é usado e melhorá-lo. Você pode aceitar ou recusar — a navegação continua normal.</p>
+  <!-- Aviso de cookies (LGPD): INFORMATIVO. A medição de audiência roda por legítimo
+       interesse; aqui o visitante é avisado e pode desativar a qualquer momento. -->
+  <div class="cookie" id="cookieBanner" hidden role="region" aria-label="Aviso de cookies">
+    <p class="cookie__txt">Usamos cookies para entender como o site é usado e melhorá-lo. Não usamos seus dados para publicidade. Você pode desativar a medição quando quiser. <a href="/privacidade">Saiba mais</a>.</p>
     <div class="cookie__act">
-      <button type="button" class="btn btn-ghost" id="cookieNo">Recusar</button>
-      <button type="button" class="btn btn-primary" id="cookieYes">Aceitar</button>
+      <button type="button" class="btn btn-ghost" id="cookieNo">Desativar medição</button>
+      <button type="button" class="btn btn-primary" id="cookieYes">Entendi</button>
     </div>
   </div>
 
@@ -254,6 +262,7 @@ const softwareSchema = {
             <a href="/quem-somos">Quem somos</a>
             <a href="/alternativas">Alternativas</a>
             <a href={`mailto:contato@menosclique.com.br`}>Contato</a>
+            <a href="/privacidade">Privacidade</a>
           </div>
         </div>
       </div>
@@ -359,18 +368,19 @@ const softwareSchema = {
     }, { rootMargin: "0px 0px -8% 0px", threshold: .08 });
     document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-    // Consentimento de cookies (LGPD) — mostra o banner só na 1ª visita/sem escolha salva.
+    // Aviso de cookies (LGPD) — informativo: aparece uma vez e não bloqueia a leitura.
+    // "Entendi" só registra que viu; "Desativar medição" é o opt-out do legítimo interesse.
     const cookie = document.getElementById("cookieBanner");
     let choice = null;
     try { choice = localStorage.getItem("mc_consent"); } catch (e) {}
     if (!choice && cookie) cookie.hidden = false;
     document.getElementById("cookieYes")?.addEventListener("click", () => {
-      try { localStorage.setItem("mc_consent", "granted"); } catch (e) {}
-      if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: "granted" });
+      try { localStorage.setItem("mc_consent", "seen"); } catch (e) {}
       if (cookie) cookie.hidden = true;
     });
     document.getElementById("cookieNo")?.addEventListener("click", () => {
       try { localStorage.setItem("mc_consent", "denied"); } catch (e) {}
+      if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: "denied" });
       if (cookie) cookie.hidden = true;
     });
   </script>

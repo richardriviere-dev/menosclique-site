@@ -29,6 +29,7 @@ export async function GET(context: APIContext) {
 - [Alternativas](${site}/alternativas/): comparação honesta com outros sistemas para clínicas.
 - [Teste grátis](${site}/teste-gratis/): 14 dias, sem cartão — conta criada em 2 minutos.
 - [Quem somos](${site}/quem-somos/): a empresa e a filosofia "menos é mais".
+- [Política de Privacidade](${site}/privacidade/): o que o site coleta, base legal (legítimo interesse) e como desativar a medição.
 - [Blog](${site}/blog/): guias práticos de gestão de clínicas (feed: ${site}/rss.xml).
 
 ## Funcionalidades
