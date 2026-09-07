@@ -116,6 +116,24 @@ const softwareSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
   <link rel="alternate" type="application/rss+xml" title="Blog MenosClique" href="/rss.xml" />
 
+  <!-- Pixel do Meta (Facebook/Instagram) — PUBLICIDADE exige consentimento explícito na LGPD
+       (é tratamento invasivo, não cabe em legítimo interesse como a medição de audiência).
+       Por isso só carrega quando o visitante autoriza; o opt-in vive no aviso de cookies.
+       A conversão de cadastro NÃO depende disto: é enviada pelo servidor (API de Conversões). -->
+  <script is:inline>
+    window.mcLoadPixel = function () {
+      if (window.fbq) return;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1619188646507855');
+      fbq('track', 'PageView');
+    };
+    try { if (localStorage.getItem('mc_consent') === 'ads') window.mcLoadPixel(); } catch (e) {}
+  </script>
+
   <!-- Google Analytics 4 com Consent Mode v2 (LGPD) — gtag.js é adiado (idle/1ª interação) p/ não pesar no TBT -->
   <script is:inline>
     window.dataLayer = window.dataLayer || [];
@@ -213,10 +231,10 @@ const softwareSchema = {
   <!-- Aviso de cookies (LGPD): INFORMATIVO. A medição de audiência roda por legítimo
        interesse; aqui o visitante é avisado e pode desativar a qualquer momento. -->
   <div class="cookie" id="cookieBanner" hidden role="region" aria-label="Aviso de cookies">
-    <p class="cookie__txt">Usamos cookies para entender como o site é usado e melhorá-lo. Não usamos seus dados para publicidade. Você pode desativar a medição quando quiser. <a href="/privacidade">Saiba mais</a>.</p>
+    <p class="cookie__txt">Usamos cookies para entender como o site é usado e melhorá-lo. Com a sua permissão, também para medir a eficácia dos nossos anúncios. <a href="/privacidade">Saiba mais</a>.</p>
     <div class="cookie__act">
-      <button type="button" class="btn btn-ghost" id="cookieNo">Desativar medição</button>
-      <button type="button" class="btn btn-primary" id="cookieYes">Entendi</button>
+      <button type="button" class="btn btn-ghost" id="cookieNo">Só o essencial</button>
+      <button type="button" class="btn btn-primary" id="cookieYes">Permitir</button>
     </div>
   </div>
 
@@ -375,12 +393,17 @@ const softwareSchema = {
     try { choice = localStorage.getItem("mc_consent"); } catch (e) {}
     if (!choice && cookie) cookie.hidden = false;
     document.getElementById("cookieYes")?.addEventListener("click", () => {
-      try { localStorage.setItem("mc_consent", "seen"); } catch (e) {}
+      // OPT-IN de publicidade: libera cookies de anúncio e carrega o pixel na hora.
+      try { localStorage.setItem("mc_consent", "ads"); } catch (e) {}
+      if (typeof window.gtag === "function") window.gtag("consent", "update", {
+        ad_storage: "granted", ad_user_data: "granted", ad_personalization: "granted"
+      });
+      if (typeof window.mcLoadPixel === "function") window.mcLoadPixel();
       if (cookie) cookie.hidden = true;
     });
     document.getElementById("cookieNo")?.addEventListener("click", () => {
-      try { localStorage.setItem("mc_consent", "denied"); } catch (e) {}
-      if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: "denied" });
+      // Só o essencial: medição de audiência segue (legítimo interesse), publicidade NÃO.
+      try { localStorage.setItem("mc_consent", "seen"); } catch (e) {}
       if (cookie) cookie.hidden = true;
     });
   </script>
