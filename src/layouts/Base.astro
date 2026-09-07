@@ -214,6 +214,20 @@ const softwareSchema = {
           <div class="foot__logo"><img src="/menosclique-icon.png" alt="" width="30" height="30" /><span>menos<b>clique</b></span></div>
           <p>Sistema de gestão para clínicas e consultórios. Agenda, prontuário, financeiro e documentos em um só lugar.</p>
           <p class="foot__slogan">Porque menos é mais.</p>
+          <!-- Perfis oficiais: link REAL (o Google pesa mais que a declaração em sameAs)
+               e caminho para o visitante conferir a empresa antes de assinar. -->
+          <div class="foot__social">
+            <a href="https://www.linkedin.com/company/menosclique/" target="_blank" rel="noopener me"
+               aria-label="MenosClique no LinkedIn" title="MenosClique no LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://wa.me/5511987779910" target="_blank" rel="noopener"
+               aria-label="Falar com o MenosClique no WhatsApp" title="Falar no WhatsApp">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.6.8 5.1 2.2 7.2L3 29l6.2-2.1c2 1.1 4.4 1.7 6.8 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.2-.6-6-1.7l-.4-.3-3.7 1.2 1.2-3.5-.3-.4A10.4 10.4 0 0 1 5.4 15.8C5.4 10 10.2 5.4 16 5.4s10.6 4.6 10.6 10.4S21.8 26.4 16 26.4zm5.8-7.7c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.3 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.2.9 3 .9 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
         </div>
         <div class="foot__cols">
           <div>
@@ -277,6 +291,13 @@ const softwareSchema = {
     .foot__logo span { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: #eafcfd; letter-spacing: -.02em; }
     .foot__logo b { color: var(--turq); font-weight: 700; }
     .foot__brand p { color: #9dbdc0; max-width: 340px; font-size: .96rem; }
+    /* Perfis oficiais — alvo de toque confortável (44px) em qualquer largura. */
+    .foot__social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .foot__social a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px;
+      border: 1px solid rgba(255,255,255,.16); border-radius: 999px; color: #cfe9ea; font-size: .88rem; font-weight: 600;
+      transition: color .2s, border-color .2s, background .2s; }
+    .foot__social a:hover, .foot__social a:focus-visible { color: #04333a; background: var(--turq); border-color: transparent; }
+    .foot__social svg { width: 17px; height: 17px; }
     .foot__slogan { margin-top: 12px; color: var(--turq) !important; font-family: var(--font-display); font-weight: 600; }
     .foot__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .foot__cols h3 { color: #fff; font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
