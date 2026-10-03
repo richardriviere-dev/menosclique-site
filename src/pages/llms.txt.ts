@@ -1,4 +1,5 @@
 import { TRIAL_DAYS } from "../data/trial";
+import { WHATSAPP_DISPLAY } from "../data/contact";
 // llms.txt — GERADO no build a partir das MESMAS fontes do site (preços, especialidades,
 // alternativas e artigos), no formato da especificação llms.txt: H1, resumo em blockquote,
 // seções H2 com listas de links "- [Título](url): descrição". Nunca mais fica desatualizado
@@ -58,7 +59,7 @@ ${posts.map((p) => `- [${p.data.title}](${site}/blog/${p.id}/): ${p.data.descrip
 
 ## Contato
 - Criar conta / teste grátis: https://app.menosclique.com.br/Register
-- WhatsApp comercial: +55 11 98777-9910
+- WhatsApp comercial: ${WHATSAPP_DISPLAY}
 - E-mail: contato@menosclique.com.br
 `;
   return new Response(txt, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
