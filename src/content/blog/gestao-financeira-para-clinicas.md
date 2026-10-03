@@ -41,4 +41,4 @@ Gestão financeira não é só registrar — é **enxergar**. Relatórios de fat
 
 A gestão financeira da sua clínica não precisa ser um quebra-cabeça. Quando o financeiro nasce do próprio atendimento, o controle vem junto — sem retrabalho.
 
-O **MenosClique** conecta agenda, atendimento e financeiro num só lugar, com repasse automático, pacotes e relatórios. [Experimente grátis por 14 dias](https://app.menosclique.com.br/Register), sem cartão de crédito.
+O **MenosClique** conecta agenda, atendimento e financeiro num só lugar, com repasse automático, pacotes e relatórios. [Experimente grátis por 7 dias](https://app.menosclique.com.br/Register), sem cartão de crédito.

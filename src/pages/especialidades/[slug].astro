@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../../data/trial";
 import Base from "../../layouts/Base.astro";
 import ScreenFrame from "../../components/ScreenFrame.astro";
 import { especialidades } from "../../data/especialidades";
@@ -26,7 +27,7 @@ const recursos = c?.recursos ?? [
 
 // FAQ específico da especialidade + 2 perguntas transversais (preço e teste).
 const faqsGerais = [
-  { q: "Tem teste grátis?", a: "Tem: 14 dias grátis, com todas as funcionalidades e sem precisar de cartão de crédito." },
+  { q: "Tem teste grátis?", a: `Tem: ${TRIAL_DAYS} dias grátis, com todas as funcionalidades e sem precisar de cartão de crédito.` },
   { q: "Quanto custa?", a: "Os planos começam em R$ 69,90 por mês (Profissional). Todas as funcionalidades estão em todos os planos — você escolhe pelo número de profissionais." },
 ];
 const faqs = [...(c?.faqs ?? []), ...faqsGerais];
@@ -34,7 +35,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
 ---
 <Base
   title={`Sistema para ${e.profissional} — MenosClique`}
-  description={`Sistema para ${e.especialidade.toLowerCase()}: agenda, prontuário personalizável, financeiro e documentos em PDF num só lugar. Teste grátis 14 dias, sem cartão.`}
+  description={`Sistema para ${e.especialidade.toLowerCase()}: agenda, prontuário personalizável, financeiro e documentos em PDF num só lugar. Teste grátis ${TRIAL_DAYS} dias, sem cartão.`}
   path={`/especialidades/${e.slug}`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -52,7 +53,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
           <a href="/precos" class="btn btn-ghost btn-lg">Ver planos</a>
         </div>
         <div class="trustline" style="margin-top:22px">
-          <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>14 dias grátis</span>
+          <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>{TRIAL_DAYS} dias grátis</span>
           <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Sem cartão</span>
           <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Migração assistida</span>
         </div>
@@ -172,7 +173,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
     <div class="container">
       <div class="ecta reveal">
         <div class="ecta__bg" aria-hidden="true"></div>
-        <h2>Experimente na sua {e.especialidade.toLowerCase()} por 14 dias.</h2>
+        <h2>Experimente na sua {e.especialidade.toLowerCase()} por {TRIAL_DAYS} dias.</h2>
         <p class="lead">Grátis, sem cartão de crédito, com migração assistida dos seus pacientes.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>

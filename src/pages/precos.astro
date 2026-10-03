@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../data/trial";
 import Base from "../layouts/Base.astro";
 import BillingToggle from "../components/BillingToggle.astro";
 import { plans } from "../data/plans";
@@ -21,8 +22,8 @@ const included = [
 ];
 
 const faqs = [
-  { q: "Preciso de cartão de crédito para testar?", a: "Não. O teste grátis de 14 dias não pede cartão de crédito. Você cria a conta e começa a usar na hora." },
-  { q: "Quantos dias dura o teste grátis?", a: "São 14 dias grátis com acesso a todas as funcionalidades. Você só escolhe um plano quando decidir continuar." },
+  { q: "Preciso de cartão de crédito para testar?", a: `Não. O teste grátis de ${TRIAL_DAYS} dias não pede cartão de crédito. Você cria a conta e começa a usar na hora.` },
+  { q: "Quantos dias dura o teste grátis?", a: `São ${TRIAL_DAYS} dias grátis com acesso a todas as funcionalidades. Você só escolhe um plano quando decidir continuar.` },
   { q: "Qual a diferença entre o plano mensal e o anual?", a: "No mensal você paga mês a mês, sem fidelidade. No anual você paga o equivalente a 10 mensalidades e usa por 12 meses — 2 meses grátis. O pagamento do anual é feito de uma vez, à vista ou parcelado em até 12x no cartão de crédito." },
   { q: "Posso trocar de plano depois?", a: "Sim. Você pode subir ou descer de plano conforme sua clínica cresce. A cobrança se ajusta ao novo plano." },
   { q: "Como funciona o profissional extra no Clínica Plus?", a: "O Clínica Plus inclui 4 profissionais de saúde. Precisando de mais, cada profissional adicional custa R$ 39,90 por mês no plano mensal — no anual, sai por R$ 33,25 por mês." },
@@ -44,7 +45,7 @@ const faqSchema = {
 ---
 <Base
   title="Preços e planos — MenosClique a partir de R$ 58,25/mês"
-  description="Planos a partir de R$ 58,25/mês no anual (2 meses grátis) ou R$ 69,90/mês no mensal, com todas as funcionalidades. Teste grátis 14 dias, sem cartão."
+  description={`Planos a partir de R$ 58,25/mês no anual (2 meses grátis) ou R$ 69,90/mês no mensal, com todas as funcionalidades. Teste grátis ${TRIAL_DAYS} dias, sem cartão.`}
   path="/precos"
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -55,7 +56,7 @@ const faqSchema = {
     <div class="container center narrow">
       <span class="eyebrow center-line">Planos e preços</span>
       <h1>Preço simples,<br><span class="grad">como tudo aqui.</span></h1>
-      <p class="lead">Comece com <strong>14 dias grátis</strong>, sem cartão de crédito. Todas as funcionalidades em todos os planos — você escolhe só pelo tamanho da sua equipe.</p>
+      <p class="lead">Comece com <strong>{TRIAL_DAYS} dias grátis</strong>, sem cartão de crédito. Todas as funcionalidades em todos os planos — você escolhe só pelo tamanho da sua equipe.</p>
       <BillingToggle />
     </div>
 
@@ -101,7 +102,7 @@ const faqSchema = {
           </div>
         ))}
       </div>
-      <p class="center trial-note"><span>14 dias grátis</span> · <span>sem cartão de crédito</span> · <span>cancele quando quiser</span></p>
+      <p class="center trial-note"><span>{TRIAL_DAYS} dias grátis</span> · <span>sem cartão de crédito</span> · <span>cancele quando quiser</span></p>
     </div>
   </section>
 
@@ -145,7 +146,7 @@ const faqSchema = {
     <div class="container">
       <div class="pcta reveal">
         <div class="pcta__bg" aria-hidden="true"></div>
-        <h2>Experimente grátis por 14 dias.</h2>
+        <h2>Experimente grátis por {TRIAL_DAYS} dias.</h2>
         <p class="lead">Sem cartão. Sem compromisso. Com migração assistida.</p>
         <div class="pcta__row"><a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a></div>
       </div>

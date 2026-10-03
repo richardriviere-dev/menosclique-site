@@ -45,4 +45,4 @@ Você não melhora o que não mede. Acompanhe a taxa de faltas por período e po
 
 Reduzir o no-show não exige mágica — exige processo e as ferramentas certas. Uma agenda organizada, confirmação por WhatsApp e acompanhamento dos status já resolvem a maior parte do problema.
 
-O **MenosClique** reúne tudo isso num sistema simples de usar. [Experimente grátis por 14 dias](https://app.menosclique.com.br/Register), sem cartão de crédito, e veja sua agenda mais cheia.
+O **MenosClique** reúne tudo isso num sistema simples de usar. [Experimente grátis por 7 dias](https://app.menosclique.com.br/Register), sem cartão de crédito, e veja sua agenda mais cheia.

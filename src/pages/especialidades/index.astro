@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../../data/trial";
 import Base from "../../layouts/Base.astro";
 import { especialidades, type Grupo } from "../../data/especialidades";
 
@@ -8,7 +9,7 @@ const porGrupo = grupos.map((g) => ({ grupo: g, itens: especialidades.filter((e)
 ---
 <Base
   title="Sistema para clínicas por especialidade — MenosClique"
-  description="Sistema de gestão sob medida para cada especialidade: dermatologia, odontologia, psicologia, fisioterapia e mais. Teste grátis 14 dias."
+  description={`Sistema de gestão sob medida para cada especialidade: dermatologia, odontologia, psicologia, fisioterapia e mais. Teste grátis ${TRIAL_DAYS} dias.`}
   path="/especialidades"
 >
   <section class="ehero">
@@ -48,7 +49,7 @@ const porGrupo = grupos.map((g) => ({ grupo: g, itens: especialidades.filter((e)
       <div class="ecta reveal">
         <div class="ecta__bg" aria-hidden="true"></div>
         <h2>Não achou a sua especialidade?</h2>
-        <p class="lead">O prontuário personalizável do MenosClique atende qualquer especialidade. Experimente grátis por 14 dias.</p>
+        <p class="lead">O prontuário personalizável do MenosClique atende qualquer especialidade. Experimente grátis por {TRIAL_DAYS} dias.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>
     </div>

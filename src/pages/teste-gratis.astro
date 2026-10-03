@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../data/trial";
 import Base from "../layouts/Base.astro";
 import ScreenFrame from "../components/ScreenFrame.astro";
 const register = "https://app.menosclique.com.br/Register";
@@ -9,21 +10,21 @@ const passos = [
   { n: "3", t: "Comece a atender", d: "Agenda, prontuário e financeiro prontos. Sua equipe aprende no primeiro dia." },
 ];
 const ganhos = [
-  "Acesso a todas as funcionalidades por 14 dias",
+  `Acesso a todas as funcionalidades por ${TRIAL_DAYS} dias`,
   "Sem cartão de crédito e sem compromisso",
   "Migração assistida dos seus pacientes",
   "Suporte humano para tirar suas dúvidas",
 ];
 const faqs = [
-  { q: "O teste é realmente grátis?", a: "Sim. São 14 dias com acesso total, sem pedir cartão de crédito. Você só escolhe um plano se decidir continuar." },
+  { q: "O teste é realmente grátis?", a: `Sim. São ${TRIAL_DAYS} dias com acesso total, sem pedir cartão de crédito. Você só escolhe um plano se decidir continuar.` },
   { q: "O que acontece quando o teste acaba?", a: "Avisamos por e-mail com antecedência. Se você não escolher um plano, o acesso é pausado — seus dados ficam guardados com segurança." },
   { q: "Preciso instalar algo?", a: "Não. O MenosClique é 100% online: você acessa pelo navegador, de qualquer computador." },
 ];
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
 ---
 <Base
-  title="Teste grátis — MenosClique | 14 dias sem cartão de crédito"
-  description="Experimente o MenosClique grátis por 14 dias, com todas as funcionalidades e sem cartão de crédito. Crie a conta da sua clínica em 2 minutos."
+  title={`Teste grátis — MenosClique | ${TRIAL_DAYS} dias sem cartão de crédito`}
+  description={`Experimente o MenosClique grátis por ${TRIAL_DAYS} dias, com todas as funcionalidades e sem cartão de crédito. Crie a conta da sua clínica em 2 minutos.`}
   path="/teste-gratis"
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -35,7 +36,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
       <div class="thero__copy">
         <span class="eyebrow">Teste grátis</span>
         <h1>Comece grátis em <span class="grad">menos de 2 minutos.</span></h1>
-        <p class="lead">14 dias com tudo liberado, sem cartão de crédito. Sinta na prática como a sua clínica funciona com menos cliques.</p>
+        <p class="lead">{TRIAL_DAYS} dias com tudo liberado, sem cartão de crédito. Sinta na prática como a sua clínica funciona com menos cliques.</p>
         <div class="thero__cta">
           <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
           <a href="/precos" class="btn btn-ghost btn-lg">Ver planos</a>
@@ -89,7 +90,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
       <div class="tcta reveal">
         <div class="tcta__bg" aria-hidden="true"></div>
         <h2>Sua clínica com menos cliques começa agora.</h2>
-        <p class="lead">14 dias grátis. Sem cartão. Sem compromisso.</p>
+        <p class="lead">{TRIAL_DAYS} dias grátis. Sem cartão. Sem compromisso.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>
     </div>

@@ -1,11 +1,12 @@
 ---
+import { TRIAL_DAYS } from "../../data/trial";
 import Base from "../../layouts/Base.astro";
 import { concorrentes } from "../../data/concorrentes";
 const register = "https://app.menosclique.com.br/Register";
 ---
 <Base
   title="Alternativas a sistemas para clínicas — MenosClique"
-  description="Compare o MenosClique com iClinic, Feegow, Amplimed e outros sistemas para clínicas. Simples, completo e com preço justo. Teste grátis 14 dias."
+  description={`Compare o MenosClique com iClinic, Feegow, Amplimed e outros sistemas para clínicas. Simples, completo e com preço justo. Teste grátis ${TRIAL_DAYS} dias.`}
   path="/alternativas"
 >
   <section class="ahero">
@@ -15,7 +16,7 @@ const register = "https://app.menosclique.com.br/Register";
       <h1>Pensando em trocar de <span class="grad">sistema?</span></h1>
       <p class="lead">Se você já usa outro sistema para clínicas e sente que ele é complicado ou caro demais, veja por que tantas clínicas escolhem a simplicidade do MenosClique — e como é fácil migrar.</p>
       <div class="ahero__cta">
-        <a href={register} class="btn btn-primary btn-lg">Testar grátis por 14 dias</a>
+        <a href={register} class="btn btn-primary btn-lg">Testar grátis por {TRIAL_DAYS} dias</a>
         <a href="/precos" class="btn btn-ghost btn-lg">Ver preços</a>
       </div>
     </div>
@@ -41,7 +42,7 @@ const register = "https://app.menosclique.com.br/Register";
       <div class="ecta reveal">
         <div class="ecta__bg" aria-hidden="true"></div>
         <h2>A melhor comparação é testar.</h2>
-        <p class="lead">14 dias grátis, sem cartão, com migração assistida dos seus pacientes.</p>
+        <p class="lead">{TRIAL_DAYS} dias grátis, sem cartão, com migração assistida dos seus pacientes.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>
     </div>

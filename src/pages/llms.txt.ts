@@ -1,3 +1,4 @@
+import { TRIAL_DAYS } from "../data/trial";
 // llms.txt — GERADO no build a partir das MESMAS fontes do site (preços, especialidades,
 // alternativas e artigos), no formato da especificação llms.txt: H1, resumo em blockquote,
 // seções H2 com listas de links "- [Título](url): descrição". Nunca mais fica desatualizado
@@ -19,7 +20,7 @@ export async function GET(context: APIContext) {
 
   const txt = `# MenosClique
 
-> Sistema de gestão para clínicas e consultórios: agenda, prontuário eletrônico, financeiro e documentos em um só sistema, simples de usar. Slogan: "Porque menos é mais." Software brasileiro, 100% online (SaaS), para clínicas médicas, odontológicas e de saúde. Teste grátis por 14 dias, sem cartão de crédito.
+> Sistema de gestão para clínicas e consultórios: agenda, prontuário eletrônico, financeiro e documentos em um só sistema, simples de usar. Slogan: "Porque menos é mais." Software brasileiro, 100% online (SaaS), para clínicas médicas, odontológicas e de saúde. Teste grátis por ${TRIAL_DAYS} dias, sem cartão de crédito.
 
 ## Páginas principais
 - [Início](${site}/): visão geral do sistema, telas reais e planos.
@@ -27,7 +28,7 @@ export async function GET(context: APIContext) {
 - [Preços](${site}/precos/): planos mensal e anual, todas as funcionalidades em todos os planos.
 - [Especialidades](${site}/especialidades/): como o sistema atende cada especialidade.
 - [Alternativas](${site}/alternativas/): comparação honesta com outros sistemas para clínicas.
-- [Teste grátis](${site}/teste-gratis/): 14 dias, sem cartão — conta criada em 2 minutos.
+- [Teste grátis](${site}/teste-gratis/): ${TRIAL_DAYS} dias, sem cartão — conta criada em 2 minutos.
 - [Quem somos](${site}/quem-somos/): a empresa e a filosofia "menos é mais".
 - [Política de Privacidade](${site}/privacidade/): o que o site coleta, base legal (legítimo interesse) e como desativar a medição.
 - [Blog](${site}/blog/): guias práticos de gestão de clínicas (feed: ${site}/rss.xml).
@@ -44,7 +45,7 @@ export async function GET(context: APIContext) {
 
 ## Planos e preços (preço de lançamento)
 ${planos.join("\n")}
-- Todas as funcionalidades estão em todos os planos. Teste grátis por 14 dias, sem cartão de crédito. Cancele quando quiser.
+- Todas as funcionalidades estão em todos os planos. Teste grátis por ${TRIAL_DAYS} dias, sem cartão de crédito. Cancele quando quiser.
 
 ## Especialidades atendidas
 ${especialidades.map((e) => `- [Sistema para ${e.profissional}](${site}/especialidades/${e.slug}/)`).join("\n")}

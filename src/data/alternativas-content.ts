@@ -1,3 +1,4 @@
+import { TRIAL_DAYS } from "./trial";
 // Conteúdo ÚNICO por concorrente (SEO/GEO de fundo de funil). Complementa concorrentes.ts.
 // PRINCÍPIO (herdado): honestidade. Nenhuma afirmação falsa, negativa ou não verificável
 // sobre o concorrente — a descrição dele é neutra e pública. Toda a diferenciação é feita
@@ -19,7 +20,7 @@ export const alternativasConteudo: Record<string, AltConteudo> = {
     ],
     idealPara: "clínicas e consultórios que querem um sistema completo, mas simples de usar e com preço previsível — sem pagar por módulos que não vão utilizar.",
     faqs: [
-      { q: "Qual a diferença do MenosClique para o iClinic?", a: "As duas são ferramentas de gestão para clínicas. A proposta do MenosClique é a simplicidade: tudo incluído em todos os planos, preço transparente a partir de R$ 69,90 e uma curva de aprendizado curta. A melhor forma de comparar é testar 14 dias grátis, sem cartão." },
+      { q: "Qual a diferença do MenosClique para o iClinic?", a: `As duas são ferramentas de gestão para clínicas. A proposta do MenosClique é a simplicidade: tudo incluído em todos os planos, preço transparente a partir de R$ 69,90 e uma curva de aprendizado curta. A melhor forma de comparar é testar ${TRIAL_DAYS} dias grátis, sem cartão.` },
       { q: "Consigo trazer meus dados do iClinic?", a: "Oferecemos migração assistida de pacientes para você começar rápido, sem redigitar tudo. Fale com a gente durante o teste grátis que ajudamos você a organizar a importação." }
     ]
   },
@@ -31,7 +32,7 @@ export const alternativasConteudo: Record<string, AltConteudo> = {
     idealPara: "clínicas e consultórios que acham as plataformas corporativas robustas demais e querem simplicidade sem abrir mão do essencial.",
     faqs: [
       { q: "O MenosClique serve para clínica com mais de uma unidade?", a: "Sim. O MenosClique é multi-unidade e multiusuário, com permissões por cargo (Admin, Recepção, Financeiro, Profissional) e dados isolados por clínica — só que sem a complexidade de uma plataforma corporativa." },
-      { q: "Preciso de um sistema robusto como o Feegow?", a: "Depende do porte da operação. Se você sente que paga por complexidade que não usa, o MenosClique entrega o essencial de forma simples. Teste 14 dias grátis e veja se atende à sua rotina." }
+      { q: "Preciso de um sistema robusto como o Feegow?", a: `Depende do porte da operação. Se você sente que paga por complexidade que não usa, o MenosClique entrega o essencial de forma simples. Teste ${TRIAL_DAYS} dias grátis e veja se atende à sua rotina.` }
     ]
   },
   "amplimed": {
@@ -59,7 +60,7 @@ export const alternativasConteudo: Record<string, AltConteudo> = {
   "ninsaude": {
     intro: [
       "O Ninsaúde é uma plataforma de gestão para clínicas e consultórios, com uma proposta ampla de recursos para a rotina da saúde. É uma opção conhecida entre quem procura organizar a operação.",
-      "O MenosClique aposta na simplicidade como diferencial: em vez de muitas telas e configurações, entrega direto o que a clínica usa — agenda, prontuário, financeiro e documentos — de forma que a equipe aprende rápido. Tudo em todos os planos, a partir de R$ 69,90, com 14 dias grátis para testar sem cartão."
+      `O MenosClique aposta na simplicidade como diferencial: em vez de muitas telas e configurações, entrega direto o que a clínica usa — agenda, prontuário, financeiro e documentos — de forma que a equipe aprende rápido. Tudo em todos os planos, a partir de R$ 69,90, com ${TRIAL_DAYS} dias grátis para testar sem cartão.`
     ],
     idealPara: "clínicas que querem ir direto ao ponto, com um sistema enxuto que a equipe domina rápido e um preço que cabe no orçamento.",
     faqs: [
@@ -114,12 +115,12 @@ export const alternativasConteudo: Record<string, AltConteudo> = {
   "medplus": {
     intro: [
       "O MedPlus é um software de gestão para consultórios e clínicas, com recursos para organizar atendimento e rotina. É uma das opções disponíveis para quem busca gestão na saúde.",
-      "O MenosClique se diferencia pela simplicidade e pela transparência: agenda, prontuário personalizável, financeiro e documentos num sistema que a equipe aprende rápido, com todas as funcionalidades em todos os planos e preço a partir de R$ 69,90 — mais 14 dias grátis, sem cartão, para decidir com calma."
+      `O MenosClique se diferencia pela simplicidade e pela transparência: agenda, prontuário personalizável, financeiro e documentos num sistema que a equipe aprende rápido, com todas as funcionalidades em todos os planos e preço a partir de R$ 69,90 — mais ${TRIAL_DAYS} dias grátis, sem cartão, para decidir com calma.`
     ],
     idealPara: "consultórios e clínicas que valorizam simplicidade, preço transparente e tudo incluído desde o primeiro plano.",
     faqs: [
       { q: "O que está incluído no plano do MenosClique?", a: "Tudo: agenda, prontuário eletrônico, financeiro e repasse, pacotes, documentos em PDF, confirmação por WhatsApp, relatórios, multi-unidade e backup. Você escolhe apenas pelo número de profissionais." },
-      { q: "Consigo testar antes de contratar?", a: "Sim, são 14 dias grátis com todas as funcionalidades e sem precisar de cartão de crédito. Se decidir seguir, a migração dos pacientes é assistida." }
+      { q: "Consigo testar antes de contratar?", a: `Sim, são ${TRIAL_DAYS} dias grátis com todas as funcionalidades e sem precisar de cartão de crédito. Se decidir seguir, a migração dos pacientes é assistida.` }
     ]
   },
   "doctoralia": {

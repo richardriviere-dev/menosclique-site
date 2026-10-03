@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../data/trial";
 import Base from "../layouts/Base.astro";
 import ScreenFrame from "../components/ScreenFrame.astro";
 import FeatureSection from "../components/FeatureSection.astro";
@@ -91,7 +92,7 @@ const sections = [
 ---
 <Base
   title="Funcionalidades do MenosClique — sistema para clínicas"
-  description="Agenda, prontuário eletrônico, financeiro, documentos em PDF, confirmação por WhatsApp e relatórios: tudo do MenosClique. Teste grátis por 14 dias."
+  description={`Agenda, prontuário eletrônico, financeiro, documentos em PDF, confirmação por WhatsApp e relatórios: tudo do MenosClique. Teste grátis por ${TRIAL_DAYS} dias.`}
   path="/funcionalidades"
 >
   <!-- HERO -->
@@ -119,7 +120,7 @@ const sections = [
       <div class="fcta reveal">
         <div class="fcta__bg" aria-hidden="true"></div>
         <h2>Veja tudo isso funcionando na sua clínica.</h2>
-        <p class="lead">14 dias grátis, sem cartão de crédito, com migração assistida dos seus pacientes.</p>
+        <p class="lead">{TRIAL_DAYS} dias grátis, sem cartão de crédito, com migração assistida dos seus pacientes.</p>
         <div class="fcta__row">
           <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
           <a href="/precos" class="btn btn-ghost btn-lg">Ver planos e preços</a>

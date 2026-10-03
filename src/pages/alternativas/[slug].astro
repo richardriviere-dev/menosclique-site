@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../../data/trial";
 import Base from "../../layouts/Base.astro";
 import ScreenFrame from "../../components/ScreenFrame.astro";
 import { concorrentes } from "../../data/concorrentes";
@@ -18,15 +19,15 @@ const razoes = [
   { t: "Menos cliques, de verdade", d: "Simplicidade é o nosso produto. A equipe aprende em minutos, sem treinamento longo nem manual grosso." },
   { t: "Tudo incluído em todos os planos", d: "Nada de funcionalidade presa em plano caro. Você escolhe pelo número de profissionais — o resto vem completo." },
   { t: "Preço transparente", d: "Planos a partir de R$ 69,90 por mês, sem letra miúda. Você sabe exatamente o que paga." },
-  { t: "14 dias grátis, sem cartão", d: "Teste com calma, com todas as funcionalidades, antes de decidir. Sem compromisso." },
+  { t: `${TRIAL_DAYS} dias grátis, sem cartão`, d: "Teste com calma, com todas as funcionalidades, antes de decidir. Sem compromisso." },
   { t: "Migração assistida", d: "A gente te ajuda a trazer seus pacientes para você começar rápido, sem digitar tudo de novo." },
   { t: "Suporte humano", d: "Gente de verdade para te ajudar — não um robô que empurra você para uma página de ajuda." },
 ];
 
 const faqsGerais = [
-  { q: `O MenosClique é uma boa alternativa ao ${c.nome}?`, a: `Se você busca um sistema para clínicas simples de usar, com todas as funcionalidades em todos os planos e preço transparente a partir de R$ 69,90, sim. A melhor forma de saber é testar 14 dias grátis, sem cartão.` },
+  { q: `O MenosClique é uma boa alternativa ao ${c.nome}?`, a: `Se você busca um sistema para clínicas simples de usar, com todas as funcionalidades em todos os planos e preço transparente a partir de R$ 69,90, sim. A melhor forma de saber é testar ${TRIAL_DAYS} dias grátis, sem cartão.` },
   { q: "Consigo migrar meus pacientes?", a: "Sim. Oferecemos migração assistida de pacientes para você começar rápido, sem retrabalho." },
-  { q: "Preciso de cartão de crédito para testar?", a: "Não. O teste grátis de 14 dias não pede cartão de crédito." },
+  { q: "Preciso de cartão de crédito para testar?", a: `Não. O teste grátis de ${TRIAL_DAYS} dias não pede cartão de crédito.` },
   { q: "Quais funcionalidades o MenosClique tem?", a: "Agenda completa, prontuário eletrônico personalizável, financeiro e repasse, documentos em PDF, pacotes e sessões, confirmação por WhatsApp, relatórios, multi-unidade, backup automático e mais — tudo em todos os planos." },
 ];
 // FAQ específico do concorrente vem primeiro; depois as perguntas transversais.
@@ -35,7 +36,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
 ---
 <Base
   title={`Alternativa ao ${c.nome} — MenosClique`}
-  description={`Alternativa ao ${c.nome}: sistema para clínicas simples e completo, com agenda, prontuário, financeiro e documentos. Teste grátis 14 dias, sem cartão.`}
+  description={`Alternativa ao ${c.nome}: sistema para clínicas simples e completo, com agenda, prontuário, financeiro e documentos. Teste grátis ${TRIAL_DAYS} dias, sem cartão.`}
   path={`/alternativas/${c.slug}`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -49,7 +50,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
         <h1>Buscando uma alternativa ao {c.nome}? <span class="grad">Conheça o MenosClique.</span></h1>
         <p class="lead">O {c.nome} é {c.oneLiner}. Se o que você procura é <strong>simplicidade, tudo incluído e preço justo</strong>, o MenosClique pode ser a escolha certa para a sua clínica.</p>
         <div class="ahero__cta">
-          <a href={register} class="btn btn-primary btn-lg">Testar grátis por 14 dias</a>
+          <a href={register} class="btn btn-primary btn-lg">Testar grátis por {TRIAL_DAYS} dias</a>
           <a href="/funcionalidades" class="btn btn-ghost btn-lg">Ver funcionalidades</a>
         </div>
       </div>
@@ -125,7 +126,7 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEn
       <div class="ecta reveal">
         <div class="ecta__bg" aria-hidden="true"></div>
         <h2>Veja a diferença você mesmo.</h2>
-        <p class="lead">14 dias grátis, sem cartão, com migração assistida. Decida com a sua clínica na tela.</p>
+        <p class="lead">{TRIAL_DAYS} dias grátis, sem cartão, com migração assistida. Decida com a sua clínica na tela.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>
     </div>

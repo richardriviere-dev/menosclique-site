@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../../data/trial";
 import Base from "../../layouts/Base.astro";
 import { getCollection, render } from "astro:content";
 
@@ -71,7 +72,7 @@ const schema = {
 
       <div class="art__cta">
         <h3>Menos cliques, mais cuidado na sua clínica.</h3>
-        <p>Agenda, prontuário e financeiro em um só sistema. Teste grátis por 14 dias, sem cartão.</p>
+        <p>Agenda, prontuário e financeiro em um só sistema. Teste grátis por {TRIAL_DAYS} dias, sem cartão.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>
 

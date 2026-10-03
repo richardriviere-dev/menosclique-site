@@ -54,4 +54,4 @@ Ao avaliar um prontuário eletrônico, priorize:
 
 Migrar para o prontuário eletrônico não precisa ser um projeto complexo. Com um sistema simples e migração assistida de pacientes, você começa em minutos.
 
-Conheça o prontuário personalizável do **MenosClique**: [teste grátis por 14 dias](https://app.menosclique.com.br/Register), sem cartão de crédito.
+Conheça o prontuário personalizável do **MenosClique**: [teste grátis por 7 dias](https://app.menosclique.com.br/Register), sem cartão de crédito.

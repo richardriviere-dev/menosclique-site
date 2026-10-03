@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../data/trial";
 import Base from "../layouts/Base.astro";
 import ScreenFrame from "../components/ScreenFrame.astro";
 import HeroRotator from "../components/HeroRotator.astro";
@@ -54,7 +55,7 @@ const features = [
           <a href="/funcionalidades" class="btn btn-ghost btn-lg">Ver funcionalidades</a>
         </div>
         <div class="trustline hero__trust">
-          <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>14 dias grátis</span>
+          <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>{TRIAL_DAYS} dias grátis</span>
           <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Sem cartão de crédito</span>
           <span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Migração assistida</span>
         </div>
@@ -175,7 +176,7 @@ const features = [
       <div class="center narrow reveal">
         <span class="eyebrow center-line">Planos</span>
         <h2>Preço simples, como tudo aqui.</h2>
-        <p class="lead" style="margin-top:12px">Comece com <strong>14 dias grátis</strong>, sem cartão de crédito. Escolha o plano quando decidir ficar.</p>
+        <p class="lead" style="margin-top:12px">Comece com <strong>{TRIAL_DAYS} dias grátis</strong>, sem cartão de crédito. Escolha o plano quando decidir ficar.</p>
         <BillingToggle />
       </div>
       <div class="price-grid" data-billing-area>
@@ -228,7 +229,7 @@ const features = [
       <div class="cta reveal">
         <div class="cta__bg" aria-hidden="true"></div>
         <h2>Sua clínica com menos cliques começa hoje.</h2>
-        <p class="lead">14 dias grátis. Sem cartão. Com migração assistida dos seus pacientes.</p>
+        <p class="lead">{TRIAL_DAYS} dias grátis. Sem cartão. Com migração assistida dos seus pacientes.</p>
         <div class="cta__row">
           <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
           <a href="/precos" class="btn btn-ghost btn-lg">Ver planos</a>

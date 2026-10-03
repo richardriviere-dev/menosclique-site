@@ -1,4 +1,5 @@
 ---
+import { TRIAL_DAYS } from "../../data/trial";
 import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
@@ -47,7 +48,7 @@ const register = "https://app.menosclique.com.br/Register";
       <div class="bcta reveal">
         <div class="bcta__bg" aria-hidden="true"></div>
         <h2>Coloque em prática na sua clínica.</h2>
-        <p class="lead">14 dias grátis, sem cartão. Agenda, prontuário e financeiro em um só lugar.</p>
+        <p class="lead">{TRIAL_DAYS} dias grátis, sem cartão. Agenda, prontuário e financeiro em um só lugar.</p>
         <a href={register} class="btn btn-primary btn-lg">Criar minha conta grátis</a>
       </div>
     </div>
