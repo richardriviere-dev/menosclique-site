@@ -40,20 +40,28 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          # A identidade do servidor as vezes nao responde de primeira a partir do runner.
-          # Tenta ate 5 vezes antes de desistir (sem isso, uma falha de rede derruba o deploy).
-          for i in 1 2 3 4 5; do
-            ssh-keyscan -T 15 -H 179.198.109.50 >> ~/.ssh/known_hosts 2>/dev/null && break
-            echo "ssh-keyscan falhou (tentativa $i); nova tentativa em 10s..."
-            sleep 10
-          done
-          test -s ~/.ssh/known_hosts
+          # Identidade do servidor FIXA (chaves publicas, nao sao segredo). Antes ela era
+          # perguntada ao servidor a cada deploy (ssh-keyscan); em 11/09/2026 a pergunta ficou
+          # 2 minutos sem resposta e o artigo do dia nao foi ao ar. Se o servidor for
+          # reinstalado, atualize as 3 linhas abaixo com: ssh-keyscan 179.198.109.50
+          cat > ~/.ssh/known_hosts <<'EOF'
+          179.198.109.50 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMlUbLNTV/mSDBYJYEjerR2NKHWS4a1aPPLhkmbue2ihg4TjDF/g6mQkmyD5lIPlsEBgHx1oIW9v38sU90TQ7uk=
+          179.198.109.50 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJUUrkIhihVoRFOEcBtJVts7mUKCgD3etSaJ3j+HY4TU
+          179.198.109.50 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFNr1ILb7G7+57xnWK7WAAXrN6g/0kKIJJ3cbZEQBCb68k/QIqIpy0rjSgQszwogPEo0lIRtXvRCTXHHfghBH9UbFf7ORODXo6FRDCNl1/ojv3TAw5WxaVa1CONffCf51jHYHB7pQaeBioDoQIFWS+Py/MotLse3xbQTY3Ke7K7k+bC6HrbJTa2ag4/N8sp+84V6M9xJcMNM4LXP5yyz3jElKjVUlWwntCY3yUBVFZqnx6oBMwdZKhWdsz7oswt4XmkflLz9mWKvoZ77rI9IbYEmJYpCEfYtyXCvfraJ6BVBiM5WwnH5Jvup/1msAv4ALlvm1RckzxsT2bkhehBjAWFim7N7SabD+kEEhAGj0g1wuNpKO49eO8uoAdKMCgnb0uluFLmLExeyy5AcNH3VVs0RHzlwh/Z4agNMvD4+zLV7ogLlPA99INx12cxNIvNuP8XbnUXUkHI3VkpYfEHbkeKa2XbOsVFlpoxJpWz7+edbLluV7/rWOU+n5KHVZBRWE=
+          EOF
 
       - name: Enviar o site para o servidor
         run: |
-          rsync -az --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
-            dist/ root@179.198.109.50:/var/www/menosclique-site/
+          # A rede entre o GitHub e o servidor as vezes cai por alguns minutos.
+          # Tenta por ate ~12 minutos antes de desistir (espera 30s, 60s, 90s...).
+          for i in 1 2 3 4 5 6; do
+            rsync -az --delete --timeout=60 \
+              -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes -o ConnectTimeout=20" \
+              dist/ root@179.198.109.50:/var/www/menosclique-site/ && exit 0
+            echo "envio falhou (tentativa $i); nova tentativa em $((i*30))s..."
+            sleep $((i*30))
+          done
+          exit 1
 
       # Avisa os buscadores compatíveis com IndexNow (Bing, Yandex e parceiros) sobre todas as URLs.
       - name: Avisar buscadores (IndexNow)
