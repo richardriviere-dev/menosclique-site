@@ -5,3 +5,8 @@ export const WHATSAPP_DISPLAY = "+55 11 95222-4252";       // texto legível
 export const WHATSAPP_SCHEMA = "+55-11-95222-4252";        // formato do schema.org
 export const waLink = (text?: string) =>
   `https://wa.me/${WHATSAPP_E164}` + (text ? `?text=${encodeURIComponent(text)}` : "");
+
+// Demonstração de 15 min por vídeo (Google Agenda da marca) — o mesmo link do sistema (BrandContact).
+export const DEMO_URL = "https://calendar.app.google/qzt9vqBZKxNvrdCc6";
+// "A gente cadastra seus pacientes" — conversa já aberta com o pedido.
+export const MIGRATION_WA = waLink("Olá! Quero que vocês cadastrem meus pacientes no MenosClique.");
