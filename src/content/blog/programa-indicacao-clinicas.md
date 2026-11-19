@@ -4,6 +4,7 @@ description: "Aprenda a montar um programa de indicação para clínicas que ger
 pubDate: 2026-11-05
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/programa-indicacao-clinicas.jpg"
 ---
 
 Um **programa de indicação para clínicas** é uma estratégia estruturada em que pacientes satisfeitos recomendam a clínica a amigos e familiares, de forma incentivada e rastreável. Funciona porque a recomendação pessoal é a propaganda mais confiável que existe — segundo a Nielsen, 83% das pessoas confiam em indicações de quem conhecem. Bem desenhado, ele reduz o custo de aquisição e traz pacientes mais fiéis.
