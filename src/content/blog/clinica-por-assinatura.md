@@ -4,6 +4,7 @@ description: "Entenda o que é clínica por assinatura, como estruturar planos r
 pubDate: 2026-10-27
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/clinica-por-assinatura.jpg"
 ---
 
 A **clínica por assinatura** é um modelo de negócio em que o paciente paga uma mensalidade fixa para ter acesso a um pacote definido de serviços — consultas, acompanhamento, exames básicos ou benefícios de conveniência. Em vez de cobrar apenas por atendimento avulso, a clínica cria uma receita recorrente e previsível, fideliza o paciente e aproxima a relação do cuidado contínuo, não episódico.
