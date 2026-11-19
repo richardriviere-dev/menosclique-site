@@ -4,6 +4,7 @@ description: "Guia prático de gestão de contratos em clínicas: tipos, cláusu
 pubDate: 2026-11-13
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/gestao-de-contratos-em-clinicas.jpg"
 ---
 
 A **gestão de contratos em clínicas** é o processo de organizar, acompanhar e revisar todos os acordos jurídicos do negócio — convênios, fornecedores, colaboradores, locação, softwares e pacientes — para garantir cumprimento de prazos, reduzir riscos financeiros e evitar renovações automáticas desfavoráveis. Bem estruturada, ela protege o caixa, diminui glosas e dá previsibilidade às decisões do gestor.
