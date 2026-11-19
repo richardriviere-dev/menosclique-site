@@ -4,6 +4,7 @@ description: "Entenda a Matriz de Ansoff para clínicas e descubra 4 estratégia
 pubDate: 2026-11-16
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/matriz-ansoff-clinicas.jpg"
 ---
 
 A **Matriz de Ansoff para clínicas** é uma ferramenta estratégica que organiza as opções de crescimento em quatro caminhos, cruzando produtos (serviços) com mercados (pacientes). Na prática, ela ajuda o gestor a decidir se deve atender mais os pacientes atuais, buscar novos públicos, lançar novos serviços ou diversificar o negócio — sempre medindo o risco de cada escolha antes de investir.
