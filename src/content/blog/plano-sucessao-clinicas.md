@@ -4,6 +4,7 @@ description: "Entenda como montar um plano de sucessão em clínicas: etapas, go
 pubDate: 2026-10-29
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/plano-sucessao-clinicas.jpg"
 ---
 
 Um **plano de sucessão em clínicas** é o conjunto estruturado de decisões que define quem vai liderar, operar e ser dono do negócio quando o fundador se afastar — por aposentadoria, venda, incapacidade ou falecimento. Ele combina preparo de pessoas, organização societária e documentos formais. Sem esse plano, a clínica depende de uma única pessoa e corre risco real de perder valor, pacientes e equipe na transição.
