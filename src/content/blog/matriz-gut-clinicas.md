@@ -4,6 +4,7 @@ description: "Aprenda a usar a Matriz GUT na sua clínica para priorizar problem
 pubDate: 2026-11-15
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/matriz-gut-clinicas.jpg"
 ---
 
 A **matriz GUT para clínicas** é uma ferramenta de priorização que classifica problemas por três critérios — Gravidade, Urgência e Tendência — atribuindo notas de 1 a 5 a cada um. Ao multiplicar as três notas, você obtém um score que indica o que resolver primeiro. É útil quando a lista de pendências é longa e os recursos (tempo, dinheiro e equipe) são limitados.
