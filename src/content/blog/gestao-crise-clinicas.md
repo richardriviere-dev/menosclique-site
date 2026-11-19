@@ -4,6 +4,7 @@ description: "Aprenda gestão de crise em clínicas: como preparar o time, comun
 pubDate: 2026-11-09
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/gestao-crise-clinicas.jpg"
 ---
 
 A **gestão de crise em clínicas** é o conjunto de processos para antecipar, conter e comunicar eventos que ameaçam a reputação, a operação ou a segurança do paciente — como vazamento de dados, evento adverso, reclamação viral ou falha grave de atendimento. Na prática, envolve um plano escrito, um comitê responsável, mensagens-padrão e uma rotina de aprendizado após o episódio.
