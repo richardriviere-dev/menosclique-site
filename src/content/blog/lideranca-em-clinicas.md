@@ -4,6 +4,7 @@ description: "Liderança em clínicas: aprenda estilos, competências e prática
 pubDate: 2026-11-08
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/lideranca-em-clinicas.jpg"
 ---
 
 A **liderança em clínicas** é a capacidade do gestor — sócio, médico responsável ou coordenador — de orientar pessoas e processos para entregar bom atendimento e resultados sustentáveis. Na prática, significa dar direção clara, desenvolver a equipe, tomar decisões com dados e sustentar uma cultura de segurança do paciente. Boa liderança reduz conflitos, retém talentos e melhora a experiência de quem é cuidado.
