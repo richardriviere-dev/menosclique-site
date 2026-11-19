@@ -4,6 +4,7 @@ description: "Entenda o que é uma clínica popular, como estruturar o modelo de
 pubDate: 2026-10-30
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/clinica-popular-modelo-negocio.jpg"
 ---
 
 Uma **clínica popular** é um modelo de negócio focado em atender grandes volumes de pacientes com consultas e exames a preços acessíveis, pagos particularmente. Funciona com ticket baixo compensado por alta rotatividade de agenda, processos padronizados e custo operacional enxuto. O público-alvo são os brasileiros sem plano de saúde que buscam alternativa mais rápida que o SUS.
