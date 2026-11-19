@@ -4,6 +4,7 @@ description: "Entenda como montar um setor comercial para clínicas: funções, 
 pubDate: 2026-11-10
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/setor-comercial-clinicas.jpg"
 ---
 
 Montar um **setor comercial para clínicas** significa organizar pessoas, processos e metas para transformar contatos (leads) em pacientes agendados e fiéis, de forma ética e previsível. Na prática, é dar à clínica uma estrutura que acompanha cada interessado desde o primeiro contato até o retorno, reduzindo perdas de oportunidade e aumentando a taxa de conversão sem ferir as normas do CFM.
