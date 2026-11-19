@@ -4,6 +4,7 @@ description: "Aprenda gestão da mudança em clínicas: por que projetos falham,
 pubDate: 2026-11-11
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/gestao-mudanca-clinicas.jpg"
 ---
 
 A **gestão da mudança em clínicas** é o conjunto de métodos para planejar, comunicar e implantar transformações — novo sistema, novos processos, nova cultura — reduzindo a resistência das equipes e garantindo adoção real. Ela trata do lado humano da mudança: sem engajar recepção, médicos e gestão, até a melhor ferramenta vira projeto abandonado em poucas semanas.
