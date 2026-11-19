@@ -4,6 +4,7 @@ description: "Sofreu descredenciamento de convênios? Veja o passo a passo para 
 pubDate: 2026-11-01
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/descredenciamento-convenios-como-migrar.jpg"
 ---
 
 O **descredenciamento de convênios** acontece quando a operadora encerra o contrato com sua clínica ou você decide sair da rede credenciada. Para migrar com segurança, avise os pacientes dentro do prazo, retenha quem vale a pena com modelos particulares ou de assinatura, renegocie com outras operadoras e reorganize o fluxo de caixa antes da data de corte. Planejamento de 60 a 90 dias é o ideal.
