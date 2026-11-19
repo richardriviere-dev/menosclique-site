@@ -4,6 +4,7 @@ description: "Entenda o que é a Matriz BCG para clínicas, como classificar seu
 pubDate: 2026-11-14
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/matriz-bcg-clinicas.jpg"
 ---
 
 A **Matriz BCG para clínicas** é uma ferramenta estratégica que classifica cada serviço ou especialidade em quatro quadrantes — Estrela, Vaca Leiteira, Interrogação e Abacaxi — cruzando o crescimento do mercado com a participação relativa da clínica. Ela ajuda o gestor a decidir onde investir, o que manter e o que descontinuar, direcionando recursos para o portfólio que realmente dá lucro.
