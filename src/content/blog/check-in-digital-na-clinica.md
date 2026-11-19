@@ -4,6 +4,7 @@ description: "Saiba como implementar o check-in digital na clínica, reduzir fil
 pubDate: 2026-11-12
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/check-in-digital-na-clinica.jpg"
 ---
 
 O **check-in digital na clínica** é o processo em que o paciente confirma a presença, atualiza dados e, muitas vezes, preenche formulários antes mesmo de chegar à recepção — por link, QR Code ou totem. Na prática, ele antecipa burocracias, encurta o atendimento no balcão e reduz filas. Para implementar, você precisa de um sistema integrado à agenda, fluxos bem definidos e atenção à LGPD.
