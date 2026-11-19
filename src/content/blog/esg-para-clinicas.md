@@ -4,6 +4,7 @@ description: "Entenda o que é ESG para clínicas, por que importa e como aplica
 pubDate: 2026-11-02
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/esg-para-clinicas.jpg"
 ---
 
 **ESG para clínicas** é a adoção de práticas ambientais (E), sociais (S) e de governança (G) na gestão de um negócio de saúde — do descarte correto de resíduos à transparência com pacientes e colaboradores. Mais que marketing, é uma forma de reduzir custos, mitigar riscos legais e construir reputação sustentável a longo prazo.
