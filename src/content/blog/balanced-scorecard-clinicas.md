@@ -4,6 +4,7 @@ description: "Aprenda a usar o Balanced Scorecard para clínicas: as 4 perspecti
 pubDate: 2026-11-17
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/balanced-scorecard-clinicas.jpg"
 ---
 
 O **Balanced Scorecard para clínicas** é uma ferramenta de gestão que traduz a estratégia do negócio em objetivos e indicadores distribuídos em quatro perspectivas equilibradas: financeira, pacientes, processos internos e aprendizado. Na prática, ele conecta a visão de longo prazo às metas do dia a dia, evitando que a clínica olhe só para o faturamento e esqueça da experiência do paciente e da saúde dos processos.
