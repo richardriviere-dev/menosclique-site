@@ -4,6 +4,7 @@ description: "Descubra como sua clínica pode entrar no mercado de saúde corpor
 pubDate: 2026-11-04
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/saude-corporativa-clinicas.jpg"
 ---
 
 **Saúde corporativa para clínicas** é a oferta estruturada de serviços de saúde a empresas — como exames ocupacionais, check-ups, vacinação e programas de bem-estar — por meio de contratos recorrentes B2B. Em vez de depender só da demanda espontânea de pacientes, a clínica fatura com volume previsível, firmando acordos com empregadores que precisam cumprir obrigações legais e cuidar de suas equipes.
