@@ -4,6 +4,7 @@ description: "Como vender uma clínica com segurança: etapas, valuation, due di
 pubDate: 2026-10-24
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/como-vender-uma-clinica.jpg"
 ---
 
 Para **vender uma clínica** com segurança, você precisa preparar o negócio, estimar um valor justo, organizar documentos, encontrar o comprador certo, passar por uma due diligence e formalizar a transação em contrato — cuidando dos aspectos tributários e da continuidade dos pacientes. É um processo que costuma levar de meses a mais de um ano e exige planejamento antecipado para não destruir valor na mesa de negociação.
