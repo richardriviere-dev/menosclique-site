@@ -4,6 +4,7 @@ description: "Inovação em clínicas vai além de tecnologia: aprenda a criar c
 pubDate: 2026-11-06
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/inovacao-em-clinicas.jpg"
 ---
 
 **Inovação em clínicas** é o processo contínuo de melhorar processos, serviços, experiência do paciente e modelo de negócio de forma estruturada — não apenas comprar tecnologia. Na prática, significa identificar problemas reais, testar soluções em pequena escala, medir resultados e padronizar o que funciona. É um método de evolução gerenciada, não um evento isolado.
