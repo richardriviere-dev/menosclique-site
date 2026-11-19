@@ -4,6 +4,7 @@ description: "BI para clínicas: entenda o que é Business Intelligence na saúd
 pubDate: 2026-11-03
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/bi-para-clinicas.jpg"
 ---
 
 **BI para clínicas** (Business Intelligence) é o uso de dados para transformar informações da operação — agenda, financeiro, convênios e marketing — em decisões rápidas e seguras. Na prática, significa reunir indicadores em painéis visuais que mostram, em tempo real, onde a clínica ganha, onde perde dinheiro e o que fazer a seguir, substituindo o "achismo" por evidências.
