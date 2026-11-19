@@ -4,6 +4,7 @@ description: "Omnichannel para clínicas: entenda o que é, como integrar WhatsA
 pubDate: 2026-11-07
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/omnichannel-para-clinicas.jpg"
 ---
 
 **Omnichannel para clínicas** é a estratégia de integrar todos os canais de atendimento — WhatsApp, telefone, site, e-mail e redes sociais — em uma única central, de forma que o paciente seja reconhecido e tenha continuidade na conversa, independentemente de por onde chegou. Na prática, significa acabar com informações soltas, agendas duplicadas e respostas desencontradas que frustram quem busca cuidado.
