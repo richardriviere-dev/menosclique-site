@@ -4,6 +4,7 @@ description: "Entenda como usar inteligência artificial para clínicas na gest�
 pubDate: 2026-10-28
 category: "Gestão de clínicas"
 author: "Equipe MenosClique"
+cover: "/blog-covers/inteligencia-artificial-clinicas.jpg"
 ---
 
 A **inteligência artificial para clínicas** é o uso de softwares que aprendem com dados para automatizar tarefas, apoiar decisões e melhorar a experiência do paciente — da triagem no WhatsApp à previsão de faltas na agenda. Bem aplicada, reduz trabalho manual da equipe e libera tempo clínico, desde que respeite a LGPD e as normas do conselho profissional. Este guia mostra onde ela realmente entrega resultado.
